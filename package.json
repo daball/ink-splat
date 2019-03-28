@@ -1,0 +1,30 @@
+{
+  "name": "ink-splat",
+  "version": "0.0.1",
+  "description": "ink-splat is a component library for ink.",
+  "main": "dist/components/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp"
+  },
+  "author": "David A. Ball <www.daball.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
+    "@babel/preset-env": "^7.4.1",
+    "@babel/preset-react": "^7.0.0",
+    "gulp": "^4.0.0",
+    "gulp-babel": "^8.0.0-beta.2",
+    "jshint": "^2.10.2"
+  },
+  "dependencies": {
+    "ink": "^2.0.6",
+    "ink-tab": "^2.0.1",
+    "ink-text-input": "^3.1.0",
+    "inquirer": "^6.2.2",
+    "react": "^16.8.5",
+    "react-jsdom": "^3.0.0"
+  }
+}
