@@ -61,7 +61,7 @@ TabBar is a focusable Tabs component. A considerable portion of this code came f
         onChange={this.handleTabChange}
         focused={this.state.focusedComponent==='tabBar'}
         onBlur={() => (
-            (this.state.activeTabName === 'bio' && app.setState({focusedComponent: 'txtName'}))
+            (this.state.activeTabName === 'bio' && this.setState({focusedComponent: 'txtName'}))
             || (this.state.activeTabName === 'exit' && exit())
         )}>
         <Tab name="readme">Readme</Tab>
@@ -72,7 +72,7 @@ TabBar is a focusable Tabs component. A considerable portion of this code came f
 
 ### TextField
 
-TabBar is a focusable TextInput component, which is only a Text component whenever blurred.
+TextField is a focusable TextInput component, which is only a Text component whenever blurred.
 
 #### TextField example
 
@@ -80,9 +80,9 @@ TabBar is a focusable TextInput component, which is only a Text component whenev
         value={app.state.name}
         focused={this.state.focusedComponent==='txtName'}
         caption={<Text bold><Color bgMagenta whiteBright>Your Name:</Color></Text>}
-        onChange={(newName) => app.setState({newName})}
-        onSubmit={(name) => app.setState({name})}
-        onBlur={() => app.setState({focusedComponent: 'txtBio'})}
+        onChange={(newName) => this.setState({newName})}
+        onSubmit={(name) => this.setState({name})}
+        onBlur={() => this.setState({focusedComponent: 'txtBio'})}
         />
 
 ## Copyright
