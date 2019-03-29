@@ -1,0 +1,14 @@
+stages:
+  - test
+
+# test stage - test job
+test:
+  stage: test
+  script:
+    - npm test -- --coverage
+
+# test stage - lint job
+lint:
+  stage: test
+  script:
+    - npm run lint

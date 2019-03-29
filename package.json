@@ -1,25 +1,58 @@
 {
   "name": "ink-splat",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "ink-splat is a component library for ink.",
-  "main": "dist/components/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "gulp"
-  },
   "author": "David A. Ball <www.daball.me>",
   "license": "MIT",
+  "main": "dist/components/index.js",
+  "scripts": {
+    "precommit": "NODE_ENV=production lint-staged",
+    "lint": "eslint src/",
+    "check": "prettier --check src/**/*.js",
+    "test": "jest",
+    "jest-init": "jest --init",
+    "build": "gulp"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css,md}": [
+      "pretty-quick --staged",
+      "eslint src/ --fix",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
     "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/preset-env": "^7.4.1",
     "@babel/preset-react": "^7.0.0",
+    "babel-jest": "^24.5.0",
+    "eslint": "^5.15.3",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-standard": "^4.0.0",
     "gulp": "^4.0.0",
     "gulp-babel": "^8.0.0-beta.2",
-    "jshint": "^2.10.2"
+    "gulp-prettier": "^2.1.0",
+    "husky": "^1.3.1",
+    "ink-testing-library": "^1.0.1",
+    "jest": "^24.5.0",
+    "jshint": "^2.10.2",
+    "lint-staged": "^8.1.5",
+    "prettier": "^1.16.4",
+    "prettier-eslint": "^8.8.2",
+    "prettier-eslint-cli": "^4.7.1",
+    "pretty-quick": "^1.10.0"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.1",
     "ink": "^2.0.6",
     "ink-tab": "^2.0.1",
     "ink-text-input": "^3.1.0",

@@ -1,127 +1,110 @@
-// A substantial portion of this code came from https://github.com/jdeniau/ink-tab
-// My additions are concerned with making it look like a TabBar but not behaving like one
-// if it isn't in focus.
+/* eslint-disable react/jsx-one-expression-per-line */
+/**
+ * A substantial portion of this code came from https://github.com/jdeniau/ink-tab
+ * My additions are concerned with making it look like a TabBar but not behaving like one
+ * if it isn't in focus.
+ */
 
 import React, { Component } from 'react';
-import { Control } from './Control';
 import readline from 'readline';
-import PropTypes from 'prop-types';
-import { Box, Color, StdinContext } from 'ink';
+// import PropTypes from 'prop-types';
+import { Box, Color, StdinContext, Text } from 'ink';
+import Control from './Control';
 
 class Tab extends Component {
     render() {
-      return this.props.children;
+      const { props } = this;
+      return props.children;
     }
 }
 
-Tab.propTypes = {
-  children: PropTypes.node.isRequired,
-  name: PropTypes.string.isRequired,
-};
+// Tab.propTypes = {
+//   children: PropTypes.node.isRequired,
+//   name: PropTypes.string.isRequired,
+// };
 
 class TabsWithStdin extends Control {
   constructor(props) {
     super(props);
-
     this.isColumn = this.isColumn.bind(this);
     this.handleTabChange = this.handleTabChange.bind(this);
     this.handleKeyPress = this.handleKeyPress.bind(this);
     this.moveToNextTab = this.moveToNextTab.bind(this);
     this.moveToPreviousTab = this.moveToPreviousTab.bind(this);
-
     this.state = {
       ...this.state,
-      activeTab: 0,
     };
   }
 
   componentDidMount() {
-    const { stdin, setRawMode } = this.props;
-
+    const { activeTab, stdin, setRawMode } = this.props;
     // use ink / node `setRawMode` to read key-by-key
     setRawMode(true);
-
     // and listen to keypress events
     readline.emitKeypressEvents(stdin);
-
     stdin.on('keypress', this.handleKeyPress);
-
-    // select the first tab on component mount
-    this.handleTabChange(0);
+    // select the first tab on component mount (if not active tab is selected)
+    if (!activeTab)
+      this.handleTabChange(0);
   }
 
   componentWillUnmount() {
     const { stdin } = this.props;
-
     stdin.removeListener('keypress', this.handleKeyPress);
   }
 
   handleTabChange(tabId) {
+    const { onChange, onTabIdChange } = this.props;
     const tab = this.props.children[tabId];
-
     if (!tab) {
       return;
     }
-
-    this.setState({
-      activeTab: tabId,
-    });
-
-    if (this.props.onChange)
-        this.props.onChange(tab.props.name, tab);
-    if (this.props.onTabIdChange)
-        this.props.onTabIdChange(tabId);
+    if (onChange)
+        onChange(tab.props.name, tab);
+    if (onTabIdChange)
+        onTabIdChange(tabId);
   }
 
   handleKeyPress(ch, key) {
     if (!key) {
       return;
     }
-
     switch (key.name) {
       case 'left': {
         if (this.isColumn()) {
           return;
         }
-
         this.moveToPreviousTab();
         break;
       }
-
       case 'up':
         if (!this.isColumn()) {
           return;
         }
-
         this.moveToPreviousTab();
         break;
-
       case 'right': {
         if (this.isColumn()) {
           return;
         }
-
         this.moveToNextTab();
         break;
       }
-
       case 'down':
         if (!this.isColumn()) {
           return;
         }
-
         this.moveToNextTab();
         break;
-
-      case 'tab':
+      // case 'tab':
       //   if (true === key.shift) {
       //     this.moveToPreviousTab();
       //   } else {
       //     this.moveToNextTab();
       //   }
-
       //   break;
       // }
+      case 'tab':
       case 'return': {
         this.blur();
         break;
@@ -135,16 +118,13 @@ class TabsWithStdin extends Control {
       case '6':
       case '7':
       case '8':
-      case '9': {
-        if (true === key.meta) {
-          const tabId = '0' === key.name ? 9 : parseInt(key.name, 10) - 1;
-
+      case '9':
+        if (key.meta === true) {
+          const tabId = key.name === '0' ? 9 : parseInt(key.name, 10) - 1;
           this.handleTabChange(tabId);
         }
-      }
-
-      default:
-        return;
+        break;
+      default:        
     }
   }
 
@@ -155,8 +135,9 @@ class TabsWithStdin extends Control {
   }
 
   moveToNextTab() {
-    let nextTabId = this.state.activeTab + 1;
-    if (nextTabId >= this.props.children.length) {
+    const { activeTab, children } = this.props;
+    let nextTabId = activeTab + 1;
+    if (nextTabId >= children.length) {
       nextTabId = 0;
     }
 
@@ -164,16 +145,17 @@ class TabsWithStdin extends Control {
   }
 
   moveToPreviousTab() {
-    let nextTabId = this.state.activeTab - 1;
+    const { activeTab, children } = this.props;
+    let nextTabId = activeTab - 1;
     if (nextTabId < 0) {
-      nextTabId = this.props.children.length - 1;
+      nextTabId = children.length - 1;
     }
 
     this.handleTabChange(nextTabId);
   }
 
   render() {
-    const { children, onChange, flexDirection, ...rest } = this.props;
+    const { activeTab, children, onChange, flexDirection, ...rest } = this.props;
 
     const separator = this.isColumn() ? '──────' : ' | ';
 
@@ -186,10 +168,12 @@ class TabsWithStdin extends Control {
             <Box key={name} flexDirection={flexDirection}>
               {key !== 0 && <Color dim>{separator}</Color>}
               <Box>
-                <Color keyword="grey">{key + 1}. </Color>
+                <Color keyword="grey">
+                  <Text>{key + 1}. </Text>
+                </Color>
                 <Color
-                  bgGreen={this.state.activeTab === key}
-                  black={this.state.activeTab === key}
+                  bgGreen={activeTab === key}
+                  black={activeTab === key}
                 >
                   {child}
                 </Color>
@@ -216,7 +200,7 @@ class TabsWithoutStdin extends Control {
     }
   
     render() {
-      const { children, onChange, flexDirection, ...rest } = this.props;
+      const { activeTab, children, onChange, flexDirection, ...rest } = this.props;
   
       const separator = this.isColumn() ? '──────' : ' | ';
   
@@ -231,8 +215,8 @@ class TabsWithoutStdin extends Control {
                 <Box>
                   <Color keyword="grey">{key + 1}. </Color>
                   <Color
-                    bgGreen={this.props.activeTab === key}
-                    black={this.props.activeTab === key}
+                    bgGreen={activeTab === key}
+                    black={activeTab === key}
                   >
                     {child}
                   </Color>
@@ -246,27 +230,21 @@ class TabsWithoutStdin extends Control {
 }
 
 class Tabs extends Control {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <StdinContext.Consumer>
-          {({ stdin, setRawMode }) => (
-              <TabsWithStdin stdin={stdin} setRawMode={setRawMode} {...this.props} />
-          )}
+        {({ stdin, setRawMode }) => (
+          <TabsWithStdin stdin={stdin} setRawMode={setRawMode} {...this.props} />
+        )}
       </StdinContext.Consumer>
     );
   }
 }
 
 class ShadedTabs extends Control {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
-        <TabsWithoutStdin {...this.props} />
+      <TabsWithoutStdin {...this.props} />
     );
   }
 } 
@@ -289,25 +267,29 @@ class TabBar extends Control {
           this.props.onChange(tab.props.name, tab);
         }
     }
+    
     handleTabIdChange(activeTab) {
         this.setState({activeTab});
     }
-    canFocus() {
-        return true;
-    }
+
     render() {
         return (
             this.isFocused()
             ?
-            <Tabs
-                {...this.props}
-                onTabIdChange={this.handleTabIdChange}
-            />
-            :
-            <ShadedTabs
+            (
+              <Tabs
                 {...this.props}
                 activeTab={this.state.activeTab}
-            />
+                onTabIdChange={this.handleTabIdChange}
+              />
+            )
+            :
+            (
+              <ShadedTabs
+                {...this.props}
+                activeTab={this.state.activeTab}
+              />
+            )
         );
     }
 }

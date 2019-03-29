@@ -1,0 +1,51 @@
+{
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "parser": "babel-eslint",
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly",
+    "window": true,
+    "document": true,
+    "localStorage": true,
+    "FormData": true,
+    "FileReader": true,
+    "Blob": true,
+    "navigator": true,
+    "process": true,
+    "require": true,
+    "__dirname": true,
+    "__filename": true
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/prop-types": 0,
+    "no-underscore-dangle": 0,
+    "import/imports-first": ["error", "absolute-first"],
+    "import/newline-after-import": "error",
+    "no-console": "off",
+    "no-restricted-syntax": [
+      "error",
+      {
+        "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+        "message": "Unexpected property on console object was called"
+      }
+    ]
+  },
+  "plugins": ["prettier"]
+}
