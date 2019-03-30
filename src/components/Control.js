@@ -14,6 +14,9 @@ export default class Control extends React.Component {
      * @param {*} anyComponentOrClass Any valid React component or React component class.
      */
     static isControl(anyComponentOrClass) {
+        if (anyComponentOrClass === Control) {
+            return true;
+        }
         switch (typeof anyComponentOrClass) {
             case 'object':
                 return (anyComponentOrClass instanceof Control);
@@ -27,7 +30,8 @@ export default class Control extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            ...this.state
+            ...this.state,
+            canIReachThisState: 'yep!'
         };
     }
 
@@ -50,7 +54,7 @@ export default class Control extends React.Component {
      */
     // eslint-disable-next-line class-methods-use-this
     canFocus() {
-        return true;
+        return this.isEnabled() && this.isBlurred();
     }
 
     /**
@@ -66,7 +70,7 @@ export default class Control extends React.Component {
      * disabled state, canFocus() would return false, but otherwise return true.
      */
     canBlur() {
-        return this.isFocused();
+        return this.isEnabled() && this.isFocused();
     }
 
     /**
@@ -111,18 +115,18 @@ export default class Control extends React.Component {
         const {
             props
         } = this;
-        return !!props.disabled;
+        return props !== undefined && (!!props.disabled);
     }
 
     isEnabled() {
-        return !this.isEnabled();
+        return !this.isDisabled();
     }
 
     isFocused() {
         const {
             props
         } = this;
-        return !!props.focused;
+        return props !== undefined && (!!props.focused && this.isEnabled());
     }
 
     isBlurred() {
@@ -136,10 +140,12 @@ export default class Control extends React.Component {
         if (this.isFocused()) {
             return true;
         }
-        for (let c = 0; c < props.children.length; c++) {
-            if (props.children[c].containsFocus &&
-                props.children[c].containsFocus())
-                return true;
+        if (props && props.children && props.children.length) {
+            for (let c = 0; c < props.children.length; c++) {
+                if (props.children[c].containsFocus &&
+                    props.children[c].containsFocus())
+                    return true;
+            }
         }
         return false;
     }
@@ -148,6 +154,6 @@ export default class Control extends React.Component {
         const {
             props
         } = this;
-        return props.children;
+        return (props&&props.children)||null;
     }
 }

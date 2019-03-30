@@ -6,10 +6,10 @@
   "license": "MIT",
   "main": "dist/components/index.js",
   "scripts": {
-    "precommit": "NODE_ENV=production lint-staged",
+    "precommit": "NODE_ENV=production lint-staged && jest --coverage && gulp",
     "lint": "eslint src/",
     "check": "prettier --check src/**/*.js",
-    "test": "jest",
+    "test": "jest --coverage",
     "jest-init": "jest --init",
     "build": "gulp"
   },
@@ -42,7 +42,6 @@
     "gulp-babel": "^8.0.0-beta.2",
     "gulp-prettier": "^2.1.0",
     "husky": "^1.3.1",
-    "ink-testing-library": "^1.0.1",
     "jest": "^24.5.0",
     "jshint": "^2.10.2",
     "lint-staged": "^8.1.5",
@@ -56,8 +55,10 @@
     "ink": "^2.0.6",
     "ink-tab": "^2.0.1",
     "ink-text-input": "^3.1.0",
+    "ink-testing-library": "^1.0.1",
     "inquirer": "^6.2.2",
     "react": "^16.8.5",
-    "react-jsdom": "^3.0.0"
+    "react-dom": "^16.8.6",
+    "window": "^4.2.6"
   }
 }

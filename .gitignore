@@ -85,3 +85,6 @@ typings/
 
 # dist output
 dist/
+
+# test output
+tests/

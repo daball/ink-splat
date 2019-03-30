@@ -11,7 +11,7 @@ import readline from 'readline';
 import { Box, Color, StdinContext, Text } from 'ink';
 import Control from './Control';
 
-class Tab extends Component {
+export class Tab extends Component {
     render() {
       const { props } = this;
       return props.children;
@@ -254,7 +254,7 @@ class ShadedTabs extends Control {
 //   children: PropTypes.node.isRequired,
 // };
 
-class TabBar extends Control {
+export class TabBar extends Control {
     constructor(props) {
         super(props);
         this.state = {
@@ -293,5 +293,3 @@ class TabBar extends Control {
         );
     }
 }
-
-export { Tab, TabBar };

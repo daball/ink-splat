@@ -9,11 +9,14 @@ export default class ContainerControl extends Control {
     /**
      * Returns a boolean which indicates if the provided anyComponentOrClass parameter
      * is an instance of ContainerControl (if passed an object) or a class derived from
-     * Control (if passed a function).
+     * ContainerControl (if passed a function).
      * 
      * @param {*} anyComponentOrClass Any valid React component or React component class.
      */
     static isContainerControl(anyComponentOrClass) {
+        if (anyComponentOrClass === ContainerControl) {
+            return true;
+        }
         switch (typeof anyComponentOrClass) {
             case 'object':
                 return (anyComponentOrClass instanceof ContainerControl);
@@ -112,13 +115,16 @@ export default class ContainerControl extends Control {
         // let countDerived = 0;
         // we are going to modify the children array such that when one of our children components
         // blurs, we will bubble it out to select the next focusable control
-        const modifiedChildren = this.props.children.map((el) =>
-        // expanded: const modifiedChildren = this.props.children.map((el, i, all) =>
-            Control.isDerivedControl(el) ? React.cloneElement(el, {
+        if (this.props.children) {
+            const modifiedChildren = this.props.children.map((el) =>
+            // expanded: const modifiedChildren = this.props.children.map((el, i, all) =>
+                Control.isDerivedControl(el) ? React.cloneElement(el, {
 
-            }) : el
-        );
-        return modifiedChildren;
+                }) : el
+            );
+            return modifiedChildren;
+        }
+        return null;
     }
 
     render() {
