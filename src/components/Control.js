@@ -1,5 +1,11 @@
 /* eslint no-plusplus: ["error", { "allowForLoopAfterthoughts": true }] */
 import React from 'react';
+import { isClassOrComponentFactory } from '../utils/isClassOrComponent';
+
+const BLUR_DIRECTION_REVERSE = '<';
+const BLUR_DIRECTION_FORWARD = '>';
+const BLUR_DIRECTION_DEFAULT = '>';
+
 /**
  * Defines the base class for controls, which are components with visual representation.
  * 
@@ -7,24 +13,37 @@ import React from 'react';
  */
 export default class Control extends React.Component {
     /**
-     * Returns a boolean which indicates if the provided anyComponentOrClass parameter
-     * is an instance of Control (if passed an object) or a class derived from
-     * Control (if passed a function).
+     * BLUR_DIRECTION indicate the direction a onBlur() should
+     * move.
+     */
+    static BLUR_DIRECTION = {
+        /**
+         * REVERSE indicates the next focused component will be the previous
+         * tab order.
+         */
+        REVERSE: BLUR_DIRECTION_REVERSE,
+        /**
+         * FORWARD indicates the next focused component will be the next
+         * tab order.
+         */
+        FORWARD: BLUR_DIRECTION_FORWARD,
+        /**
+         * DEFAULT direction is FORWARD.
+         */
+        DEFAULT: BLUR_DIRECTION_DEFAULT
+    };
+    
+    /**
+     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter
+     * is an instance of `Control` (if passed an object) or a class derived from
+     * `Control` (if passed a function) or a component derived from `Control`.
      * 
-     * @param {*} anyComponentOrClass Any valid React component or React component class.
+     * @param {*} anyComponentOrClass Any valid React component or React component class or instance
+     * or derived component or class or instance.
+     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.
      */
     static isControl(anyComponentOrClass) {
-        if (anyComponentOrClass === Control) {
-            return true;
-        }
-        switch (typeof anyComponentOrClass) {
-            case 'object':
-                return (anyComponentOrClass instanceof Control);
-            case 'function':
-                return (anyComponentOrClass.prototype instanceof Control);
-            default:
-                return false;
-        }
+        return isClassOrComponentFactory(Control)(anyComponentOrClass)
     }
 
     constructor(props) {

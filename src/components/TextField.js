@@ -8,7 +8,7 @@ export default class TextField extends Control {
         super(props);
         this.state = {
             ...this.state,
-            newValue: this.props.value
+            newValue: (this.props && this.props.value) ? this.props.value : ''
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -42,6 +42,7 @@ export default class TextField extends Control {
                 (
                   <TextInput
                     value={this.state.newValue}
+                    showCursor
                     onChange={this.handleChange}
                     onSubmit={this.handleSubmit}
                   />

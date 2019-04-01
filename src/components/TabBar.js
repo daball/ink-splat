@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 /* eslint-disable react/jsx-one-expression-per-line */
 /**
  * A substantial portion of this code came from https://github.com/jdeniau/ink-tab
@@ -5,13 +6,27 @@
  * if it isn't in focus.
  */
 
-import React, { Component } from 'react';
+import React from 'react';
 import readline from 'readline';
 // import PropTypes from 'prop-types';
 import { Box, Color, StdinContext, Text } from 'ink';
 import Control from './Control';
+import { isClassOrComponentFactory } from '../utils/isClassOrComponent';
 
-export class Tab extends Component {
+export class Tab extends Control {
+    /**
+     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter
+     * is an instance of `Tab` (if passed an object) or a class derived from
+     * `Tab` (if passed a function) or a component derived from `Tab`.
+     * 
+     * @param {*} anyComponentOrClass Any valid React component or React component class or instance
+     * or derived component or class or instance.
+     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.
+     */
+    static isTab(anyComponentOrClass) {
+      return isClassOrComponentFactory(Tab)(anyComponentOrClass)
+    }
+  
     render() {
       const { props } = this;
       return props.children;
@@ -255,8 +270,71 @@ class ShadedTabs extends Control {
 // };
 
 export class TabBar extends Control {
+    /**
+     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter
+     * is an instance of `TabBar` (if passed an object) or a class derived from
+     * `TabBar` (if passed a function) or a component derived from `TabBar`.
+     * 
+     * @param {*} anyComponentOrClass Any valid React component or React component class or instance
+     * or derived component or class or instance.
+     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.
+     */
+    static isTabBar(anyComponentOrClass) {
+      return isClassOrComponentFactory(TabBar)(anyComponentOrClass)
+    }
+
+    // static ERROR_NO_TABS_PROVIDED = 'TabBar must contain at least one Tab control.';
+    
+    static ERROR_ONLY_TABS_ALLOWED = 'TabBar children must contain only Tab controls.';
+    
+    static ERROR_UNKNOWN_ERROR = 'An unknown error has occurred while validating TabBar child controls.';
+
+    /**
+     * Validates a `children` array to make sure it is valid.
+     * 
+     * @param {*} children An array of Tab components or null or undefined.
+     * @param {*} throwOnError If true, throws an error if invalid.
+     * @return `true` if valid, `false` otherwise when `throwOnError` is `false`
+     * @throws An error when `throwOnError` is `true` if children contains anything
+     * other than a Tab control or if it is an empty array `[]` or `null` or `undefined`.
+     */
+    static validateChildren(children, throwOnError) {
+      // condition 1 - when children is an array
+      if (Array.isArray(children)) {
+        // omitted condition 2 - children array cannot be empty
+        // if (children.length === 0) {
+        //   if (throwOnError)
+        //     throw TabBar.ERROR_NO_TABS_PROVIDED;
+        //   return false;
+        // }
+        for (let c = 0; c < children.length; c++) {
+          const child = children[c];
+          // condition 3 - ensure each child is a Tab
+          if (!Tab.isTab(child)) {
+            if (throwOnError)
+              throw TabBar.ERROR_ONLY_TABS_ALLOWED;
+            return false;
+          }
+        }
+        return true;
+      }
+      if (children === undefined || children === null) {
+        // omitted condition 4 - children must be provided
+        // if (throwOnError)
+        //   throw TabBar.ERROR_NO_TABS_PROVIDED;
+        // return false;
+        // allow it:
+        return true;
+      }
+      if (throwOnError) {
+        throw TabBar.ERROR_UNKNOWN_ERROR;
+      }
+      return false;
+    }
+    
     constructor(props) {
         super(props);
+        // TODO: hoist state upward to outer container
         this.state = {
             ...this.state,
             activeTab: 0

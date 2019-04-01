@@ -1,30 +1,24 @@
 /* eslint no-plusplus: ["error", { "allowForLoopAfterthoughts": true }] */
 import React from 'react';
 import Control from './Control';
+import { isClassOrComponentFactory } from '../utils/isClassOrComponent';
+
 /**
  * Provides focus-management functionality for controls that can function as a container
  * for other controls.
  */
 export default class ContainerControl extends Control {
     /**
-     * Returns a boolean which indicates if the provided anyComponentOrClass parameter
-     * is an instance of ContainerControl (if passed an object) or a class derived from
-     * ContainerControl (if passed a function).
+     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter
+     * is an instance of `ContainerControl` (if passed an object) or a class derived from
+     * `ContainerControl` (if passed a function) or a component derived from `ContainerControl`.
      * 
-     * @param {*} anyComponentOrClass Any valid React component or React component class.
+     * @param {*} anyComponentOrClass Any valid React component or React component class or instance
+     * or derived component or class or instance.
+     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.
      */
     static isContainerControl(anyComponentOrClass) {
-        if (anyComponentOrClass === ContainerControl) {
-            return true;
-        }
-        switch (typeof anyComponentOrClass) {
-            case 'object':
-                return (anyComponentOrClass instanceof ContainerControl);
-            case 'function':
-                return (anyComponentOrClass.prototype instanceof ContainerControl);
-            default:
-                return false;
-        }
+        return isClassOrComponentFactory(ContainerControl)(anyComponentOrClass);
     }
 
     constructor(props) {
