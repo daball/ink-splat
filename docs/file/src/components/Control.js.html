@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/components/Control.js | ink-splat</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="ink-splat is a component library for ink."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="ink-splat"><meta property="twitter:description" content="ink-splat is a component library for ink."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/daball/ink-splat"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/App.js~App.html">App</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ComponentWrapper.js~ComponentWrapper.html">ComponentWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ContainerControl.js~ContainerControl.html">ContainerControl</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Control.js~Control.html">Control</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Form.js~Form.html">Form</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Sequence.js~Sequence.html">Sequence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/TabBar.js~Tab.html">Tab</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/TabBar.js~TabBar.html">TabBar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/TextField.js~TextField.html">TextField</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#tests-renderers">tests/renderers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderJSDOM">renderJSDOM</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderState">renderState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-cleanupInk">cleanupInk</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-renderInk">renderInk</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isClassOrComponent">isClassOrComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isClassOrComponentFactory">isClassOrComponentFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDerivedClass">isDerivedClass</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDerivedComponent">isDerivedComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isExactClass">isExactClass</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isExactComponent">isExactComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isInstanceOf">isInstanceOf</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/components/Control.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/* eslint no-plusplus: [&quot;error&quot;, { &quot;allowForLoopAfterthoughts&quot;: true }] */
+/**
+ * 
+ *  &#x2588;&#x2588;&#x2593; &#x2588;&#x2588;&#x2588;&#x2584;    &#x2588;  &#x2588;&#x2588; &#x2584;&#x2588;&#x2580;     &#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;  &#x2588;&#x2588;&#x2593;&#x2588;&#x2588;&#x2588;   &#x2588;&#x2588;&#x2593;    &#x2584;&#x2584;&#x2584;     &#x2584;&#x2584;&#x2584;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2593;
+ *  &#x2593;&#x2588;&#x2588;&#x2592; &#x2588;&#x2588; &#x2580;&#x2588;   &#x2588;  &#x2588;&#x2588;&#x2584;&#x2588;&#x2592;    &#x2592;&#x2588;&#x2588;    &#x2592; &#x2593;&#x2588;&#x2588;&#x2591;  &#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588;&#x2592;   &#x2592;&#x2588;&#x2588;&#x2588;&#x2588;&#x2584;   &#x2593;  &#x2588;&#x2588;&#x2592; &#x2593;&#x2592;
+ *  &#x2592;&#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588;  &#x2580;&#x2588; &#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588;&#x2588;&#x2584;&#x2591;    &#x2591; &#x2593;&#x2588;&#x2588;&#x2584;   &#x2593;&#x2588;&#x2588;&#x2591; &#x2588;&#x2588;&#x2593;&#x2592;&#x2592;&#x2588;&#x2588;&#x2591;   &#x2592;&#x2588;&#x2588;  &#x2580;&#x2588;&#x2584; &#x2592; &#x2593;&#x2588;&#x2588;&#x2591; &#x2592;&#x2591;
+ *  &#x2591;&#x2588;&#x2588;&#x2591;&#x2593;&#x2588;&#x2588;&#x2592;  &#x2590;&#x258C;&#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588; &#x2588;&#x2584;      &#x2592;   &#x2588;&#x2588;&#x2592;&#x2592;&#x2588;&#x2588;&#x2584;&#x2588;&#x2593;&#x2592; &#x2592;&#x2592;&#x2588;&#x2588;&#x2591;   &#x2591;&#x2588;&#x2588;&#x2584;&#x2584;&#x2584;&#x2584;&#x2588;&#x2588;&#x2591; &#x2593;&#x2588;&#x2588;&#x2593; &#x2591;
+ *  &#x2591;&#x2588;&#x2588;&#x2591;&#x2592;&#x2588;&#x2588;&#x2591;   &#x2593;&#x2588;&#x2588;&#x2591;&#x2592;&#x2588;&#x2588;&#x2592; &#x2588;&#x2584;   &#x2592;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2592;&#x2592;&#x2592;&#x2588;&#x2588;&#x2592; &#x2591;  &#x2591;&#x2591;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2592;&#x2593;&#x2588;   &#x2593;&#x2588;&#x2588;&#x2592; &#x2592;&#x2588;&#x2588;&#x2592; &#x2591;
+ *  &#x2591;&#x2593;  &#x2591; &#x2592;&#x2591;   &#x2592; &#x2592; &#x2592; &#x2592;&#x2592; &#x2593;&#x2592;   &#x2592; &#x2592;&#x2593;&#x2592; &#x2592; &#x2591;&#x2592;&#x2593;&#x2592;&#x2591; &#x2591;  &#x2591;&#x2591; &#x2592;&#x2591;&#x2593;  &#x2591;&#x2592;&#x2592;   &#x2593;&#x2592;&#x2588;&#x2591; &#x2592; &#x2591;&#x2591;
+ *  &#x2592; &#x2591;&#x2591; &#x2591;&#x2591;   &#x2591; &#x2592;&#x2591;&#x2591; &#x2591;&#x2592; &#x2592;&#x2591;   &#x2591; &#x2591;&#x2592;  &#x2591; &#x2591;&#x2591;&#x2592; &#x2591;     &#x2591; &#x2591; &#x2592;  &#x2591; &#x2592;   &#x2592;&#x2592; &#x2591;   &#x2591;
+ *  &#x2592; &#x2591;   &#x2591;   &#x2591; &#x2591; &#x2591; &#x2591;&#x2591; &#x2591;    &#x2591;  &#x2591;  &#x2591;  &#x2591;&#x2591;         &#x2591; &#x2591;    &#x2591;   &#x2592;    &#x2591;
+ *  &#x2591;           &#x2591; &#x2591;  &#x2591;            &#x2591;               &#x2591;  &#x2591;     &#x2591;  &#x2591;
+ * 
+ * LICENSE: MIT
+ */
+import React from &apos;react&apos;;
+import { isClassOrComponentFactory } from &apos;../utils/isClassOrComponent&apos;;
+
+const BLUR_DIRECTION_REVERSE = &apos;&lt;&apos;;
+const BLUR_DIRECTION_FORWARD = &apos;&gt;&apos;;
+const BLUR_DIRECTION_DEFAULT = &apos;&gt;&apos;;
+
+/**
+ * Defines the base class for controls, which are components with visual representation.
+ */
+export default class Control extends React.Component {
+    /**
+     * BLUR_DIRECTION indicates the direction a onBlur() should
+     * move focus to next.
+     */
+    static BLUR_DIRECTION = {
+        /**
+         * REVERSE indicates the next focused component will be the previous
+         * tab order.
+         */
+        REVERSE: BLUR_DIRECTION_REVERSE,
+        /**
+         * FORWARD indicates the next focused component will be the next
+         * tab order.
+         */
+        FORWARD: BLUR_DIRECTION_FORWARD,
+        /**
+         * DEFAULT direction is FORWARD.
+         */
+        DEFAULT: BLUR_DIRECTION_DEFAULT
+    };
+    
+    /**
+     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter
+     * is an instance of `Control` (if passed an object) or a class derived from
+     * `Control` (if passed a function) or a component derived from `Control`.
+     * 
+     * @param {*} anyComponentOrClass Any valid React component or React component class or instance
+     * or derived component or class or instance.
+     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.
+     */
+    static isControl(anyComponentOrClass) {
+        return isClassOrComponentFactory(Control)(anyComponentOrClass);
+    }
+
+    /**
+     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter
+     * is an instance of `React.Component` (if passed an object) or a class derived from
+     * `React.Component` (if passed a function) or a component derived from `React.Component`.
+     * 
+     * @param {*} anyComponentOrClass Any valid React component or React component class or instance
+     * or derived component or class or instance.
+     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.
+     */
+    static isReactComponent(anyComponentOrClass) {
+        return isClassOrComponentFactory(React.Component)(anyComponentOrClass)
+            || isClassOrComponentFactory(React.PureComponent)(anyComponentOrClass)
+            || (typeof anyComponentOrClass === &apos;function&apos;
+                &amp;&amp; React.isValidElement(anyComponentOrClass()))
+            || React.isValidElement(anyComponentOrClass);
+    }
+
+    /**
+     * Checks a React component to see if it has any children in props.
+     * 
+     * @param {*} component A proposed React component to inspect.
+     */
+    static componentHasChildren(component) {
+        return !!(Control.isReactComponent(component)
+            &amp;&amp; component.props !== undefined
+            &amp;&amp; component.props.children !== undefined
+            &amp;&amp; Array.isArray(component.props.children)
+            &amp;&amp; component.props.children.length &gt; 0);
+    }
+    
+    /**
+     * 
+     * @param {*} controlOrComponent 
+     */
+    static firstFocusableControlOf(controlOrComponent) {
+        if (Control.componentHasChildren(controlOrComponent)) {
+            const { children } = controlOrComponent.props;
+            for (let c = 0; c &lt; children.length; c++) {
+                const child = children[c];
+                if (Control.isControl(child)) {
+                    if (child.canFocus()) {
+                        return child;
+                    }
+                }
+                else if (Control.isReactComponent(child)) {
+                    // recursive call into firstFocusableControlOf(child)
+                    const firstFocusableInChild = Control.firstFocusableControlOf(child);
+                    if (firstFocusableInChild != null) {
+                        return firstFocusableInChild;
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    static prevFocusableChild() {
+        
+    }
+
+    /**
+     * 
+     */
+    static nextFocusableChild() {
+        
+    }
+        
+    static lastFocusableChild(controlOrComponent) {
+        if (Control.componentHasChildren(controlOrComponent)) {
+            const { children } = controlOrComponent.props;
+            for (let c = 0; c &lt; children.length; c++) {
+                const { child } = children[c];
+                if (Control.isControl(child)) {
+                    if (child.canFocus()) {
+                        return child;
+                    }
+                }
+                else if (Control.isReactComponent(child)) {
+                    // recursive call into firstFocusableControlOf(child)
+                    const firstFocusableInChild = Control.firstFocusableControlOf(child);
+                    if (firstFocusableInChild != null) {
+                        return firstFocusableInChild;
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    static buildControlForComponent(type, props, children) {
+        return (
+          &lt;Control
+            wrapComponent={&lt;type {...props} /&gt;}
+          &gt;
+            {children}
+          &lt;/Control&gt;
+        );
+    }
+
+    static wrapComponent(component) {
+        const { type } = component;
+        const props = (
+            component.props
+            ?
+            { ...component.props, children: undefined }
+            :
+            { }
+        );
+        const children = (
+            (component.props
+                &amp;&amp; component.props.children)
+            ?
+            component.props.children
+            :
+            null
+        );
+        return (
+            (component
+                &amp;&amp; Control.isReactComponent(component)
+                &amp;&amp; type
+                &amp;&amp; Control.isReactComponent(type))
+            ?
+            Control.buildControlForComponent(type, props, children)
+            :
+            null
+        );
+    }
+
+
+    constructor(props) {
+        super(props);
+        this.state = {
+            ...this.state,
+            canIReachThisState: &apos;yep!&apos;
+        };
+        // A basic Control, by itself, isn&apos;t focusable.
+        // Some of it&apos;s child Controls will be focusable, and need to specify
+        // when that is the case.
+        this.focusable = false;
+    }
+
+    /**
+     * Returns a boolean which indicates if a Control instance is focusable.
+     * 
+     * The default behavior is to always return true unless it is already focused.
+     * 
+     * The select(control) default behavior will always check the Control instance&apos;s canFocus()
+     * before doing any work.
+     * 
+     * Most Controls which exist will be focusable. It is the default behavior that a derived
+     * Control class is always focusable.
+     * 
+     * If you want to disable focusable in a specific way, you can override the function and
+     * return false instead of true.
+     * 
+     * For example, consider a TextField whose input might be disabled for now. During the
+     * disabled state, canFocus() would return false, but otherwise return true.
+     */
+    // eslint-disable-next-line class-methods-use-this
+    canFocus() {
+        return this.isEnabled()
+            &amp;&amp; this.isBlurred()
+            &amp;&amp; (this.isFocusable()
+                || this.containsFocusable());
+    }
+
+    /**
+     * Returns a boolean which indicates if the Control instance is un-focusable.
+     * 
+     * Most Controls which exist will be focusable. It is the deault behavior that a derived
+     * Control class is always focusable.
+     * 
+     * If you want to disable focusable in a specific way, you can override the function and
+     * return false instead of true.
+     * 
+     * For example, consider a TextField whose input might be disabled for now. During the
+     * disabled state, canFocus() would return false, but otherwise return true.
+     */
+    canBlur() {
+        return this.isEnabled()
+            &amp;&amp; this.isFocused();
+    }
+
+    /**
+     * 
+     *  In a command line interface, where focusable controls exist (think Visual Basic for DOS)
+     *  to get an idea of the concept, we can&apos;t completely blur out of EVERY single control.
+     *
+     *  Something is always going to ALWAYS need to be accept / capture input, be it a Button
+     *  or TextField or a Menu or a Tab or Tree. But the concept of the Control component is
+     *  that it can easily allow focus to shift from one component to the next, and allow those
+     *  components which extend the Control class to easily display one type of blurred output
+     *  while accepting input once focused.
+     *
+     *  In order to guarantee this, blur will locate the forward (or reverse component)
+     *  and &apos;select&apos; it instead.
+     */
+    blur() {
+        if (this.canBlur()) {
+            const {
+                props
+            } = this;
+            // let our listeners know 
+            if (props.onBlur) {
+                props.onBlur();
+            }
+        }
+    }
+
+    focus() {
+        if (this.canFocus()) {
+            const {
+                props
+            } = this;
+            // let our listeners know 
+            if (props.onFocus) {
+                props.onFocus();
+            }
+        }
+    }
+
+    /**
+     * The `isDisabled()` method returns a boolean which indicates the value of
+     * the `disabled` property as passed into the component.
+     * 
+     * `&lt;Control disabled /&gt;` would cause `isDisabled()` to return `true`.
+     * 
+     * `&lt;Control /&gt;` would cause `isDisabled()` to return `false`.
+     */
+    isDisabled() {
+        const {
+            props
+        } = this;
+        return props !== undefined &amp;&amp; (!!props.disabled);
+    }
+    
+    /**
+     * The `isEnabled()` method returns the inverse value of the `isDisabled()`
+     * method.
+     * 
+     * `&lt;Control disabled /&gt;` would cause `isEnabled()` to return `false`.
+     * 
+     * `&lt;Control /&gt;` would cause `isEnabled()` to return `true`.
+     */
+    isEnabled() {
+        return !this.isDisabled();
+    }
+
+    /**
+     * The `isFocused()` method returns a boolean which indicates the value of
+     * the `focused` property as passed into the component, as long as it
+     * is not `disabled`.
+     * 
+     * `&lt;Control focused /&gt;` would cause `isFocused()` to return `true`,
+     * unless the `Control` is disabled.
+     * 
+     * `&lt;Control focused disabled /&gt;` would cause `isFocused()` to return
+     * `false`, and is not a valid state for the Control component.
+     * 
+     * `&lt;Control /&gt;` would cause `isFocused()` to return `false`.
+     */
+    isFocused() {
+        const {
+            props
+        } = this;
+        return props !== undefined &amp;&amp; (!!props.focused &amp;&amp; this.isEnabled());
+    }
+    
+    /**
+     * The `isFocusable()` method returns a boolean which indicates the value of the
+     * field, `focusable`. It is checked throughout other functions in Control, but
+     * can be safely overridden if you would like to extend Control so that it is
+     * `focusable`. The `focusable` field is normally set to `false` unless it is
+     * set manually, either using a consumer or by extending the `Control` class.
+     */
+    isFocusable() {
+        return this.focusable;
+    }
+
+    /**
+     * The `isBlurred()` method returns the inverse of the `isFocused()` method.
+     */
+    isBlurred() {
+        return !this.isFocused();
+    }
+
+    containsFocus() {
+        const {
+            props
+        } = this;
+        if (this.isFocused()) {
+            return true;
+        }
+        if (props &amp;&amp; props.children &amp;&amp; props.children.length) {
+            for (let c = 0; c &lt; props.children.length; c++) {
+                if (props.children[c].containsFocus &amp;&amp;
+                    props.children[c].containsFocus())
+                    return true;
+            }
+        }
+        return false;
+    }
+    
+    containsFocusable() {
+        return Control.firstFocusableControlOf(this) != null;
+    }
+    
+    hasChildren() {
+        return Control.componentHasChildren(this);
+    }
+    
+    // /**
+    //  * Renders a child component from the `props.children` array.
+    //  */
+    // // eslint-disable-next-line class-methods-use-this, no-unused-vars
+    // renderChild(child, index, childrenArray) {
+    //     return child; // as-is
+    //     // return (
+    //     //     // child as-is if it&apos;s a Control
+    //     //     (Control.isControl(child) &amp;&amp; child)
+    //     //     // otherwise we need to wrap it up
+    //     //     || (&lt;Control wrapComponent={child} /&gt;)
+    //     // );
+    // }
+
+    // renderChildren() {
+    //     const { props } = this;
+    //     return (
+    //         this.hasChildren() &amp;&amp;
+    //         props.children.map(this.renderChild)
+    //     ) || [];
+    // }
+
+    // renderWrappedComponent() {
+    //     const { props } = this;
+    //     return (
+    //         props
+    //         &amp;&amp; props.wrapComponent
+    //         (
+    //             (Control.isControl(props.wrapComponent)
+    //                 &amp;&amp; props.wrapComponent)
+    //             || (Control.isReactComponent(props.wrapComponent)
+    //                 &amp;&amp; Control.wrapComponent(props.wrapComponent))
+    //         )
+    //     ) || null;
+    // }
+
+    render() {
+        // const outputs = [];
+        // const wrapped = this.renderWrappedComponent();
+        // if (wrapped)
+        //     outputs.push(wrapped);
+        // outputs.concat(this.renderChildren());
+        // if (outputs.length === 0) return null;
+        // if (outputs.length === 1) return outputs[0];
+        // return (
+        //   &lt;Control&gt;{outputs}&lt;/Control&gt;
+        // );
+        const { props } = this;
+        return props.children||null;
+    }
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

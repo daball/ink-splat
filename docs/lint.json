@@ -1,0 +1,358 @@
+[
+  {
+    "name": "isDerivedClass",
+    "filePath": "src/utils/isClassOrComponent.js",
+    "lines": [
+      {
+        "lineNumber": 48,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 49,
+        "line": " * Returns a boolean which indicates if the provided `derivedClassB` matches"
+      },
+      {
+        "lineNumber": 50,
+        "line": " * the following true when the following two conditions are met:"
+      },
+      {
+        "lineNumber": 51,
+        "line": " * `refClass` is a type and `derivedClassB` is a type extended from `refClass`."
+      },
+      {
+        "lineNumber": 52,
+        "line": " * "
+      },
+      {
+        "lineNumber": 53,
+        "line": " * @param {*} refClass The reference class (function)."
+      },
+      {
+        "lineNumber": 54,
+        "line": " * @param {*} derivedClassB The actual derived class (function)."
+      },
+      {
+        "lineNumber": 55,
+        "line": " * @returns `true` when `derivedClassB.prototype instanceof refBaseClass` and both are functions,"
+      },
+      {
+        "lineNumber": 56,
+        "line": " * `false` otherwise."
+      },
+      {
+        "lineNumber": 57,
+        "line": " */"
+      },
+      {
+        "lineNumber": 58,
+        "line": "const isDerivedClass = (refBaseClass, derivedClassB) =>"
+      }
+    ],
+    "codeParams": [
+      "refBaseClass",
+      "derivedClassB"
+    ],
+    "docParams": [
+      "refClass",
+      "derivedClassB"
+    ]
+  },
+  {
+    "name": "isInstanceOf",
+    "filePath": "src/utils/isClassOrComponent.js",
+    "lines": [
+      {
+        "lineNumber": 69,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 70,
+        "line": " * Returns a boolean which indicates that the provided `inst` matches"
+      },
+      {
+        "lineNumber": 71,
+        "line": " * is an instance of the provided `refClass` class and is `true` only"
+      },
+      {
+        "lineNumber": 72,
+        "line": " * when the following conditions are met:"
+      },
+      {
+        "lineNumber": 73,
+        "line": " * "
+      },
+      {
+        "lineNumber": 74,
+        "line": " * (1) `refClass` is a type (function), and"
+      },
+      {
+        "lineNumber": 75,
+        "line": " * (2) `inst` is an object which an instance of `refClass`"
+      },
+      {
+        "lineNumber": 76,
+        "line": " * "
+      },
+      {
+        "lineNumber": 77,
+        "line": " * It is an equality test that returns true for any"
+      },
+      {
+        "lineNumber": 78,
+        "line": " * `refClass === classA` if and only if `refClass` and `classA` are"
+      },
+      {
+        "lineNumber": 79,
+        "line": " * functions, as `class A {}` transpiles to a function declaration."
+      },
+      {
+        "lineNumber": 80,
+        "line": " * "
+      },
+      {
+        "lineNumber": 81,
+        "line": " * @param {*} refClass The reference class (function)."
+      },
+      {
+        "lineNumber": 82,
+        "line": " * @param {*} classA The actual class (function)."
+      },
+      {
+        "lineNumber": 83,
+        "line": " * @returns `true` when `refClass === classA` and both are functions,"
+      },
+      {
+        "lineNumber": 84,
+        "line": " * `false` otherwise."
+      },
+      {
+        "lineNumber": 85,
+        "line": " */"
+      },
+      {
+        "lineNumber": 86,
+        "line": "const isInstanceOf = (refClass, inst) =>"
+      }
+    ],
+    "codeParams": [
+      "refClass",
+      "inst"
+    ],
+    "docParams": [
+      "refClass",
+      "classA"
+    ]
+  },
+  {
+    "name": "isDerivedComponent",
+    "filePath": "src/utils/isClassOrComponent.js",
+    "lines": [
+      {
+        "lineNumber": 126,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 127,
+        "line": " * Returns a boolean which indicates that the provided `derivedComponentB` component"
+      },
+      {
+        "lineNumber": 128,
+        "line": " * is a React Component as created by `React.createElement()` instantiated using"
+      },
+      {
+        "lineNumber": 129,
+        "line": " * the `refBaseClass` base type and is `true` only when the following conditions"
+      },
+      {
+        "lineNumber": 130,
+        "line": " * are met:"
+      },
+      {
+        "lineNumber": 131,
+        "line": " * "
+      },
+      {
+        "lineNumber": 132,
+        "line": " * (1) `refBaseClass` is a type (function), and"
+      },
+      {
+        "lineNumber": 133,
+        "line": " * (2) `refBaseClass` has been extended to a secondary class, such as `class B extends A {}`"
+      },
+      {
+        "lineNumber": 134,
+        "line": " * (3) `derivedComponentB` is created using `React.createElement(B)`"
+      },
+      {
+        "lineNumber": 135,
+        "line": " * (4) You are interested in seeing if this Component element is of type derived from `A`"
+      },
+      {
+        "lineNumber": 136,
+        "line": " * "
+      },
+      {
+        "lineNumber": 137,
+        "line": " * @param {*} refBaseClass The reference base class (function)."
+      },
+      {
+        "lineNumber": 138,
+        "line": " * @param {*} componentA The actual component (object)."
+      },
+      {
+        "lineNumber": 139,
+        "line": " * @returns `true` when `refClass === classA` and both are functions,"
+      },
+      {
+        "lineNumber": 140,
+        "line": " * `false` otherwise."
+      },
+      {
+        "lineNumber": 141,
+        "line": " */"
+      },
+      {
+        "lineNumber": 142,
+        "line": "const isDerivedComponent = (refBaseClass, derivedComponentB) =>"
+      }
+    ],
+    "codeParams": [
+      "refBaseClass",
+      "derivedComponentB"
+    ],
+    "docParams": [
+      "refBaseClass",
+      "componentA"
+    ]
+  },
+  {
+    "name": "isClassOrComponent",
+    "filePath": "src/utils/isClassOrComponent.js",
+    "lines": [
+      {
+        "lineNumber": 157,
+        "line": "/**"
+      },
+      {
+        "lineNumber": 158,
+        "line": " * Returns a boolean which indicates if the provided anyInst matches any"
+      },
+      {
+        "lineNumber": 159,
+        "line": " * of the following conditions (given class A extends React.Component {...}"
+      },
+      {
+        "lineNumber": 160,
+        "line": " * and class B extends class A {...}):"
+      },
+      {
+        "lineNumber": 161,
+        "line": " * "
+      },
+      {
+        "lineNumber": 162,
+        "line": " * (1) a reference to refClass (A === A),"
+      },
+      {
+        "lineNumber": 163,
+        "line": " * "
+      },
+      {
+        "lineNumber": 164,
+        "line": " * (2) an instance of refClass (new A()),"
+      },
+      {
+        "lineNumber": 165,
+        "line": " * "
+      },
+      {
+        "lineNumber": 166,
+        "line": " * (3) a React Element provided refClass as the type (React.createElement(A))"
+      },
+      {
+        "lineNumber": 167,
+        "line": " * "
+      },
+      {
+        "lineNumber": 168,
+        "line": " * TODO: (4) a DOM Node which has been rendered with a React Element, type refClass"
+      },
+      {
+        "lineNumber": 169,
+        "line": " * "
+      },
+      {
+        "lineNumber": 170,
+        "line": " * (5) a reference to a derived class (B === A whereas class B extends A {...})"
+      },
+      {
+        "lineNumber": 171,
+        "line": " * "
+      },
+      {
+        "lineNumber": 172,
+        "line": " * (6) an instance of a derived class (new B() given class B extends A {...})"
+      },
+      {
+        "lineNumber": 173,
+        "line": " * "
+      },
+      {
+        "lineNumber": 174,
+        "line": " * (7) a React Element with a derived class as the type (React.createElement(B))"
+      },
+      {
+        "lineNumber": 175,
+        "line": " * "
+      },
+      {
+        "lineNumber": 176,
+        "line": " * TODO: (8) a DOM Node which has been rendered with a React Element, type derived refClass"
+      },
+      {
+        "lineNumber": 177,
+        "line": " * "
+      },
+      {
+        "lineNumber": 178,
+        "line": " * @param {*} refClass The reference type as defined in a class declaration."
+      },
+      {
+        "lineNumber": 179,
+        "line": " * @param {*} inst Anything really, but mostly instances of things."
+      },
+      {
+        "lineNumber": 180,
+        "line": " * @returns A boolean indicating whether inst is a reference to refClass, a reference to"
+      },
+      {
+        "lineNumber": 181,
+        "line": " * a class derived from refClass, an instance of refClass, an instance of a derived class,"
+      },
+      {
+        "lineNumber": 182,
+        "line": " * or a React Element of type refClass, or a React Element of a derived refClass,"
+      },
+      {
+        "lineNumber": 183,
+        "line": " * or a mounted DOM Node."
+      },
+      {
+        "lineNumber": 184,
+        "line": " */"
+      },
+      {
+        "lineNumber": 185,
+        "line": "const isClassOrComponent = (refClass, anyInst) =>"
+      }
+    ],
+    "codeParams": [
+      "refClass",
+      "anyInst"
+    ],
+    "docParams": [
+      "refClass",
+      "inst"
+    ]
+  }
+]

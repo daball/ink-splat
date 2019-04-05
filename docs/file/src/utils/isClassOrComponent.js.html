@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/utils/isClassOrComponent.js | ink-splat</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="ink-splat is a component library for ink."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="ink-splat"><meta property="twitter:description" content="ink-splat is a component library for ink."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/daball/ink-splat"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/App.js~App.html">App</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ComponentWrapper.js~ComponentWrapper.html">ComponentWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ContainerControl.js~ContainerControl.html">ContainerControl</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Control.js~Control.html">Control</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Form.js~Form.html">Form</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Sequence.js~Sequence.html">Sequence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/TabBar.js~Tab.html">Tab</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/TabBar.js~TabBar.html">TabBar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/TextField.js~TextField.html">TextField</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#tests-renderers">tests/renderers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderJSDOM">renderJSDOM</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderState">renderState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-cleanupInk">cleanupInk</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-renderInk">renderInk</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isClassOrComponent">isClassOrComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isClassOrComponentFactory">isClassOrComponentFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDerivedClass">isDerivedClass</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDerivedComponent">isDerivedComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isExactClass">isExactClass</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isExactComponent">isExactComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isInstanceOf">isInstanceOf</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/utils/isClassOrComponent.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * 
+ *  &#x2588;&#x2588;&#x2593; &#x2588;&#x2588;&#x2588;&#x2584;    &#x2588;  &#x2588;&#x2588; &#x2584;&#x2588;&#x2580;     &#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;  &#x2588;&#x2588;&#x2593;&#x2588;&#x2588;&#x2588;   &#x2588;&#x2588;&#x2593;    &#x2584;&#x2584;&#x2584;     &#x2584;&#x2584;&#x2584;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2593;
+ *  &#x2593;&#x2588;&#x2588;&#x2592; &#x2588;&#x2588; &#x2580;&#x2588;   &#x2588;  &#x2588;&#x2588;&#x2584;&#x2588;&#x2592;    &#x2592;&#x2588;&#x2588;    &#x2592; &#x2593;&#x2588;&#x2588;&#x2591;  &#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588;&#x2592;   &#x2592;&#x2588;&#x2588;&#x2588;&#x2588;&#x2584;   &#x2593;  &#x2588;&#x2588;&#x2592; &#x2593;&#x2592;
+ *  &#x2592;&#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588;  &#x2580;&#x2588; &#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588;&#x2588;&#x2584;&#x2591;    &#x2591; &#x2593;&#x2588;&#x2588;&#x2584;   &#x2593;&#x2588;&#x2588;&#x2591; &#x2588;&#x2588;&#x2593;&#x2592;&#x2592;&#x2588;&#x2588;&#x2591;   &#x2592;&#x2588;&#x2588;  &#x2580;&#x2588;&#x2584; &#x2592; &#x2593;&#x2588;&#x2588;&#x2591; &#x2592;&#x2591;
+ *  &#x2591;&#x2588;&#x2588;&#x2591;&#x2593;&#x2588;&#x2588;&#x2592;  &#x2590;&#x258C;&#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588; &#x2588;&#x2584;      &#x2592;   &#x2588;&#x2588;&#x2592;&#x2592;&#x2588;&#x2588;&#x2584;&#x2588;&#x2593;&#x2592; &#x2592;&#x2592;&#x2588;&#x2588;&#x2591;   &#x2591;&#x2588;&#x2588;&#x2584;&#x2584;&#x2584;&#x2584;&#x2588;&#x2588;&#x2591; &#x2593;&#x2588;&#x2588;&#x2593; &#x2591;
+ *  &#x2591;&#x2588;&#x2588;&#x2591;&#x2592;&#x2588;&#x2588;&#x2591;   &#x2593;&#x2588;&#x2588;&#x2591;&#x2592;&#x2588;&#x2588;&#x2592; &#x2588;&#x2584;   &#x2592;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2592;&#x2592;&#x2592;&#x2588;&#x2588;&#x2592; &#x2591;  &#x2591;&#x2591;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2592;&#x2593;&#x2588;   &#x2593;&#x2588;&#x2588;&#x2592; &#x2592;&#x2588;&#x2588;&#x2592; &#x2591;
+ *  &#x2591;&#x2593;  &#x2591; &#x2592;&#x2591;   &#x2592; &#x2592; &#x2592; &#x2592;&#x2592; &#x2593;&#x2592;   &#x2592; &#x2592;&#x2593;&#x2592; &#x2592; &#x2591;&#x2592;&#x2593;&#x2592;&#x2591; &#x2591;  &#x2591;&#x2591; &#x2592;&#x2591;&#x2593;  &#x2591;&#x2592;&#x2592;   &#x2593;&#x2592;&#x2588;&#x2591; &#x2592; &#x2591;&#x2591;
+ *  &#x2592; &#x2591;&#x2591; &#x2591;&#x2591;   &#x2591; &#x2592;&#x2591;&#x2591; &#x2591;&#x2592; &#x2592;&#x2591;   &#x2591; &#x2591;&#x2592;  &#x2591; &#x2591;&#x2591;&#x2592; &#x2591;     &#x2591; &#x2591; &#x2592;  &#x2591; &#x2592;   &#x2592;&#x2592; &#x2591;   &#x2591;
+ *  &#x2592; &#x2591;   &#x2591;   &#x2591; &#x2591; &#x2591; &#x2591;&#x2591; &#x2591;    &#x2591;  &#x2591;  &#x2591;  &#x2591;&#x2591;         &#x2591; &#x2591;    &#x2591;   &#x2592;    &#x2591;
+ *  &#x2591;           &#x2591; &#x2591;  &#x2591;            &#x2591;               &#x2591;  &#x2591;     &#x2591;  &#x2591;
+ * 
+ * LICENSE: MIT
+ */
+import React from &apos;react&apos;;
+// import Window from &apos;window&apos;;
+// import renderJSDOM from &apos;../tests/renderers/jsdomRenderer&apos;;
+
+// const window = new Window();
+
+/**
+ * Returns a boolean which indicates that the provided `classA` matches
+ * the provided `refClass` and is `true` only when the following conditions
+ * are met:
+ * 
+ * (1) `refClass` is a type (function), and
+ * (2) `classA` is that exact same type (function).
+ * 
+ * It is an equality test that returns true for any
+ * `refClass === classA` if and only if `refClass` and `classA` are
+ * functions, as `class A {}` transpiles to a function declaration.
+ * 
+ * @param {*} refClass The reference class (function).
+ * @param {*} classA The actual class (function).
+ * @returns `true` when `refClass === classA` and both are functions,
+ * `false` otherwise.
+ */
+const isExactClass = (refClass, classA) =&gt;
+    (
+        typeof refClass === &apos;function&apos;
+        &amp;&amp;
+        typeof classA === &apos;function&apos;
+    )
+    &amp;&amp;
+    (
+        refClass === classA
+    );
+
+/**
+ * Returns a boolean which indicates if the provided `derivedClassB` matches
+ * the following true when the following two conditions are met:
+ * `refClass` is a type and `derivedClassB` is a type extended from `refClass`.
+ * 
+ * @param {*} refClass The reference class (function).
+ * @param {*} derivedClassB The actual derived class (function).
+ * @returns `true` when `derivedClassB.prototype instanceof refBaseClass` and both are functions,
+ * `false` otherwise.
+ */
+const isDerivedClass = (refBaseClass, derivedClassB) =&gt;
+    (
+        typeof refBaseClass === &apos;function&apos;
+        &amp;&amp;
+        typeof derivedClassB === &apos;function&apos;
+    )
+    &amp;&amp;
+    (
+        derivedClassB.prototype instanceof refBaseClass
+    );
+
+/**
+ * Returns a boolean which indicates that the provided `inst` matches
+ * is an instance of the provided `refClass` class and is `true` only
+ * when the following conditions are met:
+ * 
+ * (1) `refClass` is a type (function), and
+ * (2) `inst` is an object which an instance of `refClass`
+ * 
+ * It is an equality test that returns true for any
+ * `refClass === classA` if and only if `refClass` and `classA` are
+ * functions, as `class A {}` transpiles to a function declaration.
+ * 
+ * @param {*} refClass The reference class (function).
+ * @param {*} classA The actual class (function).
+ * @returns `true` when `refClass === classA` and both are functions,
+ * `false` otherwise.
+ */
+const isInstanceOf = (refClass, inst) =&gt;
+(
+    typeof refClass === &apos;function&apos;
+    &amp;&amp;
+    typeof inst === &apos;object&apos;
+)
+&amp;&amp;
+(
+    inst instanceof refClass
+);
+
+/**
+ * Returns a boolean which indicates that the provided `componentA` component
+ * is a React Component as created by `React.createElement()` instantiated using
+ * the  `refClass` type and is `true` only when the following conditions
+ * are met:
+ * 
+ * (1) `refClass` is a type (function), and
+ * (2) `componentA` is created using `React.createElement(refClass)`
+ * 
+ * @param {*} refClass The reference class (function).
+ * @param {*} componentA The actual component (object).
+ * @returns `true` when `refClass === classA` and both are functions,
+ * `false` otherwise.
+ */
+const isExactComponent = (refClass, componentA) =&gt;
+(
+    typeof refClass === &apos;function&apos;
+    &amp;&amp;
+    typeof componentA === &apos;object&apos;
+)
+&amp;&amp;
+(
+    React.isValidElement(componentA)
+)
+&amp;&amp;
+(
+    isExactClass(refClass, componentA.type)
+);
+
+/**
+ * Returns a boolean which indicates that the provided `derivedComponentB` component
+ * is a React Component as created by `React.createElement()` instantiated using
+ * the `refBaseClass` base type and is `true` only when the following conditions
+ * are met:
+ * 
+ * (1) `refBaseClass` is a type (function), and
+ * (2) `refBaseClass` has been extended to a secondary class, such as `class B extends A {}`
+ * (3) `derivedComponentB` is created using `React.createElement(B)`
+ * (4) You are interested in seeing if this Component element is of type derived from `A`
+ * 
+ * @param {*} refBaseClass The reference base class (function).
+ * @param {*} componentA The actual component (object).
+ * @returns `true` when `refClass === classA` and both are functions,
+ * `false` otherwise.
+ */
+const isDerivedComponent = (refBaseClass, derivedComponentB) =&gt;
+(
+    typeof refBaseClass === &apos;function&apos;
+    &amp;&amp;
+    typeof derivedComponentB === &apos;object&apos;
+)
+&amp;&amp;
+(
+    React.isValidElement(derivedComponentB)
+)
+&amp;&amp;
+(
+    isDerivedClass(refBaseClass, derivedComponentB.type)
+);
+
+/**
+ * Returns a boolean which indicates if the provided anyInst matches any
+ * of the following conditions (given class A extends React.Component {...}
+ * and class B extends class A {...}):
+ * 
+ * (1) a reference to refClass (A === A),
+ * 
+ * (2) an instance of refClass (new A()),
+ * 
+ * (3) a React Element provided refClass as the type (React.createElement(A))
+ * 
+ * TODO: (4) a DOM Node which has been rendered with a React Element, type refClass
+ * 
+ * (5) a reference to a derived class (B === A whereas class B extends A {...})
+ * 
+ * (6) an instance of a derived class (new B() given class B extends A {...})
+ * 
+ * (7) a React Element with a derived class as the type (React.createElement(B))
+ * 
+ * TODO: (8) a DOM Node which has been rendered with a React Element, type derived refClass
+ * 
+ * @param {*} refClass The reference type as defined in a class declaration.
+ * @param {*} inst Anything really, but mostly instances of things.
+ * @returns A boolean indicating whether inst is a reference to refClass, a reference to
+ * a class derived from refClass, an instance of refClass, an instance of a derived class,
+ * or a React Element of type refClass, or a React Element of a derived refClass,
+ * or a mounted DOM Node.
+ */
+const isClassOrComponent = (refClass, anyInst) =&gt;
+    // condition 1
+    isExactClass(refClass, anyInst) ||
+    // condition 5
+    isDerivedClass(refClass, anyInst) ||
+    // condition 2 and condition 6
+    isInstanceOf(refClass, anyInst) ||
+    // condition 3
+    isExactComponent(refClass, anyInst) ||
+    // condition 7
+    isDerivedComponent(refClass, anyInst);
+    // condition 4
+    // TODO: isClassOrComponent condition 4 detection
+    // condition 8
+    // TODO: isClassOrComponent condition 8 detection
+
+/**
+ * Returns a function in the format `(anyInst) =&gt; boolean` which returns a boolean
+ * which indicates if the provided `anyInst` matches any of the following conditions
+ * (given `class A extends React.Component {...}` and `class B extends class A {...}`),
+ * where A refers to the type provided in `refClass`:
+ * 
+ * (1) a reference to `refClass` (`A === A`),
+ * 
+ * (2) an instance of `refClass` (`new A()`),
+ * 
+ * (3) a React Element provided `refClass` as the type (`React.createElement(A)`)
+ * 
+ * TODO: (4) a DOM Node which has been rendered with a React Element, type `refClass`
+ * 
+ * (5) a reference to a derived class (`B === A` whereas `class B extends A {...}`)
+ * 
+ * (6) an instance of a derived class (`new B()` given `class B extends A {...}`)
+ * 
+ * (7) a React Element with a derived class as the type (`React.createElement(B)`)
+ * 
+ * TODO: (8) a DOM Node which has been rendered with a React Element, type derived from `refClass`
+ * 
+ * @param {*} refClass The reference type as defined in a class declaration.
+ * @returns A function of the type `(anyInst) =&gt; boolean` which returns a boolean
+ * indicating whether `inst` is a reference to `refClass`, a reference to a class derived
+ * from `refClass`, an instance of `refClass`, an instance of a derived class,
+ * or a React Element of type `refClass`, or a React Element of a derived `refClass`,
+ * or a mounted DOM Node of `refClass` or a derived `refClass`.
+ */
+const isClassOrComponentFactory = (refClass) =&gt;
+    (inst) =&gt; isClassOrComponent(refClass, inst);
+
+export {
+    isExactClass,
+    isDerivedClass,
+    isInstanceOf,
+    isExactComponent,
+    isDerivedComponent,
+    isClassOrComponent,
+    isClassOrComponentFactory
+};</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

@@ -1,16 +1,20 @@
-import React from 'react';
-import { cleanupInk, renderInk } from '../tests/renderers';
-import Control from './Control';
+/**
+ * 
+ *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓
+ *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒
+ *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░
+ *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░
+ *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░
+ *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░
+ *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░
+ *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░
+ *  ░           ░ ░  ░            ░               ░  ░     ░  ░
+ * 
+ * LICENSE: MIT
+ */
+ import Control from './Control';
 
-test(`Control.isControl() identifies it's own type`, () => {
-    const ctl = new Control();
-    expect(Control.isControl(Control)).toBeDefined();
-    expect(Control.isControl(Control)).toBe(true);
-    expect(ctl).toBeDefined();
-    expect(Control.isControl(ctl)).toBe(true);
-});
-
-test(`initial state of a Control instance with no props`, () => {
+test(`initial state of a default (non-focusable) Control instance with no props`, () => {
     const ctl = new Control();
     const { props } = ctl;
     expect(ctl).toBeDefined();
@@ -19,14 +23,16 @@ test(`initial state of a Control instance with no props`, () => {
     expect(ctl.isFocused()).toBe(false);
     expect(ctl.isBlurred()).toBe(true);
     expect(ctl.containsFocus()).toBe(false);
-    expect(ctl.canFocus()).toBe(true);
+    expect(ctl.canFocus()).toBe(false);
     expect(ctl.canBlur()).toBe(false);
     expect(ctl.isEnabled()).toBe(true);
     expect(ctl.isDisabled()).toBe(false);
+    expect(ctl.hasChildren()).toBe(false);
 });
 
-test(`initial state of a Control instance given property: focused = 'focused'`, () => {
-    const ctl = new Control({focused: 'focused'});
+test(`initial state of a focusable Control instance given property: focused = 'focused'`, () => {
+    const ctl = new Control({focused: 'focused'})
+    ctl.focusable = true;
     const { props } = ctl;
     expect(ctl).toBeDefined();
     expect(Control.isControl(ctl)).toBe(true);
@@ -39,14 +45,16 @@ test(`initial state of a Control instance given property: focused = 'focused'`, 
     expect(ctl.isFocused()).toBe(true);
     expect(ctl.isBlurred()).toBe(false);
     expect(ctl.containsFocus()).toBe(true);
-    expect(ctl.canFocus()).toBe(false);
+    expect(ctl.canFocus()).toBe(false); // despite having 'focus' it isn't a focusable component
     expect(ctl.canBlur()).toBe(true);
     expect(ctl.isEnabled()).toBe(true);
     expect(ctl.isDisabled()).toBe(false);
+    expect(ctl.hasChildren()).toBe(false);
 });
 
-test(`initial state of a Control instance given property: disabled = 'disabled'`, () => {
+test(`initial state of a focusable Control instance given property: disabled = 'disabled'`, () => {
     const ctl = new Control({disabled: 'disabled'});
+    ctl.focusable = true;
     const { props } = ctl;
     expect(ctl).toBeDefined();
     expect(Control.isControl(ctl)).toBe(true);
@@ -63,12 +71,17 @@ test(`initial state of a Control instance given property: disabled = 'disabled'`
     expect(ctl.canBlur()).toBe(false);
     expect(ctl.isEnabled()).toBe(false);
     expect(ctl.isDisabled()).toBe(true);
+    expect(ctl.hasChildren()).toBe(false);
 });
 
-test(`initial state of a default Control instance with 3 child Control instances: (1) default, (2) focused, (3) disabled`, () => {
+// this is, in theory, an improbable circumstance, but could occur in a stateful control
+test(`initial state of a default Control instance with 3 focusable child Control instances: (1) default, (2) focused, (3) disabled`, () => {
     const child1 = new Control();
     const child2 = new Control({focused: 'focused'});
     const child3 = new Control({disabled: 'disabled'});
+    child1.focusable = true;
+    child2.focusable = true;
+    child3.focusable = true;
     const children = [child1, child2, child3];
     const ctl = new Control({children});
     const { props } = ctl;
@@ -81,6 +94,7 @@ test(`initial state of a default Control instance with 3 child Control instances
     expect(typeof props.children).toBe('object');
     expect(props.children.length).toBeDefined();
     expect(props.children.length).toBe(3);
+    expect(ctl.isFocusable()).toBe(false);
     expect(ctl.isFocused()).toBe(false);
     expect(ctl.isBlurred()).toBe(true);
     expect(ctl.containsFocus()).toBe(true);
@@ -88,6 +102,7 @@ test(`initial state of a default Control instance with 3 child Control instances
     expect(ctl.canBlur()).toBe(false);
     expect(ctl.isEnabled()).toBe(true);
     expect(ctl.isDisabled()).toBe(false);
+    expect(ctl.hasChildren()).toBe(true);
     // child 0 expected to be:
     expect(props.children[0]).toBeDefined();
     expect(props.children[0].props).toBeUndefined();
@@ -100,6 +115,7 @@ test(`initial state of a default Control instance with 3 child Control instances
     expect(props.children[0].canBlur()).toBe(false);
     expect(props.children[0].isEnabled()).toBe(true);
     expect(props.children[0].isDisabled()).toBe(false);
+    expect(props.children[0].hasChildren()).toBe(false);
     // child 1 expected to be:
     expect(props.children[1]).toBeDefined();
     expect(Control.isControl(props.children[1])).toBe(true);
@@ -116,6 +132,7 @@ test(`initial state of a default Control instance with 3 child Control instances
     expect(props.children[1].canBlur()).toBe(true);
     expect(props.children[1].isEnabled()).toBe(true);
     expect(props.children[1].isDisabled()).toBe(false);
+    expect(props.children[1].hasChildren()).toBe(false);
     // child 2 expected to be:
     expect(props.children[2]).toBeDefined();
     expect(props.children[2].props).toBeDefined();
@@ -132,14 +149,21 @@ test(`initial state of a default Control instance with 3 child Control instances
     expect(props.children[2].canBlur()).toBe(false);
     expect(props.children[2].isEnabled()).toBe(false);
     expect(props.children[2].isDisabled()).toBe(true);
+    expect(props.children[2].hasChildren()).toBe(false);
 });
 
+// this is, in theory, the way it ought to operate, with focus being passed down to
+// it's child component from the parent
 test(`initial state of a focused Control instance with 3 child Control instances: (1) default, (2) focused, (3) disabled`, () => {
     const child1 = new Control();
     const child2 = new Control({focused: 'focused'});
     const child3 = new Control({disabled: 'disabled'});
     const children = [child1, child2, child3];
     const ctl = new Control({focused: 'focused', children});
+    child1.focusable = true;
+    child2.focusable = true;
+    child3.focusable = true;
+    ctl.focusable = true;
     const { props } = ctl;
     // parent expected to be:
     expect(props).toBeDefined();
@@ -151,13 +175,15 @@ test(`initial state of a focused Control instance with 3 child Control instances
     expect(typeof props.children).toBe('object');
     expect(props.children.length).toBeDefined();
     expect(props.children.length).toBe(3);
+    expect(ctl.isFocusable()).toBe(true);
     expect(ctl.isFocused()).toBe(true);
     expect(ctl.isBlurred()).toBe(false);
     expect(ctl.containsFocus()).toBe(true);
-    expect(ctl.canFocus()).toBe(false);
+    expect(ctl.canFocus()).toBe(false); // is already focused, so no
     expect(ctl.canBlur()).toBe(true);
     expect(ctl.isEnabled()).toBe(true);
     expect(ctl.isDisabled()).toBe(false);
+    expect(ctl.hasChildren()).toBe(true);
     // child 0 expected to be:
     expect(props.children[0]).toBeDefined();
     expect(props.children[0].props).toBeUndefined();
@@ -170,6 +196,7 @@ test(`initial state of a focused Control instance with 3 child Control instances
     expect(props.children[0].canBlur()).toBe(false);
     expect(props.children[0].isEnabled()).toBe(true);
     expect(props.children[0].isDisabled()).toBe(false);
+    expect(props.children[0].hasChildren()).toBe(false);
     // child 1 expected to be:
     expect(props.children[1]).toBeDefined();
     expect(Control.isControl(props.children[1])).toBe(true);
@@ -186,6 +213,7 @@ test(`initial state of a focused Control instance with 3 child Control instances
     expect(props.children[1].canBlur()).toBe(true);
     expect(props.children[1].isEnabled()).toBe(true);
     expect(props.children[1].isDisabled()).toBe(false);
+    expect(props.children[1].hasChildren()).toBe(false);
     // child 2 expected to be:
     expect(props.children[2]).toBeDefined();
     expect(props.children[2].props).toBeDefined();
@@ -202,51 +230,5 @@ test(`initial state of a focused Control instance with 3 child Control instances
     expect(props.children[2].canBlur()).toBe(false);
     expect(props.children[2].isEnabled()).toBe(false);
     expect(props.children[2].isDisabled()).toBe(true);
+    expect(props.children[2].hasChildren()).toBe(false);
 });
-
-test(`render a default Control with no props and no subtree`, () => {
-    const tree = (
-      <Control />
-    );
-    const inked = renderInk(tree);
-    const { lastFrame } = inked;
-    const textOutput = lastFrame();
-    const textExpected = '';
-    expect(textOutput).toBe(textExpected);
-    cleanupInk();
-});
-
-test(`render a default Control containing text as a child`, () => {
-    const tree = (
-      <Control>
-        Hello, ink-splat Control!
-      </Control>
-    );
-    const inked = renderInk(tree);
-    const { lastFrame } = inked;
-    const textOutput = lastFrame();
-    const textExpected = 'Hello, ink-splat Control!';
-    expect(textOutput).toBe(textExpected);
-    // console.log('inked=',inked);
-    cleanupInk();
-});
-
-// test('test onFocus prop for a rendered Control by simulating the focus() call from a parent', async () => {
-//     const onFocus = () => {
-//     };
-//     const tree = (
-//       <Control
-//         onFocus={onFocus}
-//       >
-//         Hello, ink-splat Control!
-//       </Control>
-//     );
-//     const inked = renderInk(tree);
-//     console.log(tree);
-//     const { lastFrame } = inked;
-//     const textOutput = lastFrame();
-//     const textExpected = 'Hello, ink-splat Control!';
-//     expect(textOutput).toBe(textExpected);
-//     // console.log('inked=',inked);
-//     cleanupInk();
-// });

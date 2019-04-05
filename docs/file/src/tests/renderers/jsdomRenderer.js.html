@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/tests/renderers/jsdomRenderer.js | ink-splat</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="ink-splat is a component library for ink."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="ink-splat"><meta property="twitter:description" content="ink-splat is a component library for ink."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/daball/ink-splat"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/App.js~App.html">App</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ComponentWrapper.js~ComponentWrapper.html">ComponentWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ContainerControl.js~ContainerControl.html">ContainerControl</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Control.js~Control.html">Control</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Form.js~Form.html">Form</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Sequence.js~Sequence.html">Sequence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/TabBar.js~Tab.html">Tab</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/TabBar.js~TabBar.html">TabBar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/TextField.js~TextField.html">TextField</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#tests-renderers">tests/renderers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderJSDOM">renderJSDOM</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderState">renderState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-cleanupInk">cleanupInk</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-renderInk">renderInk</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isClassOrComponent">isClassOrComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isClassOrComponentFactory">isClassOrComponentFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDerivedClass">isDerivedClass</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDerivedComponent">isDerivedComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isExactClass">isExactClass</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isExactComponent">isExactComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isInstanceOf">isInstanceOf</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/tests/renderers/jsdomRenderer.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/**
+ * 
+ *  &#x2588;&#x2588;&#x2593; &#x2588;&#x2588;&#x2588;&#x2584;    &#x2588;  &#x2588;&#x2588; &#x2584;&#x2588;&#x2580;     &#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;  &#x2588;&#x2588;&#x2593;&#x2588;&#x2588;&#x2588;   &#x2588;&#x2588;&#x2593;    &#x2584;&#x2584;&#x2584;     &#x2584;&#x2584;&#x2584;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2593;
+ *  &#x2593;&#x2588;&#x2588;&#x2592; &#x2588;&#x2588; &#x2580;&#x2588;   &#x2588;  &#x2588;&#x2588;&#x2584;&#x2588;&#x2592;    &#x2592;&#x2588;&#x2588;    &#x2592; &#x2593;&#x2588;&#x2588;&#x2591;  &#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588;&#x2592;   &#x2592;&#x2588;&#x2588;&#x2588;&#x2588;&#x2584;   &#x2593;  &#x2588;&#x2588;&#x2592; &#x2593;&#x2592;
+ *  &#x2592;&#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588;  &#x2580;&#x2588; &#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588;&#x2588;&#x2584;&#x2591;    &#x2591; &#x2593;&#x2588;&#x2588;&#x2584;   &#x2593;&#x2588;&#x2588;&#x2591; &#x2588;&#x2588;&#x2593;&#x2592;&#x2592;&#x2588;&#x2588;&#x2591;   &#x2592;&#x2588;&#x2588;  &#x2580;&#x2588;&#x2584; &#x2592; &#x2593;&#x2588;&#x2588;&#x2591; &#x2592;&#x2591;
+ *  &#x2591;&#x2588;&#x2588;&#x2591;&#x2593;&#x2588;&#x2588;&#x2592;  &#x2590;&#x258C;&#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588; &#x2588;&#x2584;      &#x2592;   &#x2588;&#x2588;&#x2592;&#x2592;&#x2588;&#x2588;&#x2584;&#x2588;&#x2593;&#x2592; &#x2592;&#x2592;&#x2588;&#x2588;&#x2591;   &#x2591;&#x2588;&#x2588;&#x2584;&#x2584;&#x2584;&#x2584;&#x2588;&#x2588;&#x2591; &#x2593;&#x2588;&#x2588;&#x2593; &#x2591;
+ *  &#x2591;&#x2588;&#x2588;&#x2591;&#x2592;&#x2588;&#x2588;&#x2591;   &#x2593;&#x2588;&#x2588;&#x2591;&#x2592;&#x2588;&#x2588;&#x2592; &#x2588;&#x2584;   &#x2592;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2592;&#x2592;&#x2592;&#x2588;&#x2588;&#x2592; &#x2591;  &#x2591;&#x2591;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2592;&#x2593;&#x2588;   &#x2593;&#x2588;&#x2588;&#x2592; &#x2592;&#x2588;&#x2588;&#x2592; &#x2591;
+ *  &#x2591;&#x2593;  &#x2591; &#x2592;&#x2591;   &#x2592; &#x2592; &#x2592; &#x2592;&#x2592; &#x2593;&#x2592;   &#x2592; &#x2592;&#x2593;&#x2592; &#x2592; &#x2591;&#x2592;&#x2593;&#x2592;&#x2591; &#x2591;  &#x2591;&#x2591; &#x2592;&#x2591;&#x2593;  &#x2591;&#x2592;&#x2592;   &#x2593;&#x2592;&#x2588;&#x2591; &#x2592; &#x2591;&#x2591;
+ *  &#x2592; &#x2591;&#x2591; &#x2591;&#x2591;   &#x2591; &#x2592;&#x2591;&#x2591; &#x2591;&#x2592; &#x2592;&#x2591;   &#x2591; &#x2591;&#x2592;  &#x2591; &#x2591;&#x2591;&#x2592; &#x2591;     &#x2591; &#x2591; &#x2592;  &#x2591; &#x2592;   &#x2592;&#x2592; &#x2591;   &#x2591;
+ *  &#x2592; &#x2591;   &#x2591;   &#x2591; &#x2591; &#x2591; &#x2591;&#x2591; &#x2591;    &#x2591;  &#x2591;  &#x2591;  &#x2591;&#x2591;         &#x2591; &#x2591;    &#x2591;   &#x2592;    &#x2591;
+ *  &#x2591;           &#x2591; &#x2591;  &#x2591;            &#x2591;               &#x2591;  &#x2591;     &#x2591;  &#x2591;
+ * 
+ * LICENSE: MIT
+ */
+import ReactDOM from &apos;react-dom&apos;;
+import Window from &apos;window&apos;;
+
+export default function renderJSDOM(component, window = new Window()) {
+    const { document } = window;
+
+    const origGlobals = {
+        window: global.window,
+        document: global.document
+    };
+    global.window = window;
+    global.document = document;
+
+    const container = document.createElement(&apos;div&apos;);
+    container.id = &apos;root&apos;;
+    document.body.appendChild(container);
+
+    // const renderer =
+    ReactDOM.render(component, container);
+
+    // const output = window;
+
+    Object.keys(origGlobals).forEach(prop =&gt; {
+        global[prop] = origGlobals[prop];
+    });
+
+    // return renderer;
+    return container;
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

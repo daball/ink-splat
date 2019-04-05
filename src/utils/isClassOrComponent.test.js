@@ -1,8 +1,21 @@
+/**
+ * 
+ *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓
+ *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒
+ *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░
+ *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░
+ *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░
+ *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░
+ *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░
+ *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░
+ *  ░           ░ ░  ░            ░               ░  ░     ░  ░
+ * 
+ * LICENSE: MIT
+ */
 import React from 'react';
 import {
-    isExactClass
-    // ,
-    // isClassOrComponent
+    isExactClass,
+    isClassOrComponent
  } from './isClassOrComponent';
 
 // eslint-disable-next-line react/prefer-stateless-function
@@ -13,6 +26,18 @@ class B extends A { }
 
 // eslint-disable-next-line no-unused-vars
 class C extends B { }
+
+// eslint-disable-next-line react/prefer-stateless-function, react/no-multi-comp
+class BlankComponent extends React.Component {}
+// eslint-disable-next-line react/prefer-stateless-function, react/no-multi-comp
+class BlankPureComponent extends React.PureComponent {}
+const BlankStatelessComponent = (props) => (
+  <div>
+    Nothing to see here, except
+    {props}
+    .
+  </div>
+);
 
 test('test isExactClass when used as intended', () => {
     expect(isExactClass(A, A)).toBe(true);
@@ -55,4 +80,16 @@ test('test isExactClass when used in unintended ways', () => {
     expect(isExactClass(n2, n2)).toBe(false);
     expect(isExactClass(n1, n2)).toBe(false);
     expect(isExactClass(n2, n1)).toBe(false);
+});
+
+test(`test isClassOrComponent on all types of React components`, () => {
+    expect(isClassOrComponent(React.Component, A)).toBe(true);
+    expect(isClassOrComponent(React.Component, B)).toBe(true);
+    expect(isClassOrComponent(React.Component, C)).toBe(true);
+    expect(isClassOrComponent(React.Component, BlankComponent)).toBe(true);
+    expect(isClassOrComponent(React.Component, BlankPureComponent)).toBe(true);
+    expect(isClassOrComponent(React.Component, BlankStatelessComponent)).toBe(false);
+    expect(React.isValidElement(BlankStatelessComponent)).toBe(false);
+    expect(React.isValidElement(BlankStatelessComponent())).toBe(true);
+    expect(React.isValidElement(<BlankStatelessComponent />)).toBe(true);
 });

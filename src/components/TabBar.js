@@ -1,5 +1,18 @@
-/* eslint-disable no-plusplus */
-/* eslint-disable react/jsx-one-expression-per-line */
+/* eslint-disable no-plusplus, react/jsx-one-expression-per-line */
+/**
+ * 
+ *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓
+ *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒
+ *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░
+ *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░
+ *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░
+ *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░
+ *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░
+ *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░
+ *  ░           ░ ░  ░            ░               ░  ░     ░  ░
+ * 
+ * LICENSE: MIT
+ */
 /**
  * A substantial portion of this code came from https://github.com/jdeniau/ink-tab
  * My additions are concerned with making it look like a TabBar but not behaving like one
@@ -285,8 +298,14 @@ export class TabBar extends Control {
 
     // static ERROR_NO_TABS_PROVIDED = 'TabBar must contain at least one Tab control.';
     
+    /**
+     * This error will be thrown if you pass any children other than Tab components.
+     */
     static ERROR_ONLY_TABS_ALLOWED = 'TabBar children must contain only Tab controls.';
     
+    /**
+     * This might not ever be thrown.
+     */
     static ERROR_UNKNOWN_ERROR = 'An unknown error has occurred while validating TabBar child controls.';
 
     /**

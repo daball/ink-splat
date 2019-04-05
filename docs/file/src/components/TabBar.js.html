@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../">
+  <title data-ice="title">src/components/TabBar.js | ink-splat</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="ink-splat is a component library for ink."><meta property="twitter:card" content="summary"><meta property="twitter:title" content="ink-splat"><meta property="twitter:description" content="ink-splat is a component library for ink."></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/daball/ink-splat"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#components">components</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/App.js~App.html">App</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ComponentWrapper.js~ComponentWrapper.html">ComponentWrapper</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/ContainerControl.js~ContainerControl.html">ContainerControl</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Control.js~Control.html">Control</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Form.js~Form.html">Form</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/Sequence.js~Sequence.html">Sequence</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/TabBar.js~Tab.html">Tab</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/TabBar.js~TabBar.html">TabBar</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/components/TextField.js~TextField.html">TextField</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#tests-renderers">tests/renderers</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderJSDOM">renderJSDOM</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-renderState">renderState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-cleanupInk">cleanupInk</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-renderInk">renderInk</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#utils">utils</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isClassOrComponent">isClassOrComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isClassOrComponentFactory">isClassOrComponentFactory</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDerivedClass">isDerivedClass</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isDerivedComponent">isDerivedComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isExactClass">isExactClass</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isExactComponent">isExactComponent</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-isInstanceOf">isInstanceOf</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/components/TabBar.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/* eslint-disable no-plusplus, react/jsx-one-expression-per-line */
+/**
+ * 
+ *  &#x2588;&#x2588;&#x2593; &#x2588;&#x2588;&#x2588;&#x2584;    &#x2588;  &#x2588;&#x2588; &#x2584;&#x2588;&#x2580;     &#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;  &#x2588;&#x2588;&#x2593;&#x2588;&#x2588;&#x2588;   &#x2588;&#x2588;&#x2593;    &#x2584;&#x2584;&#x2584;     &#x2584;&#x2584;&#x2584;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2593;
+ *  &#x2593;&#x2588;&#x2588;&#x2592; &#x2588;&#x2588; &#x2580;&#x2588;   &#x2588;  &#x2588;&#x2588;&#x2584;&#x2588;&#x2592;    &#x2592;&#x2588;&#x2588;    &#x2592; &#x2593;&#x2588;&#x2588;&#x2591;  &#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588;&#x2592;   &#x2592;&#x2588;&#x2588;&#x2588;&#x2588;&#x2584;   &#x2593;  &#x2588;&#x2588;&#x2592; &#x2593;&#x2592;
+ *  &#x2592;&#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588;  &#x2580;&#x2588; &#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588;&#x2588;&#x2584;&#x2591;    &#x2591; &#x2593;&#x2588;&#x2588;&#x2584;   &#x2593;&#x2588;&#x2588;&#x2591; &#x2588;&#x2588;&#x2593;&#x2592;&#x2592;&#x2588;&#x2588;&#x2591;   &#x2592;&#x2588;&#x2588;  &#x2580;&#x2588;&#x2584; &#x2592; &#x2593;&#x2588;&#x2588;&#x2591; &#x2592;&#x2591;
+ *  &#x2591;&#x2588;&#x2588;&#x2591;&#x2593;&#x2588;&#x2588;&#x2592;  &#x2590;&#x258C;&#x2588;&#x2588;&#x2592;&#x2593;&#x2588;&#x2588; &#x2588;&#x2584;      &#x2592;   &#x2588;&#x2588;&#x2592;&#x2592;&#x2588;&#x2588;&#x2584;&#x2588;&#x2593;&#x2592; &#x2592;&#x2592;&#x2588;&#x2588;&#x2591;   &#x2591;&#x2588;&#x2588;&#x2584;&#x2584;&#x2584;&#x2584;&#x2588;&#x2588;&#x2591; &#x2593;&#x2588;&#x2588;&#x2593; &#x2591;
+ *  &#x2591;&#x2588;&#x2588;&#x2591;&#x2592;&#x2588;&#x2588;&#x2591;   &#x2593;&#x2588;&#x2588;&#x2591;&#x2592;&#x2588;&#x2588;&#x2592; &#x2588;&#x2584;   &#x2592;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2592;&#x2592;&#x2592;&#x2588;&#x2588;&#x2592; &#x2591;  &#x2591;&#x2591;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2592;&#x2593;&#x2588;   &#x2593;&#x2588;&#x2588;&#x2592; &#x2592;&#x2588;&#x2588;&#x2592; &#x2591;
+ *  &#x2591;&#x2593;  &#x2591; &#x2592;&#x2591;   &#x2592; &#x2592; &#x2592; &#x2592;&#x2592; &#x2593;&#x2592;   &#x2592; &#x2592;&#x2593;&#x2592; &#x2592; &#x2591;&#x2592;&#x2593;&#x2592;&#x2591; &#x2591;  &#x2591;&#x2591; &#x2592;&#x2591;&#x2593;  &#x2591;&#x2592;&#x2592;   &#x2593;&#x2592;&#x2588;&#x2591; &#x2592; &#x2591;&#x2591;
+ *  &#x2592; &#x2591;&#x2591; &#x2591;&#x2591;   &#x2591; &#x2592;&#x2591;&#x2591; &#x2591;&#x2592; &#x2592;&#x2591;   &#x2591; &#x2591;&#x2592;  &#x2591; &#x2591;&#x2591;&#x2592; &#x2591;     &#x2591; &#x2591; &#x2592;  &#x2591; &#x2592;   &#x2592;&#x2592; &#x2591;   &#x2591;
+ *  &#x2592; &#x2591;   &#x2591;   &#x2591; &#x2591; &#x2591; &#x2591;&#x2591; &#x2591;    &#x2591;  &#x2591;  &#x2591;  &#x2591;&#x2591;         &#x2591; &#x2591;    &#x2591;   &#x2592;    &#x2591;
+ *  &#x2591;           &#x2591; &#x2591;  &#x2591;            &#x2591;               &#x2591;  &#x2591;     &#x2591;  &#x2591;
+ * 
+ * LICENSE: MIT
+ */
+/**
+ * A substantial portion of this code came from https://github.com/jdeniau/ink-tab
+ * My additions are concerned with making it look like a TabBar but not behaving like one
+ * if it isn&apos;t in focus.
+ */
+
+import React from &apos;react&apos;;
+import readline from &apos;readline&apos;;
+// import PropTypes from &apos;prop-types&apos;;
+import { Box, Color, StdinContext, Text } from &apos;ink&apos;;
+import Control from &apos;./Control&apos;;
+import { isClassOrComponentFactory } from &apos;../utils/isClassOrComponent&apos;;
+
+export class Tab extends Control {
+    /**
+     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter
+     * is an instance of `Tab` (if passed an object) or a class derived from
+     * `Tab` (if passed a function) or a component derived from `Tab`.
+     * 
+     * @param {*} anyComponentOrClass Any valid React component or React component class or instance
+     * or derived component or class or instance.
+     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.
+     */
+    static isTab(anyComponentOrClass) {
+      return isClassOrComponentFactory(Tab)(anyComponentOrClass)
+    }
+  
+    render() {
+      const { props } = this;
+      return props.children;
+    }
+}
+
+// Tab.propTypes = {
+//   children: PropTypes.node.isRequired,
+//   name: PropTypes.string.isRequired,
+// };
+
+class TabsWithStdin extends Control {
+  constructor(props) {
+    super(props);
+    this.isColumn = this.isColumn.bind(this);
+    this.handleTabChange = this.handleTabChange.bind(this);
+    this.handleKeyPress = this.handleKeyPress.bind(this);
+    this.moveToNextTab = this.moveToNextTab.bind(this);
+    this.moveToPreviousTab = this.moveToPreviousTab.bind(this);
+    this.state = {
+      ...this.state,
+    };
+  }
+
+  componentDidMount() {
+    const { activeTab, stdin, setRawMode } = this.props;
+    // use ink / node `setRawMode` to read key-by-key
+    setRawMode(true);
+    // and listen to keypress events
+    readline.emitKeypressEvents(stdin);
+    stdin.on(&apos;keypress&apos;, this.handleKeyPress);
+    // select the first tab on component mount (if not active tab is selected)
+    if (!activeTab)
+      this.handleTabChange(0);
+  }
+
+  componentWillUnmount() {
+    const { stdin } = this.props;
+    stdin.removeListener(&apos;keypress&apos;, this.handleKeyPress);
+  }
+
+  handleTabChange(tabId) {
+    const { onChange, onTabIdChange } = this.props;
+    const tab = this.props.children[tabId];
+    if (!tab) {
+      return;
+    }
+    if (onChange)
+        onChange(tab.props.name, tab);
+    if (onTabIdChange)
+        onTabIdChange(tabId);
+  }
+
+  handleKeyPress(ch, key) {
+    if (!key) {
+      return;
+    }
+    switch (key.name) {
+      case &apos;left&apos;: {
+        if (this.isColumn()) {
+          return;
+        }
+        this.moveToPreviousTab();
+        break;
+      }
+      case &apos;up&apos;:
+        if (!this.isColumn()) {
+          return;
+        }
+        this.moveToPreviousTab();
+        break;
+      case &apos;right&apos;: {
+        if (this.isColumn()) {
+          return;
+        }
+        this.moveToNextTab();
+        break;
+      }
+      case &apos;down&apos;:
+        if (!this.isColumn()) {
+          return;
+        }
+        this.moveToNextTab();
+        break;
+      // case &apos;tab&apos;:
+      //   if (true === key.shift) {
+      //     this.moveToPreviousTab();
+      //   } else {
+      //     this.moveToNextTab();
+      //   }
+      //   break;
+      // }
+      case &apos;tab&apos;:
+      case &apos;return&apos;: {
+        this.blur();
+        break;
+      }
+      case &apos;0&apos;:
+      case &apos;1&apos;:
+      case &apos;2&apos;:
+      case &apos;3&apos;:
+      case &apos;4&apos;:
+      case &apos;5&apos;:
+      case &apos;6&apos;:
+      case &apos;7&apos;:
+      case &apos;8&apos;:
+      case &apos;9&apos;:
+        if (key.meta === true) {
+          const tabId = key.name === &apos;0&apos; ? 9 : parseInt(key.name, 10) - 1;
+          this.handleTabChange(tabId);
+        }
+        break;
+      default:        
+    }
+  }
+
+  isColumn() {
+    const { flexDirection } = this.props;
+
+    return flexDirection === &apos;column&apos; || flexDirection === &apos;column-reverse&apos;;
+  }
+
+  moveToNextTab() {
+    const { activeTab, children } = this.props;
+    let nextTabId = activeTab + 1;
+    if (nextTabId &gt;= children.length) {
+      nextTabId = 0;
+    }
+
+    this.handleTabChange(nextTabId);
+  }
+
+  moveToPreviousTab() {
+    const { activeTab, children } = this.props;
+    let nextTabId = activeTab - 1;
+    if (nextTabId &lt; 0) {
+      nextTabId = children.length - 1;
+    }
+
+    this.handleTabChange(nextTabId);
+  }
+
+  render() {
+    const { activeTab, children, onChange, flexDirection, ...rest } = this.props;
+
+    const separator = this.isColumn() ? &apos;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&apos; : &apos; | &apos;;
+
+    return (
+      &lt;Box flexDirection={flexDirection} {...rest}&gt;
+        {children.map((child, key) =&gt; {
+          const { name } = child.props;
+
+          return (
+            &lt;Box key={name} flexDirection={flexDirection}&gt;
+              {key !== 0 &amp;&amp; &lt;Color dim&gt;{separator}&lt;/Color&gt;}
+              &lt;Box&gt;
+                &lt;Color keyword=&quot;grey&quot;&gt;
+                  &lt;Text&gt;{key + 1}. &lt;/Text&gt;
+                &lt;/Color&gt;
+                &lt;Color
+                  bgGreen={activeTab === key}
+                  black={activeTab === key}
+                &gt;
+                  {child}
+                &lt;/Color&gt;
+              &lt;/Box&gt;
+            &lt;/Box&gt;
+          );
+        })}
+      &lt;/Box&gt;
+    );
+  }
+}
+
+class TabsWithoutStdin extends Control {
+    constructor(props) {
+      super(props);
+  
+      this.isColumn = this.isColumn.bind(this);
+    }
+      
+    isColumn() {
+      const { flexDirection } = this.props;
+  
+      return flexDirection === &apos;column&apos; || flexDirection === &apos;column-reverse&apos;;
+    }
+  
+    render() {
+      const { activeTab, children, onChange, flexDirection, ...rest } = this.props;
+  
+      const separator = this.isColumn() ? &apos;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&apos; : &apos; | &apos;;
+  
+      return (
+        &lt;Box flexDirection={flexDirection} {...rest}&gt;
+          {children.map((child, key) =&gt; {
+            const { name } = child.props;
+  
+            return (
+              &lt;Box key={name} flexDirection={flexDirection}&gt;
+                {key !== 0 &amp;&amp; &lt;Color dim&gt;{separator}&lt;/Color&gt;}
+                &lt;Box&gt;
+                  &lt;Color keyword=&quot;grey&quot;&gt;{key + 1}. &lt;/Color&gt;
+                  &lt;Color
+                    bgGreen={activeTab === key}
+                    black={activeTab === key}
+                  &gt;
+                    {child}
+                  &lt;/Color&gt;
+                &lt;/Box&gt;
+              &lt;/Box&gt;
+            );
+          })}
+        &lt;/Box&gt;
+      );
+    }
+}
+
+class Tabs extends Control {
+  render() {
+    return (
+      &lt;StdinContext.Consumer&gt;
+        {({ stdin, setRawMode }) =&gt; (
+          &lt;TabsWithStdin stdin={stdin} setRawMode={setRawMode} {...this.props} /&gt;
+        )}
+      &lt;/StdinContext.Consumer&gt;
+    );
+  }
+}
+
+class ShadedTabs extends Control {
+  render() {
+    return (
+      &lt;TabsWithoutStdin {...this.props} /&gt;
+    );
+  }
+} 
+
+// Tabs.propTypes = {
+//   onChange: PropTypes.func.isRequired,
+//   children: PropTypes.node.isRequired,
+// };
+
+export class TabBar extends Control {
+    /**
+     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter
+     * is an instance of `TabBar` (if passed an object) or a class derived from
+     * `TabBar` (if passed a function) or a component derived from `TabBar`.
+     * 
+     * @param {*} anyComponentOrClass Any valid React component or React component class or instance
+     * or derived component or class or instance.
+     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.
+     */
+    static isTabBar(anyComponentOrClass) {
+      return isClassOrComponentFactory(TabBar)(anyComponentOrClass)
+    }
+
+    // static ERROR_NO_TABS_PROVIDED = &apos;TabBar must contain at least one Tab control.&apos;;
+    
+    /**
+     * This error will be thrown if you pass any children other than Tab components.
+     */
+    static ERROR_ONLY_TABS_ALLOWED = &apos;TabBar children must contain only Tab controls.&apos;;
+    
+    /**
+     * This might not ever be thrown.
+     */
+    static ERROR_UNKNOWN_ERROR = &apos;An unknown error has occurred while validating TabBar child controls.&apos;;
+
+    /**
+     * Validates a `children` array to make sure it is valid.
+     * 
+     * @param {*} children An array of Tab components or null or undefined.
+     * @param {*} throwOnError If true, throws an error if invalid.
+     * @return `true` if valid, `false` otherwise when `throwOnError` is `false`
+     * @throws An error when `throwOnError` is `true` if children contains anything
+     * other than a Tab control or if it is an empty array `[]` or `null` or `undefined`.
+     */
+    static validateChildren(children, throwOnError) {
+      // condition 1 - when children is an array
+      if (Array.isArray(children)) {
+        // omitted condition 2 - children array cannot be empty
+        // if (children.length === 0) {
+        //   if (throwOnError)
+        //     throw TabBar.ERROR_NO_TABS_PROVIDED;
+        //   return false;
+        // }
+        for (let c = 0; c &lt; children.length; c++) {
+          const child = children[c];
+          // condition 3 - ensure each child is a Tab
+          if (!Tab.isTab(child)) {
+            if (throwOnError)
+              throw TabBar.ERROR_ONLY_TABS_ALLOWED;
+            return false;
+          }
+        }
+        return true;
+      }
+      if (children === undefined || children === null) {
+        // omitted condition 4 - children must be provided
+        // if (throwOnError)
+        //   throw TabBar.ERROR_NO_TABS_PROVIDED;
+        // return false;
+        // allow it:
+        return true;
+      }
+      if (throwOnError) {
+        throw TabBar.ERROR_UNKNOWN_ERROR;
+      }
+      return false;
+    }
+    
+    constructor(props) {
+        super(props);
+        // TODO: hoist state upward to outer container
+        this.state = {
+            ...this.state,
+            activeTab: 0
+        };
+        this.handleTabIdChange = this.handleTabIdChange.bind(this);
+        if (this.props.children.length &gt; 0 &amp;&amp; this.props.onChange) {
+          const tab = this.props.children[0];
+          this.props.onChange(tab.props.name, tab);
+        }
+    }
+    
+    handleTabIdChange(activeTab) {
+        this.setState({activeTab});
+    }
+
+    render() {
+        return (
+            this.isFocused()
+            ?
+            (
+              &lt;Tabs
+                {...this.props}
+                activeTab={this.state.activeTab}
+                onTabIdChange={this.handleTabIdChange}
+              /&gt;
+            )
+            :
+            (
+              &lt;ShadedTabs
+                {...this.props}
+                activeTab={this.state.activeTab}
+              /&gt;
+            )
+        );
+    }
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

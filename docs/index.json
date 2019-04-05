@@ -1,0 +1,3593 @@
+[
+  {
+    "__docId__": 1,
+    "kind": "external",
+    "name": "Infinity",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Infinity",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 2,
+    "kind": "external",
+    "name": "NaN",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~NaN",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 3,
+    "kind": "external",
+    "name": "undefined",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~undefined",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 4,
+    "kind": "external",
+    "name": "null",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/null",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~null",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 5,
+    "kind": "external",
+    "name": "Object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 6,
+    "kind": "external",
+    "name": "object",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~object",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 7,
+    "kind": "external",
+    "name": "Function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 8,
+    "kind": "external",
+    "name": "function",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~function",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 9,
+    "kind": "external",
+    "name": "Boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 10,
+    "kind": "external",
+    "name": "boolean",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~boolean",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 11,
+    "kind": "external",
+    "name": "Symbol",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Symbol",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 12,
+    "kind": "external",
+    "name": "Error",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Error",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 13,
+    "kind": "external",
+    "name": "EvalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~EvalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 14,
+    "kind": "external",
+    "name": "InternalError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~InternalError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 15,
+    "kind": "external",
+    "name": "RangeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RangeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 16,
+    "kind": "external",
+    "name": "ReferenceError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ReferenceError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 17,
+    "kind": "external",
+    "name": "SyntaxError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~SyntaxError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 18,
+    "kind": "external",
+    "name": "TypeError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~TypeError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 19,
+    "kind": "external",
+    "name": "URIError",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~URIError",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 20,
+    "kind": "external",
+    "name": "Number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 21,
+    "kind": "external",
+    "name": "number",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~number",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 22,
+    "kind": "external",
+    "name": "Date",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Date",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 23,
+    "kind": "external",
+    "name": "String",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~String",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 24,
+    "kind": "external",
+    "name": "string",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~string",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 25,
+    "kind": "external",
+    "name": "RegExp",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~RegExp",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 26,
+    "kind": "external",
+    "name": "Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 27,
+    "kind": "external",
+    "name": "Int8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 28,
+    "kind": "external",
+    "name": "Uint8Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 29,
+    "kind": "external",
+    "name": "Uint8ClampedArray",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint8ClampedArray",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 30,
+    "kind": "external",
+    "name": "Int16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 31,
+    "kind": "external",
+    "name": "Uint16Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint16Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 32,
+    "kind": "external",
+    "name": "Int32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Int32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 33,
+    "kind": "external",
+    "name": "Uint32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Uint32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 34,
+    "kind": "external",
+    "name": "Float32Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float32Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 35,
+    "kind": "external",
+    "name": "Float64Array",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Float64Array",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 36,
+    "kind": "external",
+    "name": "Map",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Map",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 37,
+    "kind": "external",
+    "name": "Set",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Set",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 38,
+    "kind": "external",
+    "name": "WeakMap",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakMap",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 39,
+    "kind": "external",
+    "name": "WeakSet",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~WeakSet",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 40,
+    "kind": "external",
+    "name": "ArrayBuffer",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~ArrayBuffer",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 41,
+    "kind": "external",
+    "name": "DataView",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~DataView",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 42,
+    "kind": "external",
+    "name": "JSON",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~JSON",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 43,
+    "kind": "external",
+    "name": "Promise",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Promise",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 44,
+    "kind": "external",
+    "name": "Generator",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Generator",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 45,
+    "kind": "external",
+    "name": "GeneratorFunction",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~GeneratorFunction",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 46,
+    "kind": "external",
+    "name": "Reflect",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Reflect",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 47,
+    "kind": "external",
+    "name": "Proxy",
+    "externalLink": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "memberof": "src/.external-ecmascript.js",
+    "static": true,
+    "longname": "src/.external-ecmascript.js~Proxy",
+    "access": "public",
+    "description": "",
+    "builtinExternal": true
+  },
+  {
+    "__docId__": 48,
+    "kind": "file",
+    "name": "src/components/App.js",
+    "content": "/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport React from 'react';\nimport ink, { AppContext } from 'ink';\nimport Control from './Control';\nimport { isClassOrComponentFactory } from '../utils/isClassOrComponent';\n\n/**\n * \n */\nexport default class App extends Control {\n    /**\n     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\n     * is an instance of `App` (if passed an object) or a class derived from\n     * `App` (if passed a function) or a component derived from `App`.\n     * \n     * @param {*} anyComponentOrClass Any valid React component or React component class or instance\n     * or derived component or class or instance.\n     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.\n     */\n    static isApp(anyComponentOrClass) {\n        return isClassOrComponentFactory(App)(anyComponentOrClass);\n    }\n\n    static run(appOrComponent) {\n        return (App.isApp(appOrComponent) ? App.render(appOrComponent) : null);\n    }\n    \n    static render(appOrComponent, options) {\n        const { props, state } = appOrComponent;\n        const appRoot = (\n          <AppContext.Consumer>\n            {\n                ({ exit }) => {\n                    if (state.isExiting) {\n                        if (props.onExit) {\n                            props.onExit();\n                            exit();\n                        }\n                    }\n                    return App.isApp(appOrComponent) ? appOrComponent : null;\n                }\n            }\n          </AppContext.Consumer>   \n        );\n        return (App.isApp(appOrComponent) ? ink.render(appRoot, options) : null);\n    }\n    \n    /**\n     * Call this function to exit the app.\n     */\n    exit() {\n        const { props } = this;\n        if (props.onBeforeExit) {\n            const { cancel, exitCode } = props.onBeforeExit();\n            this.setState({ isExiting: (cancel !== undefined && !cancel) || true, exitCode: exitCode||0 });\n        }\n        else {\n            this.setState({ isExiting: true, exitCode: 0 });\n        }\n    }\n    \n    render() {\n    }\n    \n    \n }",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/components/App.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 49,
+    "kind": "class",
+    "name": "App",
+    "memberof": "src/components/App.js",
+    "static": true,
+    "longname": "src/components/App.js~App",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/components/App.js",
+    "importStyle": "App",
+    "description": "",
+    "lineNumber": 23,
+    "interface": false,
+    "extends": [
+      "src/components/Control.js~Control"
+    ]
+  },
+  {
+    "__docId__": 50,
+    "kind": "method",
+    "name": "isApp",
+    "memberof": "src/components/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/App.js~App.isApp",
+    "access": "public",
+    "description": "Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\nis an instance of `App` (if passed an object) or a class derived from\n`App` (if passed a function) or a component derived from `App`.",
+    "lineNumber": 33,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "anyComponentOrClass",
+        "description": "Any valid React component or React component class or instance\nor derived component or class or instance."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` if `anyComponentOrClass` validates, `false` otherwise."
+    }
+  },
+  {
+    "__docId__": 51,
+    "kind": "method",
+    "name": "run",
+    "memberof": "src/components/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/App.js~App.run",
+    "access": "public",
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true,
+    "params": [
+      {
+        "name": "appOrComponent",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 52,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/App.js~App.render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 41,
+    "undocument": true,
+    "params": [
+      {
+        "name": "appOrComponent",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "options",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 53,
+    "kind": "method",
+    "name": "exit",
+    "memberof": "src/components/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/App.js~App#exit",
+    "access": "public",
+    "description": "Call this function to exit the app.",
+    "lineNumber": 64,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 54,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/App.js~App",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/App.js~App#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 75,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 55,
+    "kind": "file",
+    "name": "src/components/ComponentWrapper.js",
+    "content": "/* eslint no-plusplus: [\"error\", { \"allowForLoopAfterthoughts\": true }] */\n/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport React from 'react';\nimport Control from './Control';\n// import { Component } from 'react';\n// import { isClassOrComponentFactory } from '../utils/isClassOrComponent';\n\n/**\n * // TODO: Integrate this concept into Control, using `wrapComponent`\n * // as the property.\n * \n * ComponentWrapper is a control component which is proposed to wrap an existing\n * React Component in order to make it compatible with the Control class. Pass\n * the wrapped component as `props.component`. ComponentWrapper controls\n * won't be able to be focused but will allow its children to be focused if they\n * are focusable Controls.\n * \n * It isn't something you'll have to use outright, as the Control's renderChild()\n * method will actually wrap up a Component for you. In this way, you will be\n * able to nest non-control components and control components and expect that\n * top-most control components will work correctly when searching the control\n * component heirarchy.\n */\nexport default class ComponentWrapper extends Control {\n    // TODO: Consider making Sequence into a ContainerControl if there is any purpose for\n    // ContainerControl after completing all the Control requirements.    \n    // constructor(props) {\n    //     super(props);\n    // }\n    \n    render() {\n        const { props, hasChildren } = this;\n        const outputs = [];\n        if (props && props.component && Control.isReactComponent(props.component)) {\n            outputs.push(props.component);\n        }\n        if (hasChildren()) {\n            outputs.concat(props.children);\n        }\n        if (outputs.length === 0) return null;\n        if (outputs.length === 1) return outputs[0];\n        return (\n          <Control>{outputs}</Control>\n        );\n    }\n}",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/components/ComponentWrapper.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 56,
+    "kind": "class",
+    "name": "ComponentWrapper",
+    "memberof": "src/components/ComponentWrapper.js",
+    "static": true,
+    "longname": "src/components/ComponentWrapper.js~ComponentWrapper",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/components/ComponentWrapper.js",
+    "importStyle": "ComponentWrapper",
+    "description": "// TODO: Integrate this concept into Control, using `wrapComponent`\n// as the property.\n\nComponentWrapper is a control component which is proposed to wrap an existing\nReact Component in order to make it compatible with the Control class. Pass\nthe wrapped component as `props.component`. ComponentWrapper controls\nwon't be able to be focused but will allow its children to be focused if they\nare focusable Controls.\n\nIt isn't something you'll have to use outright, as the Control's renderChild()\nmethod will actually wrap up a Component for you. In this way, you will be\nable to nest non-control components and control components and expect that\ntop-most control components will work correctly when searching the control\ncomponent heirarchy.",
+    "lineNumber": 37,
+    "interface": false,
+    "extends": [
+      "src/components/Control.js~Control"
+    ]
+  },
+  {
+    "__docId__": 57,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/ComponentWrapper.js~ComponentWrapper",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/ComponentWrapper.js~ComponentWrapper#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 44,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 58,
+    "kind": "file",
+    "name": "src/components/ContainerControl.js",
+    "content": "/* eslint no-plusplus: [\"error\", { \"allowForLoopAfterthoughts\": true }] */\n/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport React from 'react';\nimport Control from './Control';\nimport { isClassOrComponentFactory } from '../utils/isClassOrComponent';\n\n/**\n * Provides focus-management functionality for controls that can function as a container\n * for other controls.\n */\nexport default class ContainerControl extends Control {\n    /**\n     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\n     * is an instance of `ContainerControl` (if passed an object) or a class derived from\n     * `ContainerControl` (if passed a function) or a component derived from `ContainerControl`.\n     * \n     * @param {*} anyComponentOrClass Any valid React component or React component class or instance\n     * or derived component or class or instance.\n     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.\n     */\n    static isContainerControl(anyComponentOrClass) {\n        return isClassOrComponentFactory(ContainerControl)(anyComponentOrClass);\n    }\n\n    constructor(props) {\n        super(props);\n        this.state = {\n            ...this.state,\n            activeControl: ''\n        };\n    }\n\n    /**\n     * Returns a boolean which indicates if a ContainerControl instance is focusable.\n     * \n     * The default behavior is to:\n     * (1) check containsFocus(): if true, return false (already focused); if false, proceed to\n     * (2) return containsFocusable()\n     */\n    canFocus() {\n        return (!this.containsFocus() && this.containsFocusable());\n    }\n\n    /**\n     * Returns a boolean which indicates if the Control instance is un-focusable.\n     * \n     * Most Controls which exist will be focusable. It is the deault behavior that a derived\n     * Control class is always focusable.\n     * \n     * If you want to disable focusable in a specific way, you can override the function and\n     * return false instead of true.\n     * \n     * For example, consider a TextField whose input might be disabled for now. During the\n     * disabled state, canFocus() would return false, but otherwise return true.\n     */\n    canBlur() {\n        return this.isFocused();\n    }\n\n    select(control) {\n        // disable linter for now\n        // TODO: fix this routine\n        this.canFocus();\n        if (Control.isDerivedControl(control)) {\n            if (control.canFocus()) {\n                if (control.props.onFocus) {\n                    control.props.onFocus();\n                }\n            }\n        }\n    }\n\n    /**\n     * \n     *  In a command line interface, where focusable controls exist (think Visual Basic for DOS)\n     *  to get an idea of the concept, we can't completely blur out of EVERY single control.\n     *\n     *  Something is always going to ALWAYS need to be accept / capture input, be it a Button\n     *  or TextField or a Menu or a Tab or Tree. But the concept of the Control component is\n     *  that it can easily allow focus to shift from one component to the next, and allow those\n     *  components which extend the Control class to easily display one type of blurred output\n     *  while accepting input once focused.\n     *\n     *  In order to guarantee this, blur will locate the forward (or reverse component)\n     *  and 'select' it instead.\n     */\n    blur() {\n        if (this.canBlur()) {\n            // let our listeners know \n            if (this.props.onBlur) {\n                this.props.onBlur();\n            }\n        }\n    }\n\n    isFocused() {\n        return this.props.focused;\n    }\n\n    containsFocusable() {\n        for (let c = 0; c < this.props.children.length; c++) {\n            if (this.props.children[c].containsFocus &&\n                this.props.children[c].containsFocus())\n                return true;\n        }\n        return false;\n    }\n\n    renderChildren() {\n        // let countDerived = 0;\n        // we are going to modify the children array such that when one of our children components\n        // blurs, we will bubble it out to select the next focusable control\n        if (this.props.children) {\n            const modifiedChildren = this.props.children.map((el) =>\n            // expanded: const modifiedChildren = this.props.children.map((el, i, all) =>\n                Control.isDerivedControl(el) ? React.cloneElement(el, {\n\n                }) : el\n            );\n            return modifiedChildren;\n        }\n        return null;\n    }\n\n    render() {\n        return this.renderChildren();\n    }\n}",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/components/ContainerControl.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 59,
+    "kind": "class",
+    "name": "ContainerControl",
+    "memberof": "src/components/ContainerControl.js",
+    "static": true,
+    "longname": "src/components/ContainerControl.js~ContainerControl",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/components/ContainerControl.js",
+    "importStyle": "ContainerControl",
+    "description": "Provides focus-management functionality for controls that can function as a container\nfor other controls.",
+    "lineNumber": 24,
+    "interface": false,
+    "extends": [
+      "src/components/Control.js~Control"
+    ]
+  },
+  {
+    "__docId__": 60,
+    "kind": "method",
+    "name": "isContainerControl",
+    "memberof": "src/components/ContainerControl.js~ContainerControl",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/ContainerControl.js~ContainerControl.isContainerControl",
+    "access": "public",
+    "description": "Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\nis an instance of `ContainerControl` (if passed an object) or a class derived from\n`ContainerControl` (if passed a function) or a component derived from `ContainerControl`.",
+    "lineNumber": 34,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "anyComponentOrClass",
+        "description": "Any valid React component or React component class or instance\nor derived component or class or instance."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` if `anyComponentOrClass` validates, `false` otherwise."
+    }
+  },
+  {
+    "__docId__": 61,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/ContainerControl.js~ContainerControl",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/ContainerControl.js~ContainerControl#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true
+  },
+  {
+    "__docId__": 62,
+    "kind": "member",
+    "name": "state",
+    "memberof": "src/components/ContainerControl.js~ContainerControl",
+    "static": false,
+    "longname": "src/components/ContainerControl.js~ContainerControl#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 40,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{...undefined: Object, \"activeControl\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 63,
+    "kind": "method",
+    "name": "canFocus",
+    "memberof": "src/components/ContainerControl.js~ContainerControl",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/ContainerControl.js~ContainerControl#canFocus",
+    "access": "public",
+    "description": "Returns a boolean which indicates if a ContainerControl instance is focusable.\n\nThe default behavior is to:\n(1) check containsFocus(): if true, return false (already focused); if false, proceed to\n(2) return containsFocusable()",
+    "lineNumber": 53,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 64,
+    "kind": "method",
+    "name": "canBlur",
+    "memberof": "src/components/ContainerControl.js~ContainerControl",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/ContainerControl.js~ContainerControl#canBlur",
+    "access": "public",
+    "description": "Returns a boolean which indicates if the Control instance is un-focusable.\n\nMost Controls which exist will be focusable. It is the deault behavior that a derived\nControl class is always focusable.\n\nIf you want to disable focusable in a specific way, you can override the function and\nreturn false instead of true.\n\nFor example, consider a TextField whose input might be disabled for now. During the\ndisabled state, canFocus() would return false, but otherwise return true.",
+    "lineNumber": 69,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 65,
+    "kind": "method",
+    "name": "select",
+    "memberof": "src/components/ContainerControl.js~ContainerControl",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/ContainerControl.js~ContainerControl#select",
+    "access": "public",
+    "description": null,
+    "lineNumber": 73,
+    "undocument": true,
+    "params": [
+      {
+        "name": "control",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 66,
+    "kind": "method",
+    "name": "blur",
+    "memberof": "src/components/ContainerControl.js~ContainerControl",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/ContainerControl.js~ContainerControl#blur",
+    "access": "public",
+    "description": "\n In a command line interface, where focusable controls exist (think Visual Basic for DOS)\n to get an idea of the concept, we can't completely blur out of EVERY single control.\n\n Something is always going to ALWAYS need to be accept / capture input, be it a Button\n or TextField or a Menu or a Tab or Tree. But the concept of the Control component is\n that it can easily allow focus to shift from one component to the next, and allow those\n components which extend the Control class to easily display one type of blurred output\n while accepting input once focused.\n\n In order to guarantee this, blur will locate the forward (or reverse component)\n and 'select' it instead.",
+    "lineNumber": 100,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 67,
+    "kind": "method",
+    "name": "isFocused",
+    "memberof": "src/components/ContainerControl.js~ContainerControl",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/ContainerControl.js~ContainerControl#isFocused",
+    "access": "public",
+    "description": null,
+    "lineNumber": 109,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 68,
+    "kind": "method",
+    "name": "containsFocusable",
+    "memberof": "src/components/ContainerControl.js~ContainerControl",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/ContainerControl.js~ContainerControl#containsFocusable",
+    "access": "public",
+    "description": null,
+    "lineNumber": 113,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 69,
+    "kind": "method",
+    "name": "renderChildren",
+    "memberof": "src/components/ContainerControl.js~ContainerControl",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/ContainerControl.js~ContainerControl#renderChildren",
+    "access": "public",
+    "description": null,
+    "lineNumber": 122,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 70,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/ContainerControl.js~ContainerControl",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/ContainerControl.js~ContainerControl#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 138,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 71,
+    "kind": "file",
+    "name": "src/components/Control.js",
+    "content": "/* eslint no-plusplus: [\"error\", { \"allowForLoopAfterthoughts\": true }] */\n/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport React from 'react';\nimport { isClassOrComponentFactory } from '../utils/isClassOrComponent';\n\nconst BLUR_DIRECTION_REVERSE = '<';\nconst BLUR_DIRECTION_FORWARD = '>';\nconst BLUR_DIRECTION_DEFAULT = '>';\n\n/**\n * Defines the base class for controls, which are components with visual representation.\n */\nexport default class Control extends React.Component {\n    /**\n     * BLUR_DIRECTION indicates the direction a onBlur() should\n     * move focus to next.\n     */\n    static BLUR_DIRECTION = {\n        /**\n         * REVERSE indicates the next focused component will be the previous\n         * tab order.\n         */\n        REVERSE: BLUR_DIRECTION_REVERSE,\n        /**\n         * FORWARD indicates the next focused component will be the next\n         * tab order.\n         */\n        FORWARD: BLUR_DIRECTION_FORWARD,\n        /**\n         * DEFAULT direction is FORWARD.\n         */\n        DEFAULT: BLUR_DIRECTION_DEFAULT\n    };\n    \n    /**\n     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\n     * is an instance of `Control` (if passed an object) or a class derived from\n     * `Control` (if passed a function) or a component derived from `Control`.\n     * \n     * @param {*} anyComponentOrClass Any valid React component or React component class or instance\n     * or derived component or class or instance.\n     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.\n     */\n    static isControl(anyComponentOrClass) {\n        return isClassOrComponentFactory(Control)(anyComponentOrClass);\n    }\n\n    /**\n     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\n     * is an instance of `React.Component` (if passed an object) or a class derived from\n     * `React.Component` (if passed a function) or a component derived from `React.Component`.\n     * \n     * @param {*} anyComponentOrClass Any valid React component or React component class or instance\n     * or derived component or class or instance.\n     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.\n     */\n    static isReactComponent(anyComponentOrClass) {\n        return isClassOrComponentFactory(React.Component)(anyComponentOrClass)\n            || isClassOrComponentFactory(React.PureComponent)(anyComponentOrClass)\n            || (typeof anyComponentOrClass === 'function'\n                && React.isValidElement(anyComponentOrClass()))\n            || React.isValidElement(anyComponentOrClass);\n    }\n\n    /**\n     * Checks a React component to see if it has any children in props.\n     * \n     * @param {*} component A proposed React component to inspect.\n     */\n    static componentHasChildren(component) {\n        return !!(Control.isReactComponent(component)\n            && component.props !== undefined\n            && component.props.children !== undefined\n            && Array.isArray(component.props.children)\n            && component.props.children.length > 0);\n    }\n    \n    /**\n     * \n     * @param {*} controlOrComponent \n     */\n    static firstFocusableControlOf(controlOrComponent) {\n        if (Control.componentHasChildren(controlOrComponent)) {\n            const { children } = controlOrComponent.props;\n            for (let c = 0; c < children.length; c++) {\n                const child = children[c];\n                if (Control.isControl(child)) {\n                    if (child.canFocus()) {\n                        return child;\n                    }\n                }\n                else if (Control.isReactComponent(child)) {\n                    // recursive call into firstFocusableControlOf(child)\n                    const firstFocusableInChild = Control.firstFocusableControlOf(child);\n                    if (firstFocusableInChild != null) {\n                        return firstFocusableInChild;\n                    }\n                }\n            }\n        }\n        return null;\n    }\n\n    static prevFocusableChild() {\n        \n    }\n\n    /**\n     * \n     */\n    static nextFocusableChild() {\n        \n    }\n        \n    static lastFocusableChild(controlOrComponent) {\n        if (Control.componentHasChildren(controlOrComponent)) {\n            const { children } = controlOrComponent.props;\n            for (let c = 0; c < children.length; c++) {\n                const { child } = children[c];\n                if (Control.isControl(child)) {\n                    if (child.canFocus()) {\n                        return child;\n                    }\n                }\n                else if (Control.isReactComponent(child)) {\n                    // recursive call into firstFocusableControlOf(child)\n                    const firstFocusableInChild = Control.firstFocusableControlOf(child);\n                    if (firstFocusableInChild != null) {\n                        return firstFocusableInChild;\n                    }\n                }\n            }\n        }\n        return null;\n    }\n\n    static buildControlForComponent(type, props, children) {\n        return (\n          <Control\n            wrapComponent={<type {...props} />}\n          >\n            {children}\n          </Control>\n        );\n    }\n\n    static wrapComponent(component) {\n        const { type } = component;\n        const props = (\n            component.props\n            ?\n            { ...component.props, children: undefined }\n            :\n            { }\n        );\n        const children = (\n            (component.props\n                && component.props.children)\n            ?\n            component.props.children\n            :\n            null\n        );\n        return (\n            (component\n                && Control.isReactComponent(component)\n                && type\n                && Control.isReactComponent(type))\n            ?\n            Control.buildControlForComponent(type, props, children)\n            :\n            null\n        );\n    }\n\n\n    constructor(props) {\n        super(props);\n        this.state = {\n            ...this.state,\n            canIReachThisState: 'yep!'\n        };\n        // A basic Control, by itself, isn't focusable.\n        // Some of it's child Controls will be focusable, and need to specify\n        // when that is the case.\n        this.focusable = false;\n    }\n\n    /**\n     * Returns a boolean which indicates if a Control instance is focusable.\n     * \n     * The default behavior is to always return true unless it is already focused.\n     * \n     * The select(control) default behavior will always check the Control instance's canFocus()\n     * before doing any work.\n     * \n     * Most Controls which exist will be focusable. It is the default behavior that a derived\n     * Control class is always focusable.\n     * \n     * If you want to disable focusable in a specific way, you can override the function and\n     * return false instead of true.\n     * \n     * For example, consider a TextField whose input might be disabled for now. During the\n     * disabled state, canFocus() would return false, but otherwise return true.\n     */\n    // eslint-disable-next-line class-methods-use-this\n    canFocus() {\n        return this.isEnabled()\n            && this.isBlurred()\n            && (this.isFocusable()\n                || this.containsFocusable());\n    }\n\n    /**\n     * Returns a boolean which indicates if the Control instance is un-focusable.\n     * \n     * Most Controls which exist will be focusable. It is the deault behavior that a derived\n     * Control class is always focusable.\n     * \n     * If you want to disable focusable in a specific way, you can override the function and\n     * return false instead of true.\n     * \n     * For example, consider a TextField whose input might be disabled for now. During the\n     * disabled state, canFocus() would return false, but otherwise return true.\n     */\n    canBlur() {\n        return this.isEnabled()\n            && this.isFocused();\n    }\n\n    /**\n     * \n     *  In a command line interface, where focusable controls exist (think Visual Basic for DOS)\n     *  to get an idea of the concept, we can't completely blur out of EVERY single control.\n     *\n     *  Something is always going to ALWAYS need to be accept / capture input, be it a Button\n     *  or TextField or a Menu or a Tab or Tree. But the concept of the Control component is\n     *  that it can easily allow focus to shift from one component to the next, and allow those\n     *  components which extend the Control class to easily display one type of blurred output\n     *  while accepting input once focused.\n     *\n     *  In order to guarantee this, blur will locate the forward (or reverse component)\n     *  and 'select' it instead.\n     */\n    blur() {\n        if (this.canBlur()) {\n            const {\n                props\n            } = this;\n            // let our listeners know \n            if (props.onBlur) {\n                props.onBlur();\n            }\n        }\n    }\n\n    focus() {\n        if (this.canFocus()) {\n            const {\n                props\n            } = this;\n            // let our listeners know \n            if (props.onFocus) {\n                props.onFocus();\n            }\n        }\n    }\n\n    /**\n     * The `isDisabled()` method returns a boolean which indicates the value of\n     * the `disabled` property as passed into the component.\n     * \n     * `<Control disabled />` would cause `isDisabled()` to return `true`.\n     * \n     * `<Control />` would cause `isDisabled()` to return `false`.\n     */\n    isDisabled() {\n        const {\n            props\n        } = this;\n        return props !== undefined && (!!props.disabled);\n    }\n    \n    /**\n     * The `isEnabled()` method returns the inverse value of the `isDisabled()`\n     * method.\n     * \n     * `<Control disabled />` would cause `isEnabled()` to return `false`.\n     * \n     * `<Control />` would cause `isEnabled()` to return `true`.\n     */\n    isEnabled() {\n        return !this.isDisabled();\n    }\n\n    /**\n     * The `isFocused()` method returns a boolean which indicates the value of\n     * the `focused` property as passed into the component, as long as it\n     * is not `disabled`.\n     * \n     * `<Control focused />` would cause `isFocused()` to return `true`,\n     * unless the `Control` is disabled.\n     * \n     * `<Control focused disabled />` would cause `isFocused()` to return\n     * `false`, and is not a valid state for the Control component.\n     * \n     * `<Control />` would cause `isFocused()` to return `false`.\n     */\n    isFocused() {\n        const {\n            props\n        } = this;\n        return props !== undefined && (!!props.focused && this.isEnabled());\n    }\n    \n    /**\n     * The `isFocusable()` method returns a boolean which indicates the value of the\n     * field, `focusable`. It is checked throughout other functions in Control, but\n     * can be safely overridden if you would like to extend Control so that it is\n     * `focusable`. The `focusable` field is normally set to `false` unless it is\n     * set manually, either using a consumer or by extending the `Control` class.\n     */\n    isFocusable() {\n        return this.focusable;\n    }\n\n    /**\n     * The `isBlurred()` method returns the inverse of the `isFocused()` method.\n     */\n    isBlurred() {\n        return !this.isFocused();\n    }\n\n    containsFocus() {\n        const {\n            props\n        } = this;\n        if (this.isFocused()) {\n            return true;\n        }\n        if (props && props.children && props.children.length) {\n            for (let c = 0; c < props.children.length; c++) {\n                if (props.children[c].containsFocus &&\n                    props.children[c].containsFocus())\n                    return true;\n            }\n        }\n        return false;\n    }\n    \n    containsFocusable() {\n        return Control.firstFocusableControlOf(this) != null;\n    }\n    \n    hasChildren() {\n        return Control.componentHasChildren(this);\n    }\n    \n    // /**\n    //  * Renders a child component from the `props.children` array.\n    //  */\n    // // eslint-disable-next-line class-methods-use-this, no-unused-vars\n    // renderChild(child, index, childrenArray) {\n    //     return child; // as-is\n    //     // return (\n    //     //     // child as-is if it's a Control\n    //     //     (Control.isControl(child) && child)\n    //     //     // otherwise we need to wrap it up\n    //     //     || (<Control wrapComponent={child} />)\n    //     // );\n    // }\n\n    // renderChildren() {\n    //     const { props } = this;\n    //     return (\n    //         this.hasChildren() &&\n    //         props.children.map(this.renderChild)\n    //     ) || [];\n    // }\n\n    // renderWrappedComponent() {\n    //     const { props } = this;\n    //     return (\n    //         props\n    //         && props.wrapComponent\n    //         (\n    //             (Control.isControl(props.wrapComponent)\n    //                 && props.wrapComponent)\n    //             || (Control.isReactComponent(props.wrapComponent)\n    //                 && Control.wrapComponent(props.wrapComponent))\n    //         )\n    //     ) || null;\n    // }\n\n    render() {\n        // const outputs = [];\n        // const wrapped = this.renderWrappedComponent();\n        // if (wrapped)\n        //     outputs.push(wrapped);\n        // outputs.concat(this.renderChildren());\n        // if (outputs.length === 0) return null;\n        // if (outputs.length === 1) return outputs[0];\n        // return (\n        //   <Control>{outputs}</Control>\n        // );\n        const { props } = this;\n        return props.children||null;\n    }\n}",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/components/Control.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 72,
+    "kind": "variable",
+    "name": "BLUR_DIRECTION_REVERSE",
+    "memberof": "src/components/Control.js",
+    "static": true,
+    "longname": "src/components/Control.js~BLUR_DIRECTION_REVERSE",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/components/Control.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 19,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 73,
+    "kind": "variable",
+    "name": "BLUR_DIRECTION_FORWARD",
+    "memberof": "src/components/Control.js",
+    "static": true,
+    "longname": "src/components/Control.js~BLUR_DIRECTION_FORWARD",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/components/Control.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 74,
+    "kind": "variable",
+    "name": "BLUR_DIRECTION_DEFAULT",
+    "memberof": "src/components/Control.js",
+    "static": true,
+    "longname": "src/components/Control.js~BLUR_DIRECTION_DEFAULT",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/components/Control.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "string"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 75,
+    "kind": "class",
+    "name": "Control",
+    "memberof": "src/components/Control.js",
+    "static": true,
+    "longname": "src/components/Control.js~Control",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/components/Control.js",
+    "importStyle": "Control",
+    "description": "Defines the base class for controls, which are components with visual representation.",
+    "lineNumber": 26,
+    "interface": false,
+    "extends": [
+      "react~React.Component"
+    ]
+  },
+  {
+    "__docId__": 76,
+    "kind": "member",
+    "name": "BLUR_DIRECTION",
+    "memberof": "src/components/Control.js~Control",
+    "static": true,
+    "longname": "src/components/Control.js~Control.BLUR_DIRECTION",
+    "access": "public",
+    "description": "BLUR_DIRECTION indicates the direction a onBlur() should\nmove focus to next.",
+    "lineNumber": 31,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 77,
+    "kind": "method",
+    "name": "isControl",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Control.js~Control.isControl",
+    "access": "public",
+    "description": "Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\nis an instance of `Control` (if passed an object) or a class derived from\n`Control` (if passed a function) or a component derived from `Control`.",
+    "lineNumber": 57,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "anyComponentOrClass",
+        "description": "Any valid React component or React component class or instance\nor derived component or class or instance."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` if `anyComponentOrClass` validates, `false` otherwise."
+    }
+  },
+  {
+    "__docId__": 78,
+    "kind": "method",
+    "name": "isReactComponent",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Control.js~Control.isReactComponent",
+    "access": "public",
+    "description": "Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\nis an instance of `React.Component` (if passed an object) or a class derived from\n`React.Component` (if passed a function) or a component derived from `React.Component`.",
+    "lineNumber": 70,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "anyComponentOrClass",
+        "description": "Any valid React component or React component class or instance\nor derived component or class or instance."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` if `anyComponentOrClass` validates, `false` otherwise."
+    }
+  },
+  {
+    "__docId__": 79,
+    "kind": "method",
+    "name": "componentHasChildren",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Control.js~Control.componentHasChildren",
+    "access": "public",
+    "description": "Checks a React component to see if it has any children in props.",
+    "lineNumber": 83,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "component",
+        "description": "A proposed React component to inspect."
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 80,
+    "kind": "method",
+    "name": "firstFocusableControlOf",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Control.js~Control.firstFocusableControlOf",
+    "access": "public",
+    "description": "",
+    "lineNumber": 95,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "controlOrComponent",
+        "description": ""
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 81,
+    "kind": "method",
+    "name": "prevFocusableChild",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Control.js~Control.prevFocusableChild",
+    "access": "public",
+    "description": null,
+    "lineNumber": 117,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 82,
+    "kind": "method",
+    "name": "nextFocusableChild",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Control.js~Control.nextFocusableChild",
+    "access": "public",
+    "description": "",
+    "lineNumber": 124,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 83,
+    "kind": "method",
+    "name": "lastFocusableChild",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Control.js~Control.lastFocusableChild",
+    "access": "public",
+    "description": null,
+    "lineNumber": 128,
+    "undocument": true,
+    "params": [
+      {
+        "name": "controlOrComponent",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 84,
+    "kind": "method",
+    "name": "buildControlForComponent",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Control.js~Control.buildControlForComponent",
+    "access": "public",
+    "description": null,
+    "lineNumber": 150,
+    "undocument": true,
+    "params": [
+      {
+        "name": "type",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "props",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "children",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 85,
+    "kind": "method",
+    "name": "wrapComponent",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Control.js~Control.wrapComponent",
+    "access": "public",
+    "description": null,
+    "lineNumber": 160,
+    "undocument": true,
+    "params": [
+      {
+        "name": "component",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 86,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 190,
+    "undocument": true
+  },
+  {
+    "__docId__": 87,
+    "kind": "member",
+    "name": "state",
+    "memberof": "src/components/Control.js~Control",
+    "static": false,
+    "longname": "src/components/Control.js~Control#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 192,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{...undefined: Object, \"canIReachThisState\": string}"
+      ]
+    }
+  },
+  {
+    "__docId__": 88,
+    "kind": "member",
+    "name": "focusable",
+    "memberof": "src/components/Control.js~Control",
+    "static": false,
+    "longname": "src/components/Control.js~Control#focusable",
+    "access": "public",
+    "description": null,
+    "lineNumber": 199,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 89,
+    "kind": "method",
+    "name": "canFocus",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#canFocus",
+    "access": "public",
+    "description": "Returns a boolean which indicates if a Control instance is focusable.\n\nThe default behavior is to always return true unless it is already focused.\n\nThe select(control) default behavior will always check the Control instance's canFocus()\nbefore doing any work.\n\nMost Controls which exist will be focusable. It is the default behavior that a derived\nControl class is always focusable.\n\nIf you want to disable focusable in a specific way, you can override the function and\nreturn false instead of true.\n\nFor example, consider a TextField whose input might be disabled for now. During the\ndisabled state, canFocus() would return false, but otherwise return true.",
+    "lineNumber": 220,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 90,
+    "kind": "method",
+    "name": "canBlur",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#canBlur",
+    "access": "public",
+    "description": "Returns a boolean which indicates if the Control instance is un-focusable.\n\nMost Controls which exist will be focusable. It is the deault behavior that a derived\nControl class is always focusable.\n\nIf you want to disable focusable in a specific way, you can override the function and\nreturn false instead of true.\n\nFor example, consider a TextField whose input might be disabled for now. During the\ndisabled state, canFocus() would return false, but otherwise return true.",
+    "lineNumber": 239,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 91,
+    "kind": "method",
+    "name": "blur",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#blur",
+    "access": "public",
+    "description": "\n In a command line interface, where focusable controls exist (think Visual Basic for DOS)\n to get an idea of the concept, we can't completely blur out of EVERY single control.\n\n Something is always going to ALWAYS need to be accept / capture input, be it a Button\n or TextField or a Menu or a Tab or Tree. But the concept of the Control component is\n that it can easily allow focus to shift from one component to the next, and allow those\n components which extend the Control class to easily display one type of blurred output\n while accepting input once focused.\n\n In order to guarantee this, blur will locate the forward (or reverse component)\n and 'select' it instead.",
+    "lineNumber": 258,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 92,
+    "kind": "method",
+    "name": "focus",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#focus",
+    "access": "public",
+    "description": null,
+    "lineNumber": 270,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 93,
+    "kind": "method",
+    "name": "isDisabled",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#isDisabled",
+    "access": "public",
+    "description": "The `isDisabled()` method returns a boolean which indicates the value of\nthe `disabled` property as passed into the component.\n\n`<Control disabled />` would cause `isDisabled()` to return `true`.\n\n`<Control />` would cause `isDisabled()` to return `false`.",
+    "lineNumber": 290,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 94,
+    "kind": "method",
+    "name": "isEnabled",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#isEnabled",
+    "access": "public",
+    "description": "The `isEnabled()` method returns the inverse value of the `isDisabled()`\nmethod.\n\n`<Control disabled />` would cause `isEnabled()` to return `false`.\n\n`<Control />` would cause `isEnabled()` to return `true`.",
+    "lineNumber": 305,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 95,
+    "kind": "method",
+    "name": "isFocused",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#isFocused",
+    "access": "public",
+    "description": "The `isFocused()` method returns a boolean which indicates the value of\nthe `focused` property as passed into the component, as long as it\nis not `disabled`.\n\n`<Control focused />` would cause `isFocused()` to return `true`,\nunless the `Control` is disabled.\n\n`<Control focused disabled />` would cause `isFocused()` to return\n`false`, and is not a valid state for the Control component.\n\n`<Control />` would cause `isFocused()` to return `false`.",
+    "lineNumber": 322,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 96,
+    "kind": "method",
+    "name": "isFocusable",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#isFocusable",
+    "access": "public",
+    "description": "The `isFocusable()` method returns a boolean which indicates the value of the\nfield, `focusable`. It is checked throughout other functions in Control, but\ncan be safely overridden if you would like to extend Control so that it is\n`focusable`. The `focusable` field is normally set to `false` unless it is\nset manually, either using a consumer or by extending the `Control` class.",
+    "lineNumber": 336,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 97,
+    "kind": "method",
+    "name": "isBlurred",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#isBlurred",
+    "access": "public",
+    "description": "The `isBlurred()` method returns the inverse of the `isFocused()` method.",
+    "lineNumber": 343,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 98,
+    "kind": "method",
+    "name": "containsFocus",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#containsFocus",
+    "access": "public",
+    "description": null,
+    "lineNumber": 347,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 99,
+    "kind": "method",
+    "name": "containsFocusable",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#containsFocusable",
+    "access": "public",
+    "description": null,
+    "lineNumber": 364,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 100,
+    "kind": "method",
+    "name": "hasChildren",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#hasChildren",
+    "access": "public",
+    "description": null,
+    "lineNumber": 368,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 101,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/Control.js~Control",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Control.js~Control#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 408,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 102,
+    "kind": "file",
+    "name": "src/components/Form.js",
+    "content": "/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\n// import React from 'react';\nimport ContainerControl from './ContainerControl';\nimport { isClassOrComponentFactory } from '../utils/isClassOrComponent';\n\n/**\n * Form is a ContainerControl which will select the first control upon activation.\n */\nexport default class Form extends ContainerControl {\n    /**\n     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\n     * is an instance of `Form` (if passed an object) or a class derived from\n     * `Form` (if passed a function) or a component derived from `Form`.\n     * \n     * @param {*} anyComponentOrClass Any valid React component or React component class or instance\n     * or derived component or class or instance.\n     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.\n     */\n    static isForm(anyComponentOrClass) {\n        return isClassOrComponentFactory(Form)(anyComponentOrClass)\n    }\n\n\n    constructor(props) {\n        super(props);\n        this.state = {\n            ...this.state,\n        };\n    }\n    // componentDidMount() {\n    //     super.componentWillMount();\n    //     this.selectFirst();\n    // }\n}",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/components/Form.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 103,
+    "kind": "class",
+    "name": "Form",
+    "memberof": "src/components/Form.js",
+    "static": true,
+    "longname": "src/components/Form.js~Form",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/components/Form.js",
+    "importStyle": "Form",
+    "description": "Form is a ContainerControl which will select the first control upon activation.",
+    "lineNumber": 22,
+    "interface": false,
+    "extends": [
+      "src/components/ContainerControl.js~ContainerControl"
+    ]
+  },
+  {
+    "__docId__": 104,
+    "kind": "method",
+    "name": "isForm",
+    "memberof": "src/components/Form.js~Form",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/Form.js~Form.isForm",
+    "access": "public",
+    "description": "Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\nis an instance of `Form` (if passed an object) or a class derived from\n`Form` (if passed a function) or a component derived from `Form`.",
+    "lineNumber": 32,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "anyComponentOrClass",
+        "description": "Any valid React component or React component class or instance\nor derived component or class or instance."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` if `anyComponentOrClass` validates, `false` otherwise."
+    }
+  },
+  {
+    "__docId__": 105,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/Form.js~Form",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/Form.js~Form#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 37,
+    "undocument": true
+  },
+  {
+    "__docId__": 106,
+    "kind": "member",
+    "name": "state",
+    "memberof": "src/components/Form.js~Form",
+    "static": false,
+    "longname": "src/components/Form.js~Form#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 39,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{...undefined: Object}"
+      ]
+    }
+  },
+  {
+    "__docId__": 107,
+    "kind": "file",
+    "name": "src/components/Sequence.js",
+    "content": "/* eslint no-plusplus: [\"error\", { \"allowForLoopAfterthoughts\": true }] */\n/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\n// import React from 'react';\nimport Control from './Control';\n// import { isClassOrComponentFactory } from '../utils/isClassOrComponent';\n\n/**\n * The Sequence control is a Control which presents its individual child controls\n * sequentially. It is designed so that a user can be presented with prompts one at a time\n * until complete.\n * \n * Note that any child components which are not derived from the Control component will be\n * presented normally without a linear progression.\n */\nexport default class Sequence extends Control {\n    // TODO: Consider making Sequence into a ContainerControl if there is any purpose for\n    // ContainerControl after completing all the Control requirements.\n    \n    \n}",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/components/Sequence.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 108,
+    "kind": "class",
+    "name": "Sequence",
+    "memberof": "src/components/Sequence.js",
+    "static": true,
+    "longname": "src/components/Sequence.js~Sequence",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/components/Sequence.js",
+    "importStyle": "Sequence",
+    "description": "The Sequence control is a Control which presents its individual child controls\nsequentially. It is designed so that a user can be presented with prompts one at a time\nuntil complete.\n\nNote that any child components which are not derived from the Control component will be\npresented normally without a linear progression.",
+    "lineNumber": 28,
+    "interface": false,
+    "extends": [
+      "src/components/Control.js~Control"
+    ]
+  },
+  {
+    "__docId__": 109,
+    "kind": "file",
+    "name": "src/components/TabBar.js",
+    "content": "/* eslint-disable no-plusplus, react/jsx-one-expression-per-line */\n/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\n/**\n * A substantial portion of this code came from https://github.com/jdeniau/ink-tab\n * My additions are concerned with making it look like a TabBar but not behaving like one\n * if it isn't in focus.\n */\n\nimport React from 'react';\nimport readline from 'readline';\n// import PropTypes from 'prop-types';\nimport { Box, Color, StdinContext, Text } from 'ink';\nimport Control from './Control';\nimport { isClassOrComponentFactory } from '../utils/isClassOrComponent';\n\nexport class Tab extends Control {\n    /**\n     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\n     * is an instance of `Tab` (if passed an object) or a class derived from\n     * `Tab` (if passed a function) or a component derived from `Tab`.\n     * \n     * @param {*} anyComponentOrClass Any valid React component or React component class or instance\n     * or derived component or class or instance.\n     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.\n     */\n    static isTab(anyComponentOrClass) {\n      return isClassOrComponentFactory(Tab)(anyComponentOrClass)\n    }\n  \n    render() {\n      const { props } = this;\n      return props.children;\n    }\n}\n\n// Tab.propTypes = {\n//   children: PropTypes.node.isRequired,\n//   name: PropTypes.string.isRequired,\n// };\n\nclass TabsWithStdin extends Control {\n  constructor(props) {\n    super(props);\n    this.isColumn = this.isColumn.bind(this);\n    this.handleTabChange = this.handleTabChange.bind(this);\n    this.handleKeyPress = this.handleKeyPress.bind(this);\n    this.moveToNextTab = this.moveToNextTab.bind(this);\n    this.moveToPreviousTab = this.moveToPreviousTab.bind(this);\n    this.state = {\n      ...this.state,\n    };\n  }\n\n  componentDidMount() {\n    const { activeTab, stdin, setRawMode } = this.props;\n    // use ink / node `setRawMode` to read key-by-key\n    setRawMode(true);\n    // and listen to keypress events\n    readline.emitKeypressEvents(stdin);\n    stdin.on('keypress', this.handleKeyPress);\n    // select the first tab on component mount (if not active tab is selected)\n    if (!activeTab)\n      this.handleTabChange(0);\n  }\n\n  componentWillUnmount() {\n    const { stdin } = this.props;\n    stdin.removeListener('keypress', this.handleKeyPress);\n  }\n\n  handleTabChange(tabId) {\n    const { onChange, onTabIdChange } = this.props;\n    const tab = this.props.children[tabId];\n    if (!tab) {\n      return;\n    }\n    if (onChange)\n        onChange(tab.props.name, tab);\n    if (onTabIdChange)\n        onTabIdChange(tabId);\n  }\n\n  handleKeyPress(ch, key) {\n    if (!key) {\n      return;\n    }\n    switch (key.name) {\n      case 'left': {\n        if (this.isColumn()) {\n          return;\n        }\n        this.moveToPreviousTab();\n        break;\n      }\n      case 'up':\n        if (!this.isColumn()) {\n          return;\n        }\n        this.moveToPreviousTab();\n        break;\n      case 'right': {\n        if (this.isColumn()) {\n          return;\n        }\n        this.moveToNextTab();\n        break;\n      }\n      case 'down':\n        if (!this.isColumn()) {\n          return;\n        }\n        this.moveToNextTab();\n        break;\n      // case 'tab':\n      //   if (true === key.shift) {\n      //     this.moveToPreviousTab();\n      //   } else {\n      //     this.moveToNextTab();\n      //   }\n      //   break;\n      // }\n      case 'tab':\n      case 'return': {\n        this.blur();\n        break;\n      }\n      case '0':\n      case '1':\n      case '2':\n      case '3':\n      case '4':\n      case '5':\n      case '6':\n      case '7':\n      case '8':\n      case '9':\n        if (key.meta === true) {\n          const tabId = key.name === '0' ? 9 : parseInt(key.name, 10) - 1;\n          this.handleTabChange(tabId);\n        }\n        break;\n      default:        \n    }\n  }\n\n  isColumn() {\n    const { flexDirection } = this.props;\n\n    return flexDirection === 'column' || flexDirection === 'column-reverse';\n  }\n\n  moveToNextTab() {\n    const { activeTab, children } = this.props;\n    let nextTabId = activeTab + 1;\n    if (nextTabId >= children.length) {\n      nextTabId = 0;\n    }\n\n    this.handleTabChange(nextTabId);\n  }\n\n  moveToPreviousTab() {\n    const { activeTab, children } = this.props;\n    let nextTabId = activeTab - 1;\n    if (nextTabId < 0) {\n      nextTabId = children.length - 1;\n    }\n\n    this.handleTabChange(nextTabId);\n  }\n\n  render() {\n    const { activeTab, children, onChange, flexDirection, ...rest } = this.props;\n\n    const separator = this.isColumn() ? '──────' : ' | ';\n\n    return (\n      <Box flexDirection={flexDirection} {...rest}>\n        {children.map((child, key) => {\n          const { name } = child.props;\n\n          return (\n            <Box key={name} flexDirection={flexDirection}>\n              {key !== 0 && <Color dim>{separator}</Color>}\n              <Box>\n                <Color keyword=\"grey\">\n                  <Text>{key + 1}. </Text>\n                </Color>\n                <Color\n                  bgGreen={activeTab === key}\n                  black={activeTab === key}\n                >\n                  {child}\n                </Color>\n              </Box>\n            </Box>\n          );\n        })}\n      </Box>\n    );\n  }\n}\n\nclass TabsWithoutStdin extends Control {\n    constructor(props) {\n      super(props);\n  \n      this.isColumn = this.isColumn.bind(this);\n    }\n      \n    isColumn() {\n      const { flexDirection } = this.props;\n  \n      return flexDirection === 'column' || flexDirection === 'column-reverse';\n    }\n  \n    render() {\n      const { activeTab, children, onChange, flexDirection, ...rest } = this.props;\n  \n      const separator = this.isColumn() ? '──────' : ' | ';\n  \n      return (\n        <Box flexDirection={flexDirection} {...rest}>\n          {children.map((child, key) => {\n            const { name } = child.props;\n  \n            return (\n              <Box key={name} flexDirection={flexDirection}>\n                {key !== 0 && <Color dim>{separator}</Color>}\n                <Box>\n                  <Color keyword=\"grey\">{key + 1}. </Color>\n                  <Color\n                    bgGreen={activeTab === key}\n                    black={activeTab === key}\n                  >\n                    {child}\n                  </Color>\n                </Box>\n              </Box>\n            );\n          })}\n        </Box>\n      );\n    }\n}\n\nclass Tabs extends Control {\n  render() {\n    return (\n      <StdinContext.Consumer>\n        {({ stdin, setRawMode }) => (\n          <TabsWithStdin stdin={stdin} setRawMode={setRawMode} {...this.props} />\n        )}\n      </StdinContext.Consumer>\n    );\n  }\n}\n\nclass ShadedTabs extends Control {\n  render() {\n    return (\n      <TabsWithoutStdin {...this.props} />\n    );\n  }\n} \n\n// Tabs.propTypes = {\n//   onChange: PropTypes.func.isRequired,\n//   children: PropTypes.node.isRequired,\n// };\n\nexport class TabBar extends Control {\n    /**\n     * Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\n     * is an instance of `TabBar` (if passed an object) or a class derived from\n     * `TabBar` (if passed a function) or a component derived from `TabBar`.\n     * \n     * @param {*} anyComponentOrClass Any valid React component or React component class or instance\n     * or derived component or class or instance.\n     * @return `true` if `anyComponentOrClass` validates, `false` otherwise.\n     */\n    static isTabBar(anyComponentOrClass) {\n      return isClassOrComponentFactory(TabBar)(anyComponentOrClass)\n    }\n\n    // static ERROR_NO_TABS_PROVIDED = 'TabBar must contain at least one Tab control.';\n    \n    /**\n     * This error will be thrown if you pass any children other than Tab components.\n     */\n    static ERROR_ONLY_TABS_ALLOWED = 'TabBar children must contain only Tab controls.';\n    \n    /**\n     * This might not ever be thrown.\n     */\n    static ERROR_UNKNOWN_ERROR = 'An unknown error has occurred while validating TabBar child controls.';\n\n    /**\n     * Validates a `children` array to make sure it is valid.\n     * \n     * @param {*} children An array of Tab components or null or undefined.\n     * @param {*} throwOnError If true, throws an error if invalid.\n     * @return `true` if valid, `false` otherwise when `throwOnError` is `false`\n     * @throws An error when `throwOnError` is `true` if children contains anything\n     * other than a Tab control or if it is an empty array `[]` or `null` or `undefined`.\n     */\n    static validateChildren(children, throwOnError) {\n      // condition 1 - when children is an array\n      if (Array.isArray(children)) {\n        // omitted condition 2 - children array cannot be empty\n        // if (children.length === 0) {\n        //   if (throwOnError)\n        //     throw TabBar.ERROR_NO_TABS_PROVIDED;\n        //   return false;\n        // }\n        for (let c = 0; c < children.length; c++) {\n          const child = children[c];\n          // condition 3 - ensure each child is a Tab\n          if (!Tab.isTab(child)) {\n            if (throwOnError)\n              throw TabBar.ERROR_ONLY_TABS_ALLOWED;\n            return false;\n          }\n        }\n        return true;\n      }\n      if (children === undefined || children === null) {\n        // omitted condition 4 - children must be provided\n        // if (throwOnError)\n        //   throw TabBar.ERROR_NO_TABS_PROVIDED;\n        // return false;\n        // allow it:\n        return true;\n      }\n      if (throwOnError) {\n        throw TabBar.ERROR_UNKNOWN_ERROR;\n      }\n      return false;\n    }\n    \n    constructor(props) {\n        super(props);\n        // TODO: hoist state upward to outer container\n        this.state = {\n            ...this.state,\n            activeTab: 0\n        };\n        this.handleTabIdChange = this.handleTabIdChange.bind(this);\n        if (this.props.children.length > 0 && this.props.onChange) {\n          const tab = this.props.children[0];\n          this.props.onChange(tab.props.name, tab);\n        }\n    }\n    \n    handleTabIdChange(activeTab) {\n        this.setState({activeTab});\n    }\n\n    render() {\n        return (\n            this.isFocused()\n            ?\n            (\n              <Tabs\n                {...this.props}\n                activeTab={this.state.activeTab}\n                onTabIdChange={this.handleTabIdChange}\n              />\n            )\n            :\n            (\n              <ShadedTabs\n                {...this.props}\n                activeTab={this.state.activeTab}\n              />\n            )\n        );\n    }\n}",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/components/TabBar.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 110,
+    "kind": "class",
+    "name": "Tab",
+    "memberof": "src/components/TabBar.js",
+    "static": true,
+    "longname": "src/components/TabBar.js~Tab",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/components/TabBar.js",
+    "importStyle": "{Tab}",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/components/Control.js~Control"
+    ]
+  },
+  {
+    "__docId__": 111,
+    "kind": "method",
+    "name": "isTab",
+    "memberof": "src/components/TabBar.js~Tab",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/TabBar.js~Tab.isTab",
+    "access": "public",
+    "description": "Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\nis an instance of `Tab` (if passed an object) or a class derived from\n`Tab` (if passed a function) or a component derived from `Tab`.",
+    "lineNumber": 39,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "anyComponentOrClass",
+        "description": "Any valid React component or React component class or instance\nor derived component or class or instance."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` if `anyComponentOrClass` validates, `false` otherwise."
+    }
+  },
+  {
+    "__docId__": 112,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/TabBar.js~Tab",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~Tab#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 43,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 113,
+    "kind": "class",
+    "name": "TabsWithStdin",
+    "memberof": "src/components/TabBar.js",
+    "static": true,
+    "longname": "src/components/TabBar.js~TabsWithStdin",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/components/TabBar.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 54,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/components/Control.js~Control"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 114,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/TabBar.js~TabsWithStdin",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithStdin#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 55,
+    "undocument": true
+  },
+  {
+    "__docId__": 120,
+    "kind": "member",
+    "name": "state",
+    "memberof": "src/components/TabBar.js~TabsWithStdin",
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithStdin#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 62,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{...undefined: Object}"
+      ]
+    }
+  },
+  {
+    "__docId__": 121,
+    "kind": "method",
+    "name": "componentDidMount",
+    "memberof": "src/components/TabBar.js~TabsWithStdin",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithStdin#componentDidMount",
+    "access": "public",
+    "description": null,
+    "lineNumber": 67,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 122,
+    "kind": "method",
+    "name": "componentWillUnmount",
+    "memberof": "src/components/TabBar.js~TabsWithStdin",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithStdin#componentWillUnmount",
+    "access": "public",
+    "description": null,
+    "lineNumber": 79,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 123,
+    "kind": "method",
+    "name": "handleTabChange",
+    "memberof": "src/components/TabBar.js~TabsWithStdin",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithStdin#handleTabChange",
+    "access": "public",
+    "description": null,
+    "lineNumber": 84,
+    "undocument": true,
+    "params": [
+      {
+        "name": "tabId",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 124,
+    "kind": "method",
+    "name": "handleKeyPress",
+    "memberof": "src/components/TabBar.js~TabsWithStdin",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithStdin#handleKeyPress",
+    "access": "public",
+    "description": null,
+    "lineNumber": 96,
+    "undocument": true,
+    "params": [
+      {
+        "name": "ch",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "key",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 125,
+    "kind": "method",
+    "name": "isColumn",
+    "memberof": "src/components/TabBar.js~TabsWithStdin",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithStdin#isColumn",
+    "access": "public",
+    "description": null,
+    "lineNumber": 159,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 126,
+    "kind": "method",
+    "name": "moveToNextTab",
+    "memberof": "src/components/TabBar.js~TabsWithStdin",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithStdin#moveToNextTab",
+    "access": "public",
+    "description": null,
+    "lineNumber": 165,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 127,
+    "kind": "method",
+    "name": "moveToPreviousTab",
+    "memberof": "src/components/TabBar.js~TabsWithStdin",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithStdin#moveToPreviousTab",
+    "access": "public",
+    "description": null,
+    "lineNumber": 175,
+    "undocument": true,
+    "params": [],
+    "return": null
+  },
+  {
+    "__docId__": 128,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/TabBar.js~TabsWithStdin",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithStdin#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 185,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 129,
+    "kind": "class",
+    "name": "TabsWithoutStdin",
+    "memberof": "src/components/TabBar.js",
+    "static": true,
+    "longname": "src/components/TabBar.js~TabsWithoutStdin",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/components/TabBar.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 217,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/components/Control.js~Control"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 130,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/TabBar.js~TabsWithoutStdin",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithoutStdin#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 218,
+    "undocument": true
+  },
+  {
+    "__docId__": 132,
+    "kind": "method",
+    "name": "isColumn",
+    "memberof": "src/components/TabBar.js~TabsWithoutStdin",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithoutStdin#isColumn",
+    "access": "public",
+    "description": null,
+    "lineNumber": 224,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 133,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/TabBar.js~TabsWithoutStdin",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabsWithoutStdin#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 230,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 134,
+    "kind": "class",
+    "name": "Tabs",
+    "memberof": "src/components/TabBar.js",
+    "static": true,
+    "longname": "src/components/TabBar.js~Tabs",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/components/TabBar.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 260,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/components/Control.js~Control"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 135,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/TabBar.js~Tabs",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~Tabs#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 261,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 136,
+    "kind": "class",
+    "name": "ShadedTabs",
+    "memberof": "src/components/TabBar.js",
+    "static": true,
+    "longname": "src/components/TabBar.js~ShadedTabs",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/components/TabBar.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 272,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/components/Control.js~Control"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 137,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/TabBar.js~ShadedTabs",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~ShadedTabs#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 273,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 138,
+    "kind": "class",
+    "name": "TabBar",
+    "memberof": "src/components/TabBar.js",
+    "static": true,
+    "longname": "src/components/TabBar.js~TabBar",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/components/TabBar.js",
+    "importStyle": "{TabBar}",
+    "description": null,
+    "lineNumber": 285,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/components/Control.js~Control"
+    ]
+  },
+  {
+    "__docId__": 139,
+    "kind": "method",
+    "name": "isTabBar",
+    "memberof": "src/components/TabBar.js~TabBar",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/TabBar.js~TabBar.isTabBar",
+    "access": "public",
+    "description": "Returns a boolean which indicates if the provided `anyComponentOrClass` parameter\nis an instance of `TabBar` (if passed an object) or a class derived from\n`TabBar` (if passed a function) or a component derived from `TabBar`.",
+    "lineNumber": 295,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "anyComponentOrClass",
+        "description": "Any valid React component or React component class or instance\nor derived component or class or instance."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` if `anyComponentOrClass` validates, `false` otherwise."
+    }
+  },
+  {
+    "__docId__": 140,
+    "kind": "member",
+    "name": "ERROR_ONLY_TABS_ALLOWED",
+    "memberof": "src/components/TabBar.js~TabBar",
+    "static": true,
+    "longname": "src/components/TabBar.js~TabBar.ERROR_ONLY_TABS_ALLOWED",
+    "access": "public",
+    "description": "This error will be thrown if you pass any children other than Tab components.",
+    "lineNumber": 304,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 141,
+    "kind": "member",
+    "name": "ERROR_UNKNOWN_ERROR",
+    "memberof": "src/components/TabBar.js~TabBar",
+    "static": true,
+    "longname": "src/components/TabBar.js~TabBar.ERROR_UNKNOWN_ERROR",
+    "access": "public",
+    "description": "This might not ever be thrown.",
+    "lineNumber": 309,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 142,
+    "kind": "method",
+    "name": "validateChildren",
+    "memberof": "src/components/TabBar.js~TabBar",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/components/TabBar.js~TabBar.validateChildren",
+    "access": "public",
+    "description": "Validates a `children` array to make sure it is valid.",
+    "lineNumber": 320,
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "children",
+        "description": "An array of Tab components or null or undefined."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "throwOnError",
+        "description": "If true, throws an error if invalid."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` if valid, `false` otherwise when `throwOnError` is `false`"
+    },
+    "throws": [
+      {
+        "types": [
+          "*"
+        ],
+        "description": "An error when `throwOnError` is `true` if children contains anything\nother than a Tab control or if it is an empty array `[]` or `null` or `undefined`."
+      }
+    ]
+  },
+  {
+    "__docId__": 143,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/TabBar.js~TabBar",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabBar#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 354,
+    "undocument": true
+  },
+  {
+    "__docId__": 144,
+    "kind": "member",
+    "name": "state",
+    "memberof": "src/components/TabBar.js~TabBar",
+    "static": false,
+    "longname": "src/components/TabBar.js~TabBar#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 357,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{...undefined: Object, \"activeTab\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 146,
+    "kind": "method",
+    "name": "handleTabIdChange",
+    "memberof": "src/components/TabBar.js~TabBar",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabBar#handleTabIdChange",
+    "access": "public",
+    "description": null,
+    "lineNumber": 368,
+    "undocument": true,
+    "params": [
+      {
+        "name": "activeTab",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 147,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/TabBar.js~TabBar",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TabBar.js~TabBar#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 372,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 148,
+    "kind": "file",
+    "name": "src/components/TextField.js",
+    "content": "/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport React from 'react';\nimport {Box, Text} from 'ink';\nimport TextInput from 'ink-text-input';\nimport Control from './Control';\n\nexport default class TextField extends Control {\n    constructor(props) {\n        super(props);\n        this.state = {\n            ...this.state,\n            newValue: (this.props && this.props.value) ? this.props.value : ''\n        };\n        this.handleChange = this.handleChange.bind(this);\n        this.handleSubmit = this.handleSubmit.bind(this);\n        this.focusable = true;\n    }\n\n    handleChange(value) {\n        this.setState({newValue: value});\n        if (this.props.onChange)\n            this.props.onChange(value);\n    }\n\n    handleSubmit(value) {\n        const newValue = value.trim();\n        this.setState({newValue});\n        this.blur();\n        if (this.props.onSubmit)\n            this.props.onSubmit(newValue);\n    }\n\n    render() {\n        return (\n          <Box>\n            {\n                this.props.caption\n                &&\n                (<Box marginRight={1}>{this.props.caption}</Box>)\n            }\n            {\n                this.isFocused()\n                ?\n                (\n                  <TextInput\n                    value={this.state.newValue}\n                    showCursor\n                    onChange={this.handleChange}\n                    onSubmit={this.handleSubmit}\n                  />\n                )\n                :\n                (\n                  <Text>{this.props.value}</Text>\n                )\n            }\n          </Box>\n        );\n    }\n  }",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/components/TextField.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 149,
+    "kind": "class",
+    "name": "TextField",
+    "memberof": "src/components/TextField.js",
+    "static": true,
+    "longname": "src/components/TextField.js~TextField",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/components/TextField.js",
+    "importStyle": "TextField",
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "src/components/Control.js~Control"
+    ]
+  },
+  {
+    "__docId__": 150,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/components/TextField.js~TextField",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TextField.js~TextField#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true
+  },
+  {
+    "__docId__": 151,
+    "kind": "member",
+    "name": "state",
+    "memberof": "src/components/TextField.js~TextField",
+    "static": false,
+    "longname": "src/components/TextField.js~TextField#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{...undefined: Object, \"newValue\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 154,
+    "kind": "member",
+    "name": "focusable",
+    "memberof": "src/components/TextField.js~TextField",
+    "static": false,
+    "longname": "src/components/TextField.js~TextField#focusable",
+    "access": "public",
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "boolean"
+      ]
+    }
+  },
+  {
+    "__docId__": 155,
+    "kind": "method",
+    "name": "handleChange",
+    "memberof": "src/components/TextField.js~TextField",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TextField.js~TextField#handleChange",
+    "access": "public",
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 156,
+    "kind": "method",
+    "name": "handleSubmit",
+    "memberof": "src/components/TextField.js~TextField",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TextField.js~TextField#handleSubmit",
+    "access": "public",
+    "description": null,
+    "lineNumber": 38,
+    "undocument": true,
+    "params": [
+      {
+        "name": "value",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 157,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/components/TextField.js~TextField",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/components/TextField.js~TextField#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 46,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 158,
+    "kind": "file",
+    "name": "src/components/index.js",
+    "content": "/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport Control from './Control';\nimport {\n    TabBar,\n    Tab\n} from './TabBar';\nimport Sequence from './Sequence';\nimport TextField from './TextField';\nimport ContainerControl from './ContainerControl';\nimport Form from './Form';\n\nexport {\n    Control,\n    ContainerControl,\n    Form,\n    Sequence,\n    Tab,\n    TabBar,\n    TextField\n};",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/components/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 159,
+    "kind": "file",
+    "name": "src/tests/ControlTests.js",
+    "content": "/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\n",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/tests/ControlTests.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 160,
+    "kind": "file",
+    "name": "src/tests/ExampleApp.js",
+    "content": "/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\n// import React, { Component } from 'react';\n// import App from \"../components/App\";\n\n// class ExampleApp extends Component {\n//     render() {\n//         return (\n//           <\n//         );\n//     }\n// }\n\n// App.run(<ExampleApp />)",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/tests/ExampleApp.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 161,
+    "kind": "file",
+    "name": "src/tests/FocusBlur.js",
+    "content": "/* eslint-disable react/jsx-one-expression-per-line */\n/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport React, { Component } from 'react';\nimport { render, AppContext, Box, Color, Text } from 'ink';\nimport { TabBar, Tab, TextField } from '../components';\n\nclass FocusBlurApp extends Component {\n  constructor(props) {\n    super(props);\n\n    this.state = {\n        focusedComponent: 'tabBar',\n        name: '',\n        newName: '',\n        bio: '',\n        newBio: ''\n    };\n\n    this.handleTabChange = this.handleTabChange.bind(this);\n  }\n\n  handleTabChange(name) {\n    // expanded: handleTabChange(name, activeTab) {\n      this.setState({\n      activeTabName: name\n    });\n  }\n  \n  render() {\n    const app = this;\n    const { state } = this;\n    return (\n      <AppContext.Consumer>\n        {({ exit }) => (\n          <Box flexDirection=\"column\">\n            <Text>Tab Selected: {state.activeTabName}</Text>\n            <Text>Focused: {state.focusedComponent}</Text>\n            {\n              state.focusedComponent !=='tabBar'\n              &&\n              (<Text>Current Value: {state.focusedComponent==='txtName'&&state.name}{state.focusedComponent==='txtBio'&&state.bio}</Text>)\n            }\n            {\n              state.focusedComponent !=='tabBar'\n              &&\n              (<Text>New Value: {state.focusedComponent==='txtName'&&state.newName}{state.focusedComponent==='txtBio'&&state.newBio}</Text>)\n            }\n            <TabBar\n              onChange={this.handleTabChange}\n              focused={state.focusedComponent==='tabBar'}\n              onBlur={() => (\n                (state.activeTabName === 'bio' && app.setState({focusedComponent: 'txtName'}))\n                || (state.activeTabName === 'exit' && exit())\n              )}\n            >\n              <Tab name=\"readme\">Readme</Tab>\n              <Tab name=\"bio\">Bio</Tab>\n              <Tab name=\"report\">Report</Tab>\n              <Tab name=\"exit\">Exit</Tab>\n            </TabBar>\n            {\n              state.activeTabName === 'readme'\n              &&\n              (\n                <Box flexDirection=\"column\" paddingBottom={1}>\n                  <Text>So this app demonstates focusing and blurring controlled components.</Text>\n                  <Text>Just check out these tabs.</Text>\n                </Box>\n              )\n            }\n            {\n              state.activeTabName === 'report'\n              &&\n              (\n                <Box flexDirection=\"column\" paddingBottom={1}>\n                  <Text>You are a pretty cool cat, {state.name}!</Text>\n                  <Text>Just look at all this bio.</Text>\n                  <Text>{state.bio}</Text>\n                </Box>\n              )\n            }\n            {\n              state.activeTabName === 'bio'\n              &&\n              (\n                <Box flexDirection=\"column\">\n                  <Box>\n                    <TextField\n                      value={app.state.name}\n                      focused={state.focusedComponent==='txtName'}\n                      caption={<Text bold><Color bgMagenta whiteBright>Your Name:</Color></Text>}\n                      onChange={(newName) => app.setState({newName})}\n                      onSubmit={(name) => app.setState({name})}\n                      onBlur={() => app.setState({focusedComponent: 'txtBio'})}\n                    />\n                  </Box>\n                  <Box>\n                    <TextField\n                      value={app.state.bio}\n                      focused={state.focusedComponent==='txtBio'}\n                      caption={<Text italic><Color bgBlue whiteBright>Your Bio:</Color></Text>}\n                      onChange={(newBio) => app.setState({newBio})}\n                      onSubmit={(bio) => app.setState({bio})}\n                      onBlur={() => app.setState({focusedComponent: 'tabBar'})}\n                    />\n                  </Box>\n                </Box>\n              )\n            }\n          </Box>\n        )}\n      </AppContext.Consumer>\n    );\n  }\n}\n\nrender(<FocusBlurApp />);",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/tests/FocusBlur.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 162,
+    "kind": "class",
+    "name": "FocusBlurApp",
+    "memberof": "src/tests/FocusBlur.js",
+    "static": true,
+    "longname": "src/tests/FocusBlur.js~FocusBlurApp",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/FocusBlur.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "react~Component"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 163,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/tests/FocusBlur.js~FocusBlurApp",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/tests/FocusBlur.js~FocusBlurApp#constructor",
+    "access": "public",
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true
+  },
+  {
+    "__docId__": 164,
+    "kind": "member",
+    "name": "state",
+    "memberof": "src/tests/FocusBlur.js~FocusBlurApp",
+    "static": false,
+    "longname": "src/tests/FocusBlur.js~FocusBlurApp#state",
+    "access": "public",
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "{\"focusedComponent\": string, \"name\": *, \"newName\": *, \"bio\": *, \"newBio\": *}"
+      ]
+    }
+  },
+  {
+    "__docId__": 166,
+    "kind": "method",
+    "name": "handleTabChange",
+    "memberof": "src/tests/FocusBlur.js~FocusBlurApp",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/tests/FocusBlur.js~FocusBlurApp#handleTabChange",
+    "access": "public",
+    "description": null,
+    "lineNumber": 35,
+    "undocument": true,
+    "params": [
+      {
+        "name": "name",
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": null
+  },
+  {
+    "__docId__": 167,
+    "kind": "method",
+    "name": "render",
+    "memberof": "src/tests/FocusBlur.js~FocusBlurApp",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/tests/FocusBlur.js~FocusBlurApp#render",
+    "access": "public",
+    "description": null,
+    "lineNumber": 42,
+    "undocument": true,
+    "params": [],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 168,
+    "kind": "file",
+    "name": "src/tests/findingState.js",
+    "content": "/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport React from 'react';\nimport { Text } from 'ink';\nimport { renderInk, renderState, renderJSDOM } from './renderers';\nimport Control from '../components/Control';\n\nconst props = [ { focused: 'focused' } ];\nconst controlInstance = new Control(props);\nconst controlFactory = React.createFactory(Control);\nconst controlComponent = controlFactory(props, [React.createElement(Text, [], 'test fixture')]);\nconst controlComponentJSX = <Control {...props}><Text>test fixture for JSX</Text></Control>;\n// const controlJSDOM = new ReactJSDOM(controlComponent);\n// const controlJSDOMJSX = new ReactJSDOM(controlComponent);\nconst controlRenderer = renderJSDOM(controlComponent);\nconst controlRendererJSX = renderJSDOM(controlComponentJSX);\nconst controlElement = renderInk(controlComponent);\nconst controlElementJSX = renderInk(controlComponentJSX);\nconst controlState = renderState(controlComponent);\nconst controlStateJSX = renderState(controlComponentJSX);\n// const controlRenderStream = renderToStream(controlComponent);\n// const controlRenderStreamJSX = renderToStream(controlComponent);\n\n// test('mount a Control component into ink', () => {})\n\n// test('mount a Control component into ink', () => {\n    // is(true, React.isValidElement(ctl));\n    console.log('controlInstance (using new Control(...props)) =', controlInstance);\n    console.log('controlFactory (using React.createFactory(Control)) = ', controlFactory);\n    console.log('controlComponentJSX (base for comparison, using <Control />) = ', controlComponentJSX);\n    console.log('controlComponent (ideal use, using controlFactory(instance)) = ', controlComponent);\n    // console.log('controlJSDOM (base for comparison, using ReactJSDOM.render(controlComponentJSX)) = ',controlJSDOM);\n    // console.log('controlJSDOMJSX (base for comparison, using ReactJSDOM.render(controlComponentJSX)) = ',controlJSDOMJSX);\n    console.log('controlRendererJSX (base for comparison, using ReactJSDOM.renderer(controlComponentJSX)) = ',controlRendererJSX);\n    console.log('controlRenderer (ideal use, using ReactJSDOM.renderer(controlComponent)) = ',controlRenderer);\n    console.log('controlElementJSX (base for comparison, using ReactJSDOM.render(controlComponentJSX)) = ',controlElementJSX);\n    console.log('controlElement (ideal use, using ReactJSDOM.render(controlComponent)) = ',controlElement);\n    console.log('controlState (base for comparison, using ReactJSDOM.render(controlComponentJSX)) = ',controlState);\n    console.log('controlStateJSX (ideal use, using ReactJSDOM.render(controlComponent)) = ',controlStateJSX);\n    // ReactDOM.;\n// })",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/tests/findingState.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 169,
+    "kind": "variable",
+    "name": "props",
+    "memberof": "src/tests/findingState.js",
+    "static": true,
+    "longname": "src/tests/findingState.js~props",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/findingState.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 20,
+    "undocument": true,
+    "type": {
+      "types": [
+        "undefined[]"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 170,
+    "kind": "variable",
+    "name": "controlInstance",
+    "memberof": "src/tests/findingState.js",
+    "static": true,
+    "longname": "src/tests/findingState.js~controlInstance",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/findingState.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 21,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/components/Control.js~Control"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 171,
+    "kind": "variable",
+    "name": "controlFactory",
+    "memberof": "src/tests/findingState.js",
+    "static": true,
+    "longname": "src/tests/findingState.js~controlFactory",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/findingState.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 22,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 172,
+    "kind": "variable",
+    "name": "controlComponent",
+    "memberof": "src/tests/findingState.js",
+    "static": true,
+    "longname": "src/tests/findingState.js~controlComponent",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/findingState.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 23,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 173,
+    "kind": "variable",
+    "name": "controlComponentJSX",
+    "memberof": "src/tests/findingState.js",
+    "static": true,
+    "longname": "src/tests/findingState.js~controlComponentJSX",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/findingState.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 24,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 174,
+    "kind": "variable",
+    "name": "controlRenderer",
+    "memberof": "src/tests/findingState.js",
+    "static": true,
+    "longname": "src/tests/findingState.js~controlRenderer",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/findingState.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 27,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 175,
+    "kind": "variable",
+    "name": "controlRendererJSX",
+    "memberof": "src/tests/findingState.js",
+    "static": true,
+    "longname": "src/tests/findingState.js~controlRendererJSX",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/findingState.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 28,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 176,
+    "kind": "variable",
+    "name": "controlElement",
+    "memberof": "src/tests/findingState.js",
+    "static": true,
+    "longname": "src/tests/findingState.js~controlElement",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/findingState.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 29,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 177,
+    "kind": "variable",
+    "name": "controlElementJSX",
+    "memberof": "src/tests/findingState.js",
+    "static": true,
+    "longname": "src/tests/findingState.js~controlElementJSX",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/findingState.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 30,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 178,
+    "kind": "variable",
+    "name": "controlState",
+    "memberof": "src/tests/findingState.js",
+    "static": true,
+    "longname": "src/tests/findingState.js~controlState",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/findingState.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 31,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 179,
+    "kind": "variable",
+    "name": "controlStateJSX",
+    "memberof": "src/tests/findingState.js",
+    "static": true,
+    "longname": "src/tests/findingState.js~controlStateJSX",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/findingState.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 32,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 180,
+    "kind": "file",
+    "name": "src/tests/renderers/index.js",
+    "content": "/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport { cleanupInk, renderInk } from './inkRenderer';\nimport renderJSDOM from './jsdomRenderer';\nimport renderState from './stateRenderer';\n\nexport {\n\tcleanupInk,\n\trenderInk,\n\trenderJSDOM,\n\trenderState\n};",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/tests/renderers/index.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 181,
+    "kind": "file",
+    "name": "src/tests/renderers/inkRenderer.js",
+    "content": "/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport {render,cleanup} from 'ink-testing-library';\n\nconst renderInk = render;\nconst cleanupInk = cleanup;\nexport { renderInk, cleanupInk };",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/tests/renderers/inkRenderer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 182,
+    "kind": "variable",
+    "name": "renderInk",
+    "memberof": "src/tests/renderers/inkRenderer.js",
+    "static": true,
+    "longname": "src/tests/renderers/inkRenderer.js~renderInk",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/tests/renderers/inkRenderer.js",
+    "importStyle": "{renderInk}",
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 183,
+    "kind": "variable",
+    "name": "cleanupInk",
+    "memberof": "src/tests/renderers/inkRenderer.js",
+    "static": true,
+    "longname": "src/tests/renderers/inkRenderer.js~cleanupInk",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/tests/renderers/inkRenderer.js",
+    "importStyle": "{cleanupInk}",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "type": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 184,
+    "kind": "file",
+    "name": "src/tests/renderers/jsdomRenderer.js",
+    "content": "/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport ReactDOM from 'react-dom';\nimport Window from 'window';\n\nexport default function renderJSDOM(component, window = new Window()) {\n    const { document } = window;\n\n    const origGlobals = {\n        window: global.window,\n        document: global.document\n    };\n    global.window = window;\n    global.document = document;\n\n    const container = document.createElement('div');\n    container.id = 'root';\n    document.body.appendChild(container);\n\n    // const renderer =\n    ReactDOM.render(component, container);\n\n    // const output = window;\n\n    Object.keys(origGlobals).forEach(prop => {\n        global[prop] = origGlobals[prop];\n    });\n\n    // return renderer;\n    return container;\n}",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/tests/renderers/jsdomRenderer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 185,
+    "kind": "function",
+    "name": "renderJSDOM",
+    "memberof": "src/tests/renderers/jsdomRenderer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/tests/renderers/jsdomRenderer.js~renderJSDOM",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/tests/renderers/jsdomRenderer.js",
+    "importStyle": "renderJSDOM",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "component",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "window",
+        "optional": true,
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 186,
+    "kind": "file",
+    "name": "src/tests/renderers/stateRenderer.js",
+    "content": "/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport Window from 'window';\nimport jsdomRenderer from './jsdomRenderer';\n\nexport default function renderState(component, window = new Window()) {\n    const renderer = jsdomRenderer(component, window);\n    return renderer;// ._reactRootContainer._internalRoot.current.state;\n}",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/tests/renderers/stateRenderer.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 187,
+    "kind": "function",
+    "name": "renderState",
+    "memberof": "src/tests/renderers/stateRenderer.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/tests/renderers/stateRenderer.js~renderState",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/tests/renderers/stateRenderer.js",
+    "importStyle": "renderState",
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "params": [
+      {
+        "name": "component",
+        "types": [
+          "*"
+        ]
+      },
+      {
+        "name": "window",
+        "optional": true,
+        "types": [
+          "*"
+        ]
+      }
+    ],
+    "return": {
+      "types": [
+        "*"
+      ]
+    }
+  },
+  {
+    "__docId__": 188,
+    "kind": "file",
+    "name": "src/tests/testinstof.js",
+    "content": "/* eslint-disable no-self-compare */\n/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nclass A {}\nclass B extends A {}\nclass C extends B {}\n\nconsole.log(C === C); // true\nconsole.log('typeof C =', typeof C); // function\nconsole.log(C.prototype instanceof C); // true\nconsole.log(C.prototype instanceof B); // true\nconsole.log(C.prototype instanceof A); // true\n\nconst Ci = new C();\nconsole.log(Ci === Ci);\nconsole.log('typeof Ci =', typeof Ci); // function\nconsole.log(Ci instanceof C); // true\nconsole.log(Ci instanceof B); // true\nconsole.log(Ci instanceof A); // true",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/tests/testinstof.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 189,
+    "kind": "class",
+    "name": "A",
+    "memberof": "src/tests/testinstof.js",
+    "static": true,
+    "longname": "src/tests/testinstof.js~A",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/testinstof.js",
+    "importStyle": null,
+    "description": "\n ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n ░           ░ ░  ░            ░               ░  ░     ░  ░\n\nLICENSE: MIT",
+    "lineNumber": 16,
+    "interface": false,
+    "ignore": true
+  },
+  {
+    "__docId__": 190,
+    "kind": "class",
+    "name": "B",
+    "memberof": "src/tests/testinstof.js",
+    "static": true,
+    "longname": "src/tests/testinstof.js~B",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/testinstof.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 17,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "A"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 191,
+    "kind": "class",
+    "name": "C",
+    "memberof": "src/tests/testinstof.js",
+    "static": true,
+    "longname": "src/tests/testinstof.js~C",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/testinstof.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 18,
+    "undocument": true,
+    "interface": false,
+    "extends": [
+      "B"
+    ],
+    "ignore": true
+  },
+  {
+    "__docId__": 192,
+    "kind": "variable",
+    "name": "Ci",
+    "memberof": "src/tests/testinstof.js",
+    "static": true,
+    "longname": "src/tests/testinstof.js~Ci",
+    "access": "public",
+    "export": false,
+    "importPath": "ink-splat/src/tests/testinstof.js",
+    "importStyle": null,
+    "description": null,
+    "lineNumber": 26,
+    "undocument": true,
+    "type": {
+      "types": [
+        "src/tests/testinstof.js~C"
+      ]
+    },
+    "ignore": true
+  },
+  {
+    "__docId__": 193,
+    "kind": "file",
+    "name": "src/utils/isClassOrComponent.js",
+    "content": "/**\n * \n *  ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n *  ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n *  ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n *  ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n *  ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n *  ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n *  ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n *  ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n *  ░           ░ ░  ░            ░               ░  ░     ░  ░\n * \n * LICENSE: MIT\n */\nimport React from 'react';\n// import Window from 'window';\n// import renderJSDOM from '../tests/renderers/jsdomRenderer';\n\n// const window = new Window();\n\n/**\n * Returns a boolean which indicates that the provided `classA` matches\n * the provided `refClass` and is `true` only when the following conditions\n * are met:\n * \n * (1) `refClass` is a type (function), and\n * (2) `classA` is that exact same type (function).\n * \n * It is an equality test that returns true for any\n * `refClass === classA` if and only if `refClass` and `classA` are\n * functions, as `class A {}` transpiles to a function declaration.\n * \n * @param {*} refClass The reference class (function).\n * @param {*} classA The actual class (function).\n * @returns `true` when `refClass === classA` and both are functions,\n * `false` otherwise.\n */\nconst isExactClass = (refClass, classA) =>\n    (\n        typeof refClass === 'function'\n        &&\n        typeof classA === 'function'\n    )\n    &&\n    (\n        refClass === classA\n    );\n\n/**\n * Returns a boolean which indicates if the provided `derivedClassB` matches\n * the following true when the following two conditions are met:\n * `refClass` is a type and `derivedClassB` is a type extended from `refClass`.\n * \n * @param {*} refClass The reference class (function).\n * @param {*} derivedClassB The actual derived class (function).\n * @returns `true` when `derivedClassB.prototype instanceof refBaseClass` and both are functions,\n * `false` otherwise.\n */\nconst isDerivedClass = (refBaseClass, derivedClassB) =>\n    (\n        typeof refBaseClass === 'function'\n        &&\n        typeof derivedClassB === 'function'\n    )\n    &&\n    (\n        derivedClassB.prototype instanceof refBaseClass\n    );\n\n/**\n * Returns a boolean which indicates that the provided `inst` matches\n * is an instance of the provided `refClass` class and is `true` only\n * when the following conditions are met:\n * \n * (1) `refClass` is a type (function), and\n * (2) `inst` is an object which an instance of `refClass`\n * \n * It is an equality test that returns true for any\n * `refClass === classA` if and only if `refClass` and `classA` are\n * functions, as `class A {}` transpiles to a function declaration.\n * \n * @param {*} refClass The reference class (function).\n * @param {*} classA The actual class (function).\n * @returns `true` when `refClass === classA` and both are functions,\n * `false` otherwise.\n */\nconst isInstanceOf = (refClass, inst) =>\n(\n    typeof refClass === 'function'\n    &&\n    typeof inst === 'object'\n)\n&&\n(\n    inst instanceof refClass\n);\n\n/**\n * Returns a boolean which indicates that the provided `componentA` component\n * is a React Component as created by `React.createElement()` instantiated using\n * the  `refClass` type and is `true` only when the following conditions\n * are met:\n * \n * (1) `refClass` is a type (function), and\n * (2) `componentA` is created using `React.createElement(refClass)`\n * \n * @param {*} refClass The reference class (function).\n * @param {*} componentA The actual component (object).\n * @returns `true` when `refClass === classA` and both are functions,\n * `false` otherwise.\n */\nconst isExactComponent = (refClass, componentA) =>\n(\n    typeof refClass === 'function'\n    &&\n    typeof componentA === 'object'\n)\n&&\n(\n    React.isValidElement(componentA)\n)\n&&\n(\n    isExactClass(refClass, componentA.type)\n);\n\n/**\n * Returns a boolean which indicates that the provided `derivedComponentB` component\n * is a React Component as created by `React.createElement()` instantiated using\n * the `refBaseClass` base type and is `true` only when the following conditions\n * are met:\n * \n * (1) `refBaseClass` is a type (function), and\n * (2) `refBaseClass` has been extended to a secondary class, such as `class B extends A {}`\n * (3) `derivedComponentB` is created using `React.createElement(B)`\n * (4) You are interested in seeing if this Component element is of type derived from `A`\n * \n * @param {*} refBaseClass The reference base class (function).\n * @param {*} componentA The actual component (object).\n * @returns `true` when `refClass === classA` and both are functions,\n * `false` otherwise.\n */\nconst isDerivedComponent = (refBaseClass, derivedComponentB) =>\n(\n    typeof refBaseClass === 'function'\n    &&\n    typeof derivedComponentB === 'object'\n)\n&&\n(\n    React.isValidElement(derivedComponentB)\n)\n&&\n(\n    isDerivedClass(refBaseClass, derivedComponentB.type)\n);\n\n/**\n * Returns a boolean which indicates if the provided anyInst matches any\n * of the following conditions (given class A extends React.Component {...}\n * and class B extends class A {...}):\n * \n * (1) a reference to refClass (A === A),\n * \n * (2) an instance of refClass (new A()),\n * \n * (3) a React Element provided refClass as the type (React.createElement(A))\n * \n * TODO: (4) a DOM Node which has been rendered with a React Element, type refClass\n * \n * (5) a reference to a derived class (B === A whereas class B extends A {...})\n * \n * (6) an instance of a derived class (new B() given class B extends A {...})\n * \n * (7) a React Element with a derived class as the type (React.createElement(B))\n * \n * TODO: (8) a DOM Node which has been rendered with a React Element, type derived refClass\n * \n * @param {*} refClass The reference type as defined in a class declaration.\n * @param {*} inst Anything really, but mostly instances of things.\n * @returns A boolean indicating whether inst is a reference to refClass, a reference to\n * a class derived from refClass, an instance of refClass, an instance of a derived class,\n * or a React Element of type refClass, or a React Element of a derived refClass,\n * or a mounted DOM Node.\n */\nconst isClassOrComponent = (refClass, anyInst) =>\n    // condition 1\n    isExactClass(refClass, anyInst) ||\n    // condition 5\n    isDerivedClass(refClass, anyInst) ||\n    // condition 2 and condition 6\n    isInstanceOf(refClass, anyInst) ||\n    // condition 3\n    isExactComponent(refClass, anyInst) ||\n    // condition 7\n    isDerivedComponent(refClass, anyInst);\n    // condition 4\n    // TODO: isClassOrComponent condition 4 detection\n    // condition 8\n    // TODO: isClassOrComponent condition 8 detection\n\n/**\n * Returns a function in the format `(anyInst) => boolean` which returns a boolean\n * which indicates if the provided `anyInst` matches any of the following conditions\n * (given `class A extends React.Component {...}` and `class B extends class A {...}`),\n * where A refers to the type provided in `refClass`:\n * \n * (1) a reference to `refClass` (`A === A`),\n * \n * (2) an instance of `refClass` (`new A()`),\n * \n * (3) a React Element provided `refClass` as the type (`React.createElement(A)`)\n * \n * TODO: (4) a DOM Node which has been rendered with a React Element, type `refClass`\n * \n * (5) a reference to a derived class (`B === A` whereas `class B extends A {...}`)\n * \n * (6) an instance of a derived class (`new B()` given `class B extends A {...}`)\n * \n * (7) a React Element with a derived class as the type (`React.createElement(B)`)\n * \n * TODO: (8) a DOM Node which has been rendered with a React Element, type derived from `refClass`\n * \n * @param {*} refClass The reference type as defined in a class declaration.\n * @returns A function of the type `(anyInst) => boolean` which returns a boolean\n * indicating whether `inst` is a reference to `refClass`, a reference to a class derived\n * from `refClass`, an instance of `refClass`, an instance of a derived class,\n * or a React Element of type `refClass`, or a React Element of a derived `refClass`,\n * or a mounted DOM Node of `refClass` or a derived `refClass`.\n */\nconst isClassOrComponentFactory = (refClass) =>\n    (inst) => isClassOrComponent(refClass, inst);\n\nexport {\n    isExactClass,\n    isDerivedClass,\n    isInstanceOf,\n    isExactComponent,\n    isDerivedComponent,\n    isClassOrComponent,\n    isClassOrComponentFactory\n};",
+    "static": true,
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/src/utils/isClassOrComponent.js",
+    "access": "public",
+    "description": null,
+    "lineNumber": 1
+  },
+  {
+    "__docId__": 194,
+    "kind": "function",
+    "name": "isExactClass",
+    "memberof": "src/utils/isClassOrComponent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/isClassOrComponent.js~isExactClass",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/utils/isClassOrComponent.js",
+    "importStyle": "{isExactClass}",
+    "description": "Returns a boolean which indicates that the provided `classA` matches\nthe provided `refClass` and is `true` only when the following conditions\nare met:\n\n(1) `refClass` is a type (function), and\n(2) `classA` is that exact same type (function).\n\nIt is an equality test that returns true for any\n`refClass === classA` if and only if `refClass` and `classA` are\nfunctions, as `class A {}` transpiles to a function declaration.",
+    "lineNumber": 38,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "`true` when `refClass === classA` and both are functions,\n`false` otherwise."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "refClass",
+        "description": "The reference class (function)."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "classA",
+        "description": "The actual class (function)."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` when `refClass === classA` and both are functions,\n`false` otherwise."
+    }
+  },
+  {
+    "__docId__": 195,
+    "kind": "function",
+    "name": "isDerivedClass",
+    "memberof": "src/utils/isClassOrComponent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/isClassOrComponent.js~isDerivedClass",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/utils/isClassOrComponent.js",
+    "importStyle": "{isDerivedClass}",
+    "description": "Returns a boolean which indicates if the provided `derivedClassB` matches\nthe following true when the following two conditions are met:\n`refClass` is a type and `derivedClassB` is a type extended from `refClass`.",
+    "lineNumber": 59,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "`true` when `derivedClassB.prototype instanceof refBaseClass` and both are functions,\n`false` otherwise."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "refClass",
+        "description": "The reference class (function)."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "derivedClassB",
+        "description": "The actual derived class (function)."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` when `derivedClassB.prototype instanceof refBaseClass` and both are functions,\n`false` otherwise."
+    }
+  },
+  {
+    "__docId__": 196,
+    "kind": "function",
+    "name": "isInstanceOf",
+    "memberof": "src/utils/isClassOrComponent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/isClassOrComponent.js~isInstanceOf",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/utils/isClassOrComponent.js",
+    "importStyle": "{isInstanceOf}",
+    "description": "Returns a boolean which indicates that the provided `inst` matches\nis an instance of the provided `refClass` class and is `true` only\nwhen the following conditions are met:\n\n(1) `refClass` is a type (function), and\n(2) `inst` is an object which an instance of `refClass`\n\nIt is an equality test that returns true for any\n`refClass === classA` if and only if `refClass` and `classA` are\nfunctions, as `class A {}` transpiles to a function declaration.",
+    "lineNumber": 87,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "`true` when `refClass === classA` and both are functions,\n`false` otherwise."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "refClass",
+        "description": "The reference class (function)."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "classA",
+        "description": "The actual class (function)."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` when `refClass === classA` and both are functions,\n`false` otherwise."
+    }
+  },
+  {
+    "__docId__": 197,
+    "kind": "function",
+    "name": "isExactComponent",
+    "memberof": "src/utils/isClassOrComponent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/isClassOrComponent.js~isExactComponent",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/utils/isClassOrComponent.js",
+    "importStyle": "{isExactComponent}",
+    "description": "Returns a boolean which indicates that the provided `componentA` component\nis a React Component as created by `React.createElement()` instantiated using\nthe  `refClass` type and is `true` only when the following conditions\nare met:\n\n(1) `refClass` is a type (function), and\n(2) `componentA` is created using `React.createElement(refClass)`",
+    "lineNumber": 112,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "`true` when `refClass === classA` and both are functions,\n`false` otherwise."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "refClass",
+        "description": "The reference class (function)."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "componentA",
+        "description": "The actual component (object)."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` when `refClass === classA` and both are functions,\n`false` otherwise."
+    }
+  },
+  {
+    "__docId__": 198,
+    "kind": "function",
+    "name": "isDerivedComponent",
+    "memberof": "src/utils/isClassOrComponent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/isClassOrComponent.js~isDerivedComponent",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/utils/isClassOrComponent.js",
+    "importStyle": "{isDerivedComponent}",
+    "description": "Returns a boolean which indicates that the provided `derivedComponentB` component\nis a React Component as created by `React.createElement()` instantiated using\nthe `refBaseClass` base type and is `true` only when the following conditions\nare met:\n\n(1) `refBaseClass` is a type (function), and\n(2) `refBaseClass` has been extended to a secondary class, such as `class B extends A {}`\n(3) `derivedComponentB` is created using `React.createElement(B)`\n(4) You are interested in seeing if this Component element is of type derived from `A`",
+    "lineNumber": 143,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "`true` when `refClass === classA` and both are functions,\n`false` otherwise."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "refBaseClass",
+        "description": "The reference base class (function)."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "componentA",
+        "description": "The actual component (object)."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "`true` when `refClass === classA` and both are functions,\n`false` otherwise."
+    }
+  },
+  {
+    "__docId__": 199,
+    "kind": "function",
+    "name": "isClassOrComponent",
+    "memberof": "src/utils/isClassOrComponent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/isClassOrComponent.js~isClassOrComponent",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/utils/isClassOrComponent.js",
+    "importStyle": "{isClassOrComponent}",
+    "description": "Returns a boolean which indicates if the provided anyInst matches any\nof the following conditions (given class A extends React.Component {...}\nand class B extends class A {...}):\n\n(1) a reference to refClass (A === A),\n\n(2) an instance of refClass (new A()),\n\n(3) a React Element provided refClass as the type (React.createElement(A))\n\nTODO: (4) a DOM Node which has been rendered with a React Element, type refClass\n\n(5) a reference to a derived class (B === A whereas class B extends A {...})\n\n(6) an instance of a derived class (new B() given class B extends A {...})\n\n(7) a React Element with a derived class as the type (React.createElement(B))\n\nTODO: (8) a DOM Node which has been rendered with a React Element, type derived refClass",
+    "lineNumber": 186,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "A boolean indicating whether inst is a reference to refClass, a reference to\na class derived from refClass, an instance of refClass, an instance of a derived class,\nor a React Element of type refClass, or a React Element of a derived refClass,\nor a mounted DOM Node."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "refClass",
+        "description": "The reference type as defined in a class declaration."
+      },
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "inst",
+        "description": "Anything really, but mostly instances of things."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "A boolean indicating whether inst is a reference to refClass, a reference to\na class derived from refClass, an instance of refClass, an instance of a derived class,\nor a React Element of type refClass, or a React Element of a derived refClass,\nor a mounted DOM Node."
+    }
+  },
+  {
+    "__docId__": 200,
+    "kind": "function",
+    "name": "isClassOrComponentFactory",
+    "memberof": "src/utils/isClassOrComponent.js",
+    "generator": false,
+    "async": false,
+    "static": true,
+    "longname": "src/utils/isClassOrComponent.js~isClassOrComponentFactory",
+    "access": "public",
+    "export": true,
+    "importPath": "ink-splat/src/utils/isClassOrComponent.js",
+    "importStyle": "{isClassOrComponentFactory}",
+    "description": "Returns a function in the format `(anyInst) => boolean` which returns a boolean\nwhich indicates if the provided `anyInst` matches any of the following conditions\n(given `class A extends React.Component {...}` and `class B extends class A {...}`),\nwhere A refers to the type provided in `refClass`:\n\n(1) a reference to `refClass` (`A === A`),\n\n(2) an instance of `refClass` (`new A()`),\n\n(3) a React Element provided `refClass` as the type (`React.createElement(A)`)\n\nTODO: (4) a DOM Node which has been rendered with a React Element, type `refClass`\n\n(5) a reference to a derived class (`B === A` whereas `class B extends A {...}`)\n\n(6) an instance of a derived class (`new B()` given `class B extends A {...}`)\n\n(7) a React Element with a derived class as the type (`React.createElement(B)`)\n\nTODO: (8) a DOM Node which has been rendered with a React Element, type derived from `refClass`",
+    "lineNumber": 231,
+    "unknown": [
+      {
+        "tagName": "@returns",
+        "tagValue": "A function of the type `(anyInst) => boolean` which returns a boolean\nindicating whether `inst` is a reference to `refClass`, a reference to a class derived\nfrom `refClass`, an instance of `refClass`, an instance of a derived class,\nor a React Element of type `refClass`, or a React Element of a derived `refClass`,\nor a mounted DOM Node of `refClass` or a derived `refClass`."
+      }
+    ],
+    "params": [
+      {
+        "nullable": null,
+        "types": [
+          "*"
+        ],
+        "spread": false,
+        "optional": false,
+        "name": "refClass",
+        "description": "The reference type as defined in a class declaration."
+      }
+    ],
+    "return": {
+      "nullable": null,
+      "types": [
+        "*"
+      ],
+      "spread": false,
+      "description": "A function of the type `(anyInst) => boolean` which returns a boolean\nindicating whether `inst` is a reference to `refClass`, a reference to a class derived\nfrom `refClass`, an instance of `refClass`, an instance of a derived class,\nor a React Element of type `refClass`, or a React Element of a derived `refClass`,\nor a mounted DOM Node of `refClass` or a derived `refClass`."
+    }
+  },
+  {
+    "kind": "index",
+    "content": "\n    ██▓ ███▄    █  ██ ▄█▀     ██████  ██▓███   ██▓    ▄▄▄     ▄▄▄█████▓\n    ▓██▒ ██ ▀█   █  ██▄█▒    ▒██    ▒ ▓██░  ██▒▓██▒   ▒████▄   ▓  ██▒ ▓▒\n    ▒██▒▓██  ▀█ ██▒▓███▄░    ░ ▓██▄   ▓██░ ██▓▒▒██░   ▒██  ▀█▄ ▒ ▓██░ ▒░\n    ░██░▓██▒  ▐▌██▒▓██ █▄      ▒   ██▒▒██▄█▓▒ ▒▒██░   ░██▄▄▄▄██░ ▓██▓ ░\n    ░██░▒██░   ▓██░▒██▒ █▄   ▒██████▒▒▒██▒ ░  ░░██████▒▓█   ▓██▒ ▒██▒ ░\n    ░▓  ░ ▒░   ▒ ▒ ▒ ▒▒ ▓▒   ▒ ▒▓▒ ▒ ░▒▓▒░ ░  ░░ ▒░▓  ░▒▒   ▓▒█░ ▒ ░░\n    ▒ ░░ ░░   ░ ▒░░ ░▒ ▒░   ░ ░▒  ░ ░░▒ ░     ░ ░ ▒  ░ ▒   ▒▒ ░   ░\n    ▒ ░   ░   ░ ░ ░ ░░ ░    ░  ░  ░  ░░         ░ ░    ░   ▒    ░\n    ░           ░ ░  ░            ░               ░  ░     ░  ░\n\n# ink-splat\n\nink-splat is a component library for ink.\n\n## Why?\n\nBecause I figured focusable screen components made sense.\n\nInk's components will let you type in text input and then not do much else.\nI need to be able to ask the user multiple questions. So focusable components\nis the direction I'm heading.\n\n## How it works\n\nTo install:\n\n`npm i -S ink ink-splat`\n\nTo build:\n\n`npm run-script build`\n\nTo use, see the demo app in `./src/test/*.js`.\n\nTo run the demo app, try:\n\n`node ./dist/test/FocusBlur`\n\n## Components Available\n\n### Control\n\nControl provides a base class for which other components can derive. It's intent was to simplify focus/blur behaviors. You will extend Control rather than use it (in theory).\n\n#### Extending Control\n\n    export class TextField extends Control {\n        constructor(props) {\n            super(props);\n            this.state = {\n                ...this.state\n            };\n        }\n        render() {\n            if (this.isFocused()) {\n                //return editor layout\n            }\n            else {\n                //return viewer layout\n            }\n        }\n    }\n\n### TabBar\n\nTabBar is a focusable Tabs component. A considerable portion of this code came from [@jdeniau/ink-tab](https://github.com/jdeniau/ink-tab). Works just like Tabs, but you get the extra onBlur and onFocus events.\n\n#### TabBar example\n\n    <TabBar\n        onChange={this.handleTabChange}\n        focused={this.state.focusedComponent==='tabBar'}\n        onBlur={() => (\n            (this.state.activeTabName === 'bio' && this.setState({focusedComponent: 'txtName'}))\n            || (this.state.activeTabName === 'exit' && exit())\n        )}>\n        <Tab name=\"readme\">Readme</Tab>\n        <Tab name=\"bio\">Bio</Tab>\n        <Tab name=\"report\">Report</Tab>\n        <Tab name=\"exit\">Exit</Tab>\n    </TabBar>\n\n### TextField\n\nTextField is a focusable TextInput component, which is only a Text component whenever blurred.\n\n#### TextField example\n\n    <TextField\n        value={app.state.name}\n        focused={this.state.focusedComponent==='txtName'}\n        caption={<Text bold><Color bgMagenta whiteBright>Your Name:</Color></Text>}\n        onChange={(newName) => this.setState({newName})}\n        onSubmit={(name) => this.setState({name})}\n        onBlur={() => this.setState({focusedComponent: 'txtBio'})}\n        />\n\n## Copyright\n\n2019 [David A. Ball](https://www.daball.me)\n\nIt is still a work in progress.\n\n## License\n\nMIT.",
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/README.md",
+    "name": "./README.md",
+    "static": true,
+    "access": "public"
+  },
+  {
+    "kind": "packageJSON",
+    "content": "{\n  \"name\": \"ink-splat\",\n  \"version\": \"0.0.6\",\n  \"description\": \"ink-splat is a component library for ink.\",\n  \"author\": \"David A. Ball <www.daball.me>\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/daball/ink-splat\"\n  },\n  \"license\": \"MIT\",\n  \"main\": \"dist/components/index.js\",\n  \"scripts\": {\n    \"pre-commit\": \"NODE_ENV=production lint-staged && gulp && esdoc && jest --coverage\",\n    \"lint\": \"eslint src/\",\n    \"check\": \"prettier --check src/**/*.js\",\n    \"test\": \"eslint src/ && gulp && jest --coverage\",\n    \"jest-init\": \"jest --init\",\n    \"build-doc\": \"esdoc\",\n    \"build\": \"gulp\"\n  },\n  \"lint-staged\": {\n    \"src/**/*.{js,jsx,json,css,md}\": [\n      \"pretty-quick --staged\",\n      \"eslint src/ --fix\",\n      \"git add\"\n    ]\n  },\n  \"devDependencies\": {\n    \"@babel/cli\": \"^7.2.3\",\n    \"@babel/core\": \"^7.4.0\",\n    \"@babel/plugin-proposal-class-properties\": \"^7.4.0\",\n    \"@babel/preset-env\": \"^7.4.1\",\n    \"@babel/preset-react\": \"^7.0.0\",\n    \"babel-jest\": \"^24.5.0\",\n    \"esdoc\": \"^1.1.0\",\n    \"esdoc-ecmascript-proposal-plugin\": \"^1.0.0\",\n    \"esdoc-jsx-plugin\": \"^1.0.0\",\n    \"esdoc-standard-plugin\": \"^1.0.0\",\n    \"eslint\": \"^5.15.3\",\n    \"eslint-config-airbnb\": \"^17.1.0\",\n    \"eslint-config-prettier\": \"^4.1.0\",\n    \"eslint-config-standard\": \"^12.0.0\",\n    \"eslint-plugin-import\": \"^2.16.0\",\n    \"eslint-plugin-jsx-a11y\": \"^6.2.1\",\n    \"eslint-plugin-node\": \"^8.0.1\",\n    \"eslint-plugin-prettier\": \"^3.0.1\",\n    \"eslint-plugin-promise\": \"^4.0.1\",\n    \"eslint-plugin-react\": \"^7.12.4\",\n    \"eslint-plugin-standard\": \"^4.0.0\",\n    \"gulp\": \"^4.0.0\",\n    \"gulp-babel\": \"^8.0.0-beta.2\",\n    \"gulp-prettier\": \"^2.1.0\",\n    \"husky\": \"^1.3.1\",\n    \"jest\": \"^24.5.0\",\n    \"jshint\": \"^2.10.2\",\n    \"lint-staged\": \"^8.1.5\",\n    \"prettier\": \"^1.16.4\",\n    \"prettier-eslint\": \"^8.8.2\",\n    \"prettier-eslint-cli\": \"^4.7.1\",\n    \"pretty-quick\": \"^1.10.0\"\n  },\n  \"dependencies\": {\n    \"babel-eslint\": \"^10.0.1\",\n    \"ink\": \"^2.0.6\",\n    \"ink-tab\": \"^2.0.1\",\n    \"ink-text-input\": \"^3.1.0\",\n    \"ink-testing-library\": \"^1.0.1\",\n    \"inquirer\": \"^6.2.2\",\n    \"react\": \"^16.8.5\",\n    \"react-dom\": \"^16.8.6\",\n    \"window\": \"^4.2.6\"\n  }\n}\n",
+    "longname": "/Users/davidball/Projects/gde-workspace/ink-splat/package.json",
+    "name": "package.json",
+    "static": true,
+    "access": "public"
+  }
+]
